@@ -259,7 +259,7 @@ export default function Home() {
             name: series.title,
             url: `https://videostreamhub.vercel.app/series/${series.id}`,
             image: series.thumbnail,
-            duration: series.duration,
+            // duration: series.duration,
             numberOfEpisodes: series.episodes.length,
             episode: series.episodes.map((episode, epIndex) => ({
               "@type": "TVEpisode",
