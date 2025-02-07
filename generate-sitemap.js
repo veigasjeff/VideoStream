@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { URL } = require('url');
 
-const baseUrl = 'https://videostream.vercel.app';
+const baseUrl = 'https://videostreamhub.vercel.app';
 const superdata = require('./data/superdata.json'); // Your superdata file
 
 function generateSitemap() {

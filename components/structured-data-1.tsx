@@ -25,7 +25,7 @@
 //     structuredData["partOfSeries"] = {
 //       "@type": "Movie",
 //       name: video.title,
-//       url: `https://videostream.vercel.app/video/${video.title}`,
+//       url: `https://videostreamhub.vercel.app/video/${video.title}`,
 //     };
 //   }
 
@@ -53,7 +53,7 @@
 //     duration: video.duration,
 //     thumbnailUrl: video.thumbnail,
 //     uploadDate: video.uploadDate,
-//     url: `https://videostream.vercel.app/adult/${video.id}`,
+//     url: `https://videostreamhub.vercel.app/adult/${video.id}`,
 //     interactionStatistic: {
 //       "@type": "InteractionCounter",
 //       interactionType: { "@type": "WatchAction" },
@@ -87,7 +87,7 @@ export function StructuredData({ video }: StructuredDataProps) {
     description: video.description,
     duration: video.duration,
     thumbnailUrl: video.thumbnail,
-    url: `https://videostream.vercel.app/adult/${video.id}`,
+    url: `https://videostreamhub.vercel.app/adult/${video.id}`,
     interactionStatistic: {
       "@type": "InteractionCounter",
       interactionType: { "@type": "WatchAction" },

@@ -12,15 +12,15 @@
 
 // // export const metadata: Metadata = {
 // //   title: {
-// //     default: "VideoStream - Watch Movies & Series",
-// //     template: "%s | VideoStream",
+// //     default: "VideoStreamHub - Watch Movies & Series",
+// //     template: "%s | VideoStreamHub",
 // //   },
-// //   description: "Watch the latest movies, series, and trailers on VideoStream",
+// //   description: "Watch the latest movies, series, and trailers on VideoStreamHub",
 // //   openGraph: {
 // //     type: "website",
 // //     locale: "en_US",
-// //     url: "https://videostreamvercel.app",
-// //     siteName: "VideoStream",
+// //     url: "https://VideoStreamHubvercel.app",
+// //     siteName: "VideoStreamHub",
 // //   },
 // //   robots: {
 // //     index: true,
@@ -32,12 +32,12 @@
 // //   {
 // //     "@context": "https://schema.org",
 // //     "@type": "Organization",
-// //     name: "VideoStream™",
-// //     url: "https://videostream.vercel.app/",
-// //     image: ["https://videostream.vercel.app/favicon.ico"],
+// //     name: "VideoStreamHub™",
+// //     url: "https://videostreamhub.vercel.app/",
+// //     image: ["https://videostreamhub.vercel.app/favicon.ico"],
 // //     logo: {
 // //       "@type": "ImageObject",
-// //       url: "https://videostream.vercel.app/logo.png",
+// //       url: "https://videostreamhub.vercel.app/logo.png",
 // //       width: 280,
 // //       height: 80,
 // //     },
@@ -45,13 +45,13 @@
 // //   {
 // //     "@context": "https://schema.org",
 // //     "@type": "WebSite",
-// //     url: "https://videostream.vercel.app/",
+// //     url: "https://videostreamhub.vercel.app/",
 // //     potentialAction: {
 // //       "@type": "SearchAction",
 // //       target: {
 // //         "@type": "EntryPoint",
 // //         urlTemplate:
-// //           "https://videostream.vercel.app/search?q={search_term_string}",
+// //           "https://videostreamhub.vercel.app/search?q={search_term_string}",
 // //       },
 // //       "query-input": "required name=search_term_string",
 // //     },
@@ -76,24 +76,24 @@
 // //     },
 // //     {
 // //       "@type": "Organization",
-// //       "@id": "https://videostream.vercel.app/#organization",
-// //       name: "VideoStream™",
-// //       url: "https://videostream.vercel.app",
+// //       "@id": "https://videostreamhub.vercel.app/#organization",
+// //       name: "VideoStreamHub™",
+// //       url: "https://videostreamhub.vercel.app",
 // //     },
 // //     {
 // //       "@type": "WebSite",
-// //       "@id": "https://videostream.vercel.app/#website",
-// //       url: "https://videostream.vercel.app",
-// //       name: "VideoStream™",
+// //       "@id": "https://videostreamhub.vercel.app/#website",
+// //       url: "https://videostreamhub.vercel.app",
+// //       name: "VideoStreamHub™",
 // //       publisher: {
 // //         "@type": "Organization",
-// //         "@id": "https://videostream.vercel.app/#organization",
+// //         "@id": "https://videostreamhub.vercel.app/#organization",
 // //       },
 // //     },
 // //     {
 // //       "@type": "WebPage",
-// //       "@id": "https://videostream.vercel.app/#webpage",
-// //       url: "https://videostream.vercel.app/",
+// //       "@id": "https://videostreamhub.vercel.app/#webpage",
+// //       url: "https://videostreamhub.vercel.app/",
 // //       name: "Movie",
 // //       datePublished: "2024-01-13T13:00:00+00:00",
 // //       dateModified: "2024-01-13T13:13:00+00:00",
@@ -111,15 +111,15 @@
 // //         },
 // //       },
 // //       isPartOf: {
-// //         "@id": "https://videostream.vercel.app/#website",
+// //         "@id": "https://videostreamhub.vercel.app/#website",
 // //       },
 // //       inLanguage: "en-US",
 // //       mainEntity: [
 // //         {
 // //           "@type": "Article",
-// //           "@id": "https://videostream.vercel.app/",
-// //           url: "https://videostream.vercel.app/",
-// //           headline: "VideoStream™",
+// //           "@id": "https://videostreamhub.vercel.app/",
+// //           url: "https://videostreamhub.vercel.app/",
+// //           headline: "VideoStreamHub™",
 // //           datePublished: "2024-01-13T13:00:00+00:00",
 // //           dateModified: "2024-01-13T13:13:00+00:00",
 // //           author: {
@@ -137,16 +137,16 @@
 // //           },
 // //           publisher: {
 // //             "@type": "Organization",
-// //             "@id": "https://videostream.vercel.app/#organization",
-// //             name: "VideoStream™",
-// //             url: "https://videostream.vercel.app",
+// //             "@id": "https://videostreamhub.vercel.app/#organization",
+// //             name: "VideoStreamHub™",
+// //             url: "https://videostreamhub.vercel.app",
 // //           },
 // //         },
 // //         {
 // //           "@type": "Article",
-// //           "@id": "https://videostream.vercel.app/",
-// //           url: "https://videostream.vercel.app/",
-// //           headline: "VideoStream™",
+// //           "@id": "https://videostreamhub.vercel.app/",
+// //           url: "https://videostreamhub.vercel.app/",
+// //           headline: "VideoStreamHub™",
 // //           datePublished: "2024-01-13T13:00:00+00:00",
 // //           dateModified: "2024-01-13T13:13:00+00:00",
 // //           author: {
@@ -164,16 +164,16 @@
 // //           },
 // //           publisher: {
 // //             "@type": "Organization",
-// //             "@id": "https://videostream.vercel.app/#organization",
-// //             name: "VideoStream™",
-// //             url: "https://videostream.vercel.app",
+// //             "@id": "https://videostreamhub.vercel.app/#organization",
+// //             name: "VideoStreamHub™",
+// //             url: "https://videostreamhub.vercel.app",
 // //           },
 // //         },
 // //         {
 // //           "@type": "Article",
-// //           "@id": "https://videostream.vercel.app/",
-// //           url: "https://videostream.vercel.app/",
-// //           headline: "VideoStream™",
+// //           "@id": "https://videostreamhub.vercel.app/",
+// //           url: "https://videostreamhub.vercel.app/",
+// //           headline: "VideoStreamHub™",
 // //           datePublished: "2024-01-13T13:00:00+00:00",
 // //           dateModified: "2024-01-13T13:13:00+00:00",
 // //           author: {
@@ -234,31 +234,31 @@
 // //           rel="sitemap"
 // //           type="application/xml"
 // //           title="Sitemap"
-// //           href="https://videostream.vercel.app/sitemap.xml"
+// //           href="https://videostreamhub.vercel.app/sitemap.xml"
 // //         />
 // //         <meta name="keywords" content="movies, tvshow, free movies, free tvshow, watch movie online, watch tvshows online, free movie streaming, free tvshow streaming, download free" />
-// //         <link rel="canonical" href="https://videostream.vercel.app" />
+// //         <link rel="canonical" href="https://videostreamhub.vercel.app" />
 // //         <meta property="og:locale" content="en_US" />
 // //         <meta property="og:type" content="website" />
 // //         <meta
 // //           property="og:title"
-// //           content=" VideoStream™"
+// //           content=" VideoStreamHub™"
 // //         />
-// //         <meta property="og:url" content="https://videostream.vercel.app" />
+// //         <meta property="og:url" content="https://videostreamhub.vercel.app" />
 // //         <meta
 // //           property="og:site_name"
-// //           content=" VideoStream™"
+// //           content=" VideoStreamHub™"
 // //         />
 // //         <meta
 // //           property="og:image"
-// //           content="https://videostream.vercel.app/og_image.jpg"
+// //           content="https://videostreamhub.vercel.app/og_image.jpg"
 // //         />
 // //         <meta property="og:image:width" content="1200" />
 // //         <meta property="og:image:height" content="630" />
 // //         <meta property="og:image:type" content="image/jpg" />
 // //         <meta
 // //           name="application-name"
-// //           content=" VideoStream™"
+// //           content=" VideoStreamHub™"
 // //         />
 // //         <meta
 // //           property="article:modified_time"
@@ -268,15 +268,15 @@
 // //         <meta name="twitter:card" content="summary_large_image" />
 // //         <meta
 // //           name="twitter:title"
-// //           content=" VideoStream™ - Online. Stream. Download."
+// //           content=" VideoStreamHub™ - Online. Stream. Download."
 // //         />
 // //         <meta
 // //           name="twitter:description"
-// //           content="Stream HD movies and TV series for free on VideoStream™. Explore, stream, and download."
+// //           content="Stream HD movies and TV series for free on VideoStreamHub™. Explore, stream, and download."
 // //         />
 // //         <meta
 // //           name="twitter:image"
-// //           content="https://videostream.vercel.app/og_image.jpg"
+// //           content="https://videostreamhub.vercel.app/og_image.jpg"
 // //         />
 // //         <meta
 // //           name="google-site-verification"
@@ -342,15 +342,15 @@
 
 // export const metadata: Metadata = {
 //   title: {
-//     default: "VideoStream - Watch Movies & Series",
-//     template: "%s | VideoStream",
+//     default: "VideoStreamHub - Watch Movies & Series",
+//     template: "%s | VideoStreamHub",
 //   },
-//   description: "Watch the latest movies, series, and adult content on VideoStream",
+//   description: "Watch the latest movies, series, and adult content on VideoStreamHub",
 //   openGraph: {
 //     type: "website",
 //     locale: "en_US",
-//     url: "https://videostream.vercel.app",
-//     siteName: "VideoStream",
+//     url: "https://videostreamhub.vercel.app",
+//     siteName: "VideoStreamHub",
 //   },
 //   robots: {
 //     index: true,
@@ -367,12 +367,12 @@
 //     {
 //       "@context": "https://schema.org",
 //       "@type": "Organization",
-//       name: "VideoStream™",
-//       url: "https://videostream.vercel.app/",
-//       image: ["https://videostream.vercel.app/favicon.ico"],
+//       name: "VideoStreamHub™",
+//       url: "https://videostreamhub.vercel.app/",
+//       image: ["https://videostreamhub.vercel.app/favicon.ico"],
 //       logo: {
 //         "@type": "ImageObject",
-//         url: "https://videostream.vercel.app/logo.png",
+//         url: "https://videostreamhub.vercel.app/logo.png",
 //         width: 280,
 //         height: 80,
 //       },
@@ -380,13 +380,13 @@
 //     {
 //       "@context": "https://schema.org",
 //       "@type": "WebSite",
-//       url: "https://videostream.vercel.app/",
+//       url: "https://videostreamhub.vercel.app/",
 //       potentialAction: {
 //         "@type": "SearchAction",
 //         target: {
 //           "@type": "EntryPoint",
 //           urlTemplate:
-//             "https://videostream.vercel.app/search?q={search_term_string}",
+//             "https://videostreamhub.vercel.app/search?q={search_term_string}",
 //         },
 //         "query-input": "required name=search_term_string",
 //       },
@@ -411,24 +411,24 @@
 //       },
 //       {
 //         "@type": "Organization",
-//         "@id": "https://videostream.vercel.app/#organization",
-//         name: "VideoStream™",
-//         url: "https://videostream.vercel.app",
+//         "@id": "https://videostreamhub.vercel.app/#organization",
+//         name: "VideoStreamHub™",
+//         url: "https://videostreamhub.vercel.app",
 //       },
 //       {
 //         "@type": "WebSite",
-//         "@id": "https://videostream.vercel.app/#website",
-//         url: "https://videostream.vercel.app",
-//         name: "VideoStream™",
+//         "@id": "https://videostreamhub.vercel.app/#website",
+//         url: "https://videostreamhub.vercel.app",
+//         name: "VideoStreamHub™",
 //         publisher: {
 //           "@type": "Organization",
-//           "@id": "https://videostream.vercel.app/#organization",
+//           "@id": "https://videostreamhub.vercel.app/#organization",
 //         },
 //       },
 //       {
 //         "@type": "WebPage",
-//         "@id": "https://videostream.vercel.app/#webpage",
-//         url: "https://videostream.vercel.app/",
+//         "@id": "https://videostreamhub.vercel.app/#webpage",
+//         url: "https://videostreamhub.vercel.app/",
 //         name: "Movie",
 //         datePublished: "2024-01-13T13:00:00+00:00",
 //         dateModified: "2024-01-13T13:13:00+00:00",
@@ -446,7 +446,7 @@
 //           },
 //         },
 //         isPartOf: {
-//           "@id": "https://videostream.vercel.app/#website",
+//           "@id": "https://videostreamhub.vercel.app/#website",
 //         },
 //         inLanguage: "en-US",
 //       },
@@ -485,31 +485,31 @@
 //           rel="sitemap"
 //           type="application/xml"
 //           title="Sitemap"
-//           href="https://videostream.vercel.app/sitemap.xml"
+//           href="https://videostreamhub.vercel.app/sitemap.xml"
 //         />
 //         <meta name="keywords" content="movies, tvshow, free movies, free tvshow, watch movie online, watch tvshows online, free movie streaming, free tvshow streaming, download free" />
-//         <link rel="canonical" href="https://videostream.vercel.app" />
+//         <link rel="canonical" href="https://videostreamhub.vercel.app" />
 //         <meta property="og:locale" content="en_US" />
 //         <meta property="og:type" content="website" />
 //         <meta
 //           property="og:title"
-//           content=" VideoStream™"
+//           content=" VideoStreamHub™"
 //         />
-//         <meta property="og:url" content="https://videostream.vercel.app" />
+//         <meta property="og:url" content="https://videostreamhub.vercel.app" />
 //         <meta
 //           property="og:site_name"
-//           content=" VideoStream™"
+//           content=" VideoStreamHub™"
 //         />
 //         <meta
 //           property="og:image"
-//           content="https://videostream.vercel.app/og_image.jpg"
+//           content="https://videostreamhub.vercel.app/og_image.jpg"
 //         />
 //         <meta property="og:image:width" content="1200" />
 //         <meta property="og:image:height" content="630" />
 //         <meta property="og:image:type" content="image/jpg" />
 //         <meta
 //           name="application-name"
-//           content=" VideoStream™"
+//           content=" VideoStreamHub™"
 //         />
 //         <meta
 //           property="article:modified_time"
@@ -519,15 +519,15 @@
 //         <meta name="twitter:card" content="summary_large_image" />
 //         <meta
 //           name="twitter:title"
-//           content=" VideoStream™ - Online. Stream. Download."
+//           content=" VideoStreamHub™ - Online. Stream. Download."
 //         />
 //         <meta
 //           name="twitter:description"
-//           content="Stream HD movies and TV series for free on VideoStream™"
+//           content="Stream HD movies and TV series for free on VideoStreamHub™"
 //         />
 //         <meta
 //           name="twitter:image"
-//           content="https://videostream.vercel.app/og_image.jpg"
+//           content="https://videostreamhub.vercel.app/og_image.jpg"
 //         />
 //         <meta
 //           name="google-site-verification"
@@ -574,45 +574,45 @@ import Script from "next/script"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://videostream.vercel.app"),
+  metadataBase: new URL("https://videostreamhub.vercel.app"),
   title: {
-    default: "VideoStream - Watch Movies, Series & More",
-    template: "%s | VideoStream",
+    default: "VideoStreamHub - Watch Movies, Series & More",
+    template: "%s | VideoStreamHub",
   },
   description:
-    "Stream the latest movies, TV series, and exclusive content on VideoStream. Your ultimate entertainment destination.",
+    "Stream the latest movies, TV series, and exclusive content on VideoStreamHub. Your ultimate entertainment destination.",
   keywords: ["video streaming", "movies", "TV series", "entertainment", "watch online"],
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://videostream.vercel.app",
-    siteName: "VideoStream",
-    title: "VideoStream - Watch Movies, Series & More",
+    url: "https://videostreamhub.vercel.app",
+    siteName: "VideoStreamHub",
+    title: "VideoStreamHub - Watch Movies, Series & More",
     description:
-      "Stream the latest movies, TV series, and exclusive content on VideoStream. Your ultimate entertainment destination.",
+      "Stream the latest movies, TV series, and exclusive content on VideoStreamHub. Your ultimate entertainment destination.",
     images: [
       {
-        url: "https://videostream.vercel.app/og-image.jpg",
+        url: "https://videostreamhub.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "VideoStream - Your Ultimate Streaming Platform",
+        alt: "VideoStreamHub - Your Ultimate Streaming Platform",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "VideoStream - Watch Movies, Series & More",
+    title: "VideoStreamHub - Watch Movies, Series & More",
     description:
-      "Stream the latest movies, TV series, and exclusive content on VideoStream. Your ultimate entertainment destination.",
-    images: ["https://videostream.vercel.app/og-image.jpg"],
-    creator: "@videostream",
+      "Stream the latest movies, TV series, and exclusive content on VideoStreamHub. Your ultimate entertainment destination.",
+    images: ["https://videostreamhub.vercel.app/og-image.jpg"],
+    creator: "@VideoStreamHub",
   },
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://videostream.vercel.app",
+    canonical: "https://videostreamhub.vercel.app",
   },
 }
 
@@ -630,11 +630,11 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "VideoStream",
-              url: "https://videostream.vercel.app",
+              name: "VideoStreamHub",
+              url: "https://videostreamhub.vercel.app",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://videostream.vercel.app/search?q={search_term_string}",
+                target: "https://videostreamhub.vercel.app/search?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
             }),

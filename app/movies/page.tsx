@@ -59,7 +59,7 @@ export default function VideosPage() {
 
   return (
     <div className="container py-6 space-y-8 ">
-      <h1 className="text-3xl font-bold mb-6 ">Videos</h1>
+      <h1 className="text-3xl font-bold mb-6 ">Movies</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
         {allVideos.map((video) => (
           <Link key={video.id} href={`/movies/${video.id}`} className="group">

@@ -49,7 +49,7 @@ import type { MetadataRoute } from "next";
 import superdata from "@/data/superdata.json";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://videostream.vercel.app";
+  const baseUrl = "https://videostreamhub.vercel.app";
 
   const staticUrls = [
     { url: baseUrl },

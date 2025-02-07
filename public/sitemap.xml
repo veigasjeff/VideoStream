@@ -6,27 +6,27 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>https://videostream.vercel.app/</loc>
+    <loc>https://videostreamhub.vercel.app/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://videostream.vercel.app/movies</loc>
+    <loc>https://videostreamhub.vercel.app/movies</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://videostream.vercel.app/series</loc>
+    <loc>https://videostreamhub.vercel.app/series</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://videostream.vercel.app/adult</loc>
+    <loc>https://videostreamhub.vercel.app/adult</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
    <url>
-    <loc>https://videostream.vercel.app/movies</loc>
+    <loc>https://videostreamhub.vercel.app/movies</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>

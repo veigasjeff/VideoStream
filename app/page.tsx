@@ -78,7 +78,7 @@
 //               item: {
 //                 "@type": video.seriesTitle ? "TVEpisode" : "Movie",
 //                 name: video.title,
-//                 url: `https://videostream.vercel.app/video/${video.id}`,
+//                 url: `https://videostreamhub.vercel.app/video/${video.id}`,
 //                 image: video.thumbnail,
 //                 datePublished: video.uploadDate,
 //                 duration: video.duration,
@@ -86,7 +86,7 @@
 //                   partOfSeries: {
 //                     "@type": "TVSeries",
 //                     name: video.seriesTitle,
-//                     url: `https://videostream.vercel.app/series/${video.seriesId}`,
+//                     url: `https://videostreamhub.vercel.app/series/${video.seriesId}`,
 //                   },
 //                 }),
 //               },
@@ -116,9 +116,9 @@ import superdata from "@/data/superdata.json"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "VideoStream - Watch Movies, Series & More",
+  title: "VideoStreamHub - Watch Movies, Series & More",
   description:
-    "Stream the latest movies, TV series, and exclusive content on VideoStream. Your ultimate entertainment destination.",
+    "Stream the latest movies, TV series, and exclusive content on VideoStreamHub. Your ultimate entertainment destination.",
 }
 
 export default function Home() {
@@ -150,7 +150,7 @@ export default function Home() {
               item: {
                 "@type": video.seriesTitle ? "TVEpisode" : "Movie",
                 name: video.title,
-                url: `https://videostream.vercel.app/video/${video.id}`,
+                url: `https://videostreamhub.vercel.app/video/${video.id}`,
                 image: video.thumbnail,
                 datePublished: video.uploadDate,
                 duration: video.duration,
@@ -158,7 +158,7 @@ export default function Home() {
                   partOfSeries: {
                     "@type": "TVSeries",
                     name: video.seriesTitle,
-                    url: `https://videostream.vercel.app/video/${video.seriesId}`,
+                    url: `https://videostreamhub.vercel.app/video/${video.seriesId}`,
                   },
                 }),
               },
@@ -168,7 +168,7 @@ export default function Home() {
       />
     <div className="container py-6 space-y-8 mx-auto text-center">
   <section>
-    <h1 className="text-4xl font-bold mb-6">Welcome to VideoStream</h1>
+    <h1 className="text-4xl font-bold mb-6">Welcome to VideoStreamHub</h1>
     <p className="text-xl mb-8">Discover the latest movies, TV series, and exclusive content.</p>
     <h2 className="text-2xl font-bold mb-4">Featured Content</h2>
     <VideoGrid videos={allVideos} />

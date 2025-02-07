@@ -23,7 +23,7 @@ export function StructuredData({ video }: StructuredDataProps) {
     structuredData["partOfSeries"] = {
       "@type": "TVSeries",
       name: video.seriesTitle,
-      url: `https://videostream.vercel.app/video/${video.seriesId}`,
+      url: `https://videostreamhub.vercel.app/video/${video.seriesId}`,
     }
   }
 
