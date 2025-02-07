@@ -412,6 +412,8 @@ function getRecommendedVideos(currentVideoId: string, limit = 500) {
     .slice(0, limit) // Limit results
 }
 
+
+
 export default function VideoPage({ params }: Props) {
   const video = findVideo(params.id)
 
@@ -445,7 +447,7 @@ export default function VideoPage({ params }: Props) {
                   <Image
                     src={v.thumbnail || "/placeholder.svg"}
                     alt={v.title}
-                    width={300} // Adjusted for better performance
+                    width={1200} // Adjusted for better performance
                     height={170}
                     quality={90}
                     objectFit="cover"
