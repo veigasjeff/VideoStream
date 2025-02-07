@@ -47,7 +47,7 @@ export function StructuredData({ video }: StructuredDataProps) {
     duration: video.duration,
     thumbnailUrl: video.thumbnail,
     url: `https://videostreamhub.vercel.app/video/${video.id}`,
-    dateCreated: video.uploadDate || undefined, // ✅ Optional but included if available
+    dateCreated: video.uploadDate || undefined, 
     episodeNumber: video.episodeNumber,
     seasonNumber: video.seasonNumber,
     partOfSeries: {

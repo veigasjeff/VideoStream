@@ -197,7 +197,7 @@
 import { VideoGrid } from "@/components/video-grid"
 import superdata from "@/data/superdata.json"
 import type { Metadata } from "next"
-import Head from "next"
+
 
 export const metadata: Metadata = {
   title: "VideoStreamHub - Watch Movies, Series & More",

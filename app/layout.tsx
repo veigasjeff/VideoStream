@@ -581,7 +581,7 @@ export const metadata: Metadata = {
   },
   description:
     "Stream the latest movies, TV series, and exclusive content on VideoStreamHub. Your ultimate entertainment destination.",
-  keywords: ["video streaming", "movies", "TV series", "entertainment", "watch online"],
+  keywords: [ "movies", "TV series", "video", "free movies", "free TV series", "watch movie online", "watch TV series online", "free movie streaming", "free TV series streaming", "video streaming", "entertainment", "watch online"],
   openGraph: {
     type: "website",
     locale: "en_US",
