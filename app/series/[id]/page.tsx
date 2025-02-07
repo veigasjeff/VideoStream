@@ -276,7 +276,7 @@ function findVideo(id: string) {
   return superdata.series.flatMap((s) => s.episodes).find((ep) => ep.id === id) 
 }
 
-function getRecommendedSeries(currentSeriesId: string, limit = 8) {
+function getRecommendedSeries(currentSeriesId: string, limit = 500) {
   // Exclude the current series and shuffle
   const filteredSeries = superdata.series.filter((s) => s.id !== currentSeriesId)
 
