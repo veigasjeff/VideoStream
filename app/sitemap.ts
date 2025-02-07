@@ -59,7 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ].map((item) => ({ ...item, lastModified: new Date() }));
 
   const videoUrls = superdata.videos.map((video) => ({
-    url: `${baseUrl}/video/${video.id}`,
+    url: `${baseUrl}/movies/${video.id}`,
     lastModified: new Date(video.uploadDate || Date.now()),
   }));
 
