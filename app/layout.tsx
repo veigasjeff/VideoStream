@@ -592,7 +592,7 @@ export const metadata: Metadata = {
       "Stream the latest movies, TV series, and exclusive content on VideoStreamHub. Your ultimate entertainment destination.",
     images: [
       {
-        url: "https://videostreamhub.vercel.app/og-image.jpg",
+        url: "https://videostreamhub.vercel.app/og_image.jpg",
         width: 1200,
         height: 630,
         alt: "VideoStreamHub - Your Ultimate Streaming Platform",
@@ -604,7 +604,7 @@ export const metadata: Metadata = {
     title: "VideoStreamHub - Watch Movies, Series & More",
     description:
       "Stream the latest movies, TV series, and exclusive content on VideoStreamHub. Your ultimate entertainment destination.",
-    images: ["https://videostreamhub.vercel.app/og-image.jpg"],
+    images: ["https://videostreamhub.vercel.app/og_image.jpg"],
     creator: "@VideoStreamHub",
   },
   robots: {
