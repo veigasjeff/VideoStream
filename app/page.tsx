@@ -205,13 +205,20 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
+  const movies = superdata.videos.map((video) => ({
+    ...video,
+    movieTitle: video.title,
+    type: "Movie",
+  }))
+
+  const tvSeries = superdata.series.map((series) => ({
+    ...series,
+    type: "TVSeries",
+  }))
+
   const allVideos = [
-    ...superdata.videos.map((video) => ({
-      ...video,
-      movieTitle: video.title,
-      type: "Movie",
-    })),
-    ...superdata.series.flatMap((s) =>
+    ...movies,
+    ...tvSeries.flatMap((s) =>
       s.episodes.map((ep) => ({
         ...ep,
         seriesTitle: s.title,
@@ -221,39 +228,56 @@ export default function Home() {
     ),
   ]
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ItemList",
+        itemListElement: movies.map((movie, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          item: {
+            "@type": "Movie",
+            name: movie.title,
+            url: `https://videostreamhub.vercel.app/video/${movie.id}`,
+            image: movie.thumbnail,
+            datePublished: movie.uploadDate,
+            duration: movie.duration,
+            // director: movie.director,
+            // actor: movie.actors,
+            // genre: movie.genre,
+          },
+        })),
+      },
+      {
+        "@type": "ItemList",
+        itemListElement: tvSeries.map((series, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          item: {
+            "@type": "TVSeries",
+            name: series.title,
+            url: `https://videostreamhub.vercel.app/series/${series.id}`,
+            image: series.thumbnail,
+            numberOfEpisodes: series.episodes.length,
+            episode: series.episodes.map((episode, epIndex) => ({
+              "@type": "TVEpisode",
+              episodeNumber: epIndex + 1,
+              name: episode.title,
+              url: `https://videostreamhub.vercel.app/video/${episode.id}`,
+            })),
+          },
+        })),
+      },
+    ],
+  }
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ItemList",
-            itemListElement: allVideos.slice(0, 10).map((video, index) => ({
-              "@type": "ListItem",
-              position: index + 1,
-              item: {
-                "@type": video.type,
-                name: video.title,
-                url: `https://videostreamhub.vercel.app/video/${video.id}`,
-                image: video.thumbnail,
-                datePublished: video.uploadDate,
-                duration: video.duration,
-                ...(video.type === "TVEpisode" && {
-                  partOfSeries: {
-                    "@type": "TVSeries",
-                    name: video.seriesTitle,
-                    url: `https://videostreamhub.vercel.app/video/${video.seriesId}`,
-                  },
-                }),
-                // ...(video.type === "Movie" && {
-                //   director: video.director,
-                //   actor: video.actors,
-                //   genre: video.genre,
-                // }),
-              },
-            })),
-          }),
+          __html: JSON.stringify(structuredData),
         }}
       />
       <div className="container py-6 space-y-8 mx-auto text-center">
@@ -267,3 +291,4 @@ export default function Home() {
     </>
   )
 }
+
