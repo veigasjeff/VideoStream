@@ -258,8 +258,141 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 // Remove the 'use client' directive from the file since it's now client-side
+// "use client"
+// import { notFound } from "next/navigation"
+// import superdata from "@/data/superdata.json"
+// import { StructuredData } from "@/components/structured-data-2"
+// import Link from "next/link"
+// import Image from "next/image"
+// import { VideoPlayer } from "@/components/video-player"
+// import type { Metadata } from "next"
+// import { useState, useEffect } from "react"
+
+// interface Props {
+//   params: {
+//     id: string
+//   }
+// }
+
+// function findVideo(id: string) {
+//   return superdata.videos.find((v) => v.id === id)
+// }
+
+// function getRecommendedVideos(currentVideoId: string, limit = 500) {
+//   return superdata.videos.filter((v) => v.id !== currentVideoId).slice(0, limit) // Exclude current video and limit the results
+// }
+
+// export default function VideoPage({ params }: Props) {
+//   const video = findVideo(params.id)
+
+//   if (!video) {
+//     notFound()
+//   }
+
+//   const recommendedVideos = getRecommendedVideos(video.id)
+
+//   // State for shuffled recommended videos
+//   const [shuffledVideos, setShuffledVideos] = useState(recommendedVideos)
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setShuffledVideos((prevVideos) => {
+//         return [...prevVideos].sort(() => Math.random() - 0.5)
+//       })
+//     }, 5000)
+
+//     return () => clearInterval(interval) // Clear the interval when the component unmounts
+//   }, [recommendedVideos]) // Only shuffle if recommendedVideos changes
+
+  
+//   return (
+//     <>
+//       <StructuredData video={video} />
+//       <h1 className="text-3xl font-bold pt-10" style={{ textAlign: 'center' }}>
+//         {video.title}
+//       </h1>
+
+//       <div className="container py-6 justify-center items-center">
+//         {/* Video Player Component */}
+//         <div className="mb-6 ">
+//         <VideoPlayer video={video} />
+//           {/* <div
+//             style={{
+//               justifyContent: "center",
+//               alignItems: "center",
+//               width: "100%",
+//               boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.5)",
+//               borderRadius: "8px",
+//               overflow: "hidden",
+//             }}
+//           >
+//             <iframe
+//               src={video.videoUrl}
+//               title={video.title}
+//               frameBorder="0"
+//               allowFullScreen
+//               style={{ width: "100%", aspectRatio: "16 / 9" }}
+//             ></iframe>
+//           </div> */}
+//           <p className="text-muted-foreground mb-6 mt-5" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+//             {video.description}
+//           </p>
+//         </div>
+
+//         {/* Recommended Videos Section */}
+//         <h2 className="text-2xl font-semibold mb-4" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+//           Recommended Movies
+//         </h2>
+
+//         {shuffledVideos.length > 0 ? (
+//           <div className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 gap-2 ">
+//             {shuffledVideos.map((v) => (
+//               <Link key={v.id} href={`/movies/${v.id}`} className="block group">
+//                 <div className="relative rounded-lg mb-2">
+//                   <Image
+//                     src={v.thumbnail || "/placeholder.svg"}
+//                     alt={v.title}
+//                     layout="intrinsic"
+//                     width={1200} // Adjust size here
+//                     height={170} // Adjust size here
+//                     objectFit="cover"
+//                     style={{ borderRadius: '15px' }} // Adjust the radius as needed
+//                   />
+//                 </div>
+//                 <h3 className="font-medium group-hover:text-primary"style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>{v.title}</h3>
+                
+//               </Link>
+//             ))}
+//           </div>
+//         ) : (
+//           <p>No recommended movies available.</p>
+//         )}
+//       </div>
+//     </>
+//   )
+// }
+
+
+
+
+
+
+
 "use client"
+
 import { notFound } from "next/navigation"
 import superdata from "@/data/superdata.json"
 import { StructuredData } from "@/components/structured-data-2"
@@ -280,7 +413,28 @@ function findVideo(id: string) {
 }
 
 function getRecommendedVideos(currentVideoId: string, limit = 500) {
-  return superdata.videos.filter((v) => v.id !== currentVideoId).slice(0, limit) // Exclude current video and limit the results
+  return superdata.videos.filter((v) => v.id !== currentVideoId).slice(0, limit)
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const video = findVideo(params.id)
+
+  if (!video) {
+    return {
+      title: "Video Not Found",
+      description: "The requested video was not found.",
+    }
+  }
+
+  return {
+    title: video.title,
+    description: video.description,
+    openGraph: {
+      title: video.title,
+      description: video.description,
+      type: "video.movie",
+    },
+  }
 }
 
 export default function VideoPage({ params }: Props) {
@@ -292,61 +446,43 @@ export default function VideoPage({ params }: Props) {
 
   const recommendedVideos = getRecommendedVideos(video.id)
 
-  // State for shuffled recommended videos
   const [shuffledVideos, setShuffledVideos] = useState(recommendedVideos)
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setShuffledVideos((prevVideos) => {
-        return [...prevVideos].sort(() => Math.random() - 0.5)
-      })
+      setShuffledVideos((prevVideos) => [...prevVideos].sort(() => Math.random() - 0.5))
     }, 5000)
 
-    return () => clearInterval(interval) // Clear the interval when the component unmounts
-  }, [recommendedVideos]) // Only shuffle if recommendedVideos changes
+    return () => clearInterval(interval)
+  }, [recommendedVideos])
 
-  
   return (
     <>
       <StructuredData video={video} />
-      <h1 className="text-3xl font-bold pt-10" style={{ textAlign: 'center' }}>
+      <h1 className="text-3xl font-bold pt-10" style={{ textAlign: "center" }}>
         {video.title}
       </h1>
 
       <div className="container py-6 justify-center items-center">
-        {/* Video Player Component */}
-        <div className="mb-6 ">
-        <VideoPlayer video={video} />
-          {/* <div
-            style={{
-              justifyContent: "center",
-              alignItems: "center",
-              width: "100%",
-              boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.5)",
-              borderRadius: "8px",
-              overflow: "hidden",
-            }}
+        <div className="mb-6">
+          <VideoPlayer video={video} />
+          <p
+            className="text-muted-foreground mb-6 mt-5"
+            style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
           >
-            <iframe
-              src={video.videoUrl}
-              title={video.title}
-              frameBorder="0"
-              allowFullScreen
-              style={{ width: "100%", aspectRatio: "16 / 9" }}
-            ></iframe>
-          </div> */}
-          <p className="text-muted-foreground mb-6 mt-5" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             {video.description}
           </p>
         </div>
 
-        {/* Recommended Videos Section */}
-        <h2 className="text-2xl font-semibold mb-4" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <h2
+          className="text-2xl font-semibold mb-4"
+          style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+        >
           Recommended Movies
         </h2>
 
         {shuffledVideos.length > 0 ? (
-          <div className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 gap-2 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2">
             {shuffledVideos.map((v) => (
               <Link key={v.id} href={`/movies/${v.id}`} className="block group">
                 <div className="relative rounded-lg mb-2">
@@ -354,14 +490,18 @@ export default function VideoPage({ params }: Props) {
                     src={v.thumbnail || "/placeholder.svg"}
                     alt={v.title}
                     layout="intrinsic"
-                    width={1200} // Adjust size here
-                    height={170} // Adjust size here
+                    width={1200}
+                    height={170}
                     objectFit="cover"
-                    style={{ borderRadius: '15px' }} // Adjust the radius as needed
+                    style={{ borderRadius: "15px" }}
                   />
                 </div>
-                <h3 className="font-medium group-hover:text-primary"style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>{v.title}</h3>
-                
+                <h3
+                  className="font-medium group-hover:text-primary"
+                  style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+                >
+                  {v.title}
+                </h3>
               </Link>
             ))}
           </div>
