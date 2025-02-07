@@ -64,7 +64,7 @@
 //       <meta name="google-site-verification" content="RNN2teFhD-lV1TQ9qcLQiSO5BLBB4DmztyYJS6QLqDg" />
 //       <meta name="yandex-verification" content="2ed424cb83002f12" />
 //       <meta name="msvalidate.01" content="695BD01C3BC615AB69B7E9C3B718EB74" />
-      
+
 //     </Head>
 //     <script
 //         type="application/ld+json"
@@ -197,6 +197,8 @@
 import { VideoGrid } from "@/components/video-grid"
 import superdata from "@/data/superdata.json"
 import type { Metadata } from "next"
+import Head from "next/head"
+
 
 export const metadata: Metadata = {
   title: "VideoStreamHub - Watch Movies, Series & More",
@@ -276,12 +278,27 @@ export default function Home() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData),
-        }}
-      />
+     <Head>
+        <meta property="og:url" content="https://videostreamhub.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="VideoStreamHub - Watch Movies, Series & More" />
+        <meta property="og:description" content="Stream the latest movies, TV series, and exclusive content on VideoStreamHub. Your ultimate entertainment destination." />
+        <meta property="og:image" content="https://videostreamhub.vercel.app/og-image.jpg" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="videostreamhub.vercel.app" />
+        <meta property="twitter:url" content="https://videostreamhub.vercel.app/" />
+        <meta name="twitter:title" content="VideoStreamHub - Watch Movies, Series & More" />
+        <meta name="twitter:description" content="Stream the latest movies, TV series, and exclusive content on VideoStreamHub. Your ultimate entertainment destination." />
+        <meta name="twitter:image" content="https://videostreamhub.vercel.app/og-image.jpg" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </Head>
+   
       <div className="container py-6 space-y-8 mx-auto text-center">
         <section>
           <h1 className="text-4xl font-bold mb-6">Welcome to VideoStreamHub</h1>
