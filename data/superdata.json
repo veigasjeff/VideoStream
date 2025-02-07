@@ -1,6 +1,46 @@
 {
   "videos": [
     {
+      "id": "the-mehta-boys-2025",
+      "title": "The Mehta Boys (2025)",
+      "description": "A father and son embark on an involuntary 48-hour odyssey, navigating clashing perspectives as they confront the intricate nuances of their strained relationship.",
+      "videoUrl": "https://geo.dailymotion.com/player/xjrxe.html?video=x9doc80",
+      "thumbnail": "https://pimwp.s3-accelerate.amazonaws.com/2025/01/Untitled-design-2025-01-29T195340.696.jpg",
+      "views": 0,
+      "duration": "1:56:00",
+      "uploadDate": "2025-02-07",
+      "tags": [
+        "drama"
+      ]
+    },
+    {
+      "id": "mrs-2025",
+      "title": "Mrs (2025)",
+      "description": "The life of a married girl who finds her identity amidst navigating her life in kitchen.",
+      "videoUrl": "https://geo.dailymotion.com/player/xjrxe.html?video=x9doc66",
+      "thumbnail": "https://i.ytimg.com/vi/BxnCNl9KE6E/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDCYRzId7eIl5Z3B4MUN2RYI0DSIA",
+      "views": 2540,
+      "duration": "1:46:00",
+      "uploadDate": "2025-02-07",
+      "tags": [
+        "comedy.drama"
+      ]
+    },
+    {
+      "id": "anuja-2025",
+      "title": "Anuja (2025)",
+      "description": "When Anuja, a precocious nine-year-old orphan, quits school to work alongside her sister at a local garment factory, she finds herself faced with a choice that will determine the fate of her future and her family.",
+      "videoUrl": "https://geo.dailymotion.com/player/xjrxe.html?video=x9doc8o",
+      "thumbnail": "https://images.cnbctv18.com/uploads/2025/02/anuja-3-2025-02-95c25a093df4b04190dd6fab34fa2230-1280x720.jpg",
+      "views": 3310,
+      "duration": "22:35",
+      "uploadDate": "2025-02-07",
+      "tags": [
+        "drama",
+        "short"
+      ]
+    },
+    {
       "id": "the-perfect-setting-2025",
       "title": "The Perfect Setting (2025)",
       "description": "An aspiring jewelry designer returns to Belgium to visit her grandfather and hopefully win the Valentines Day Diamond Contest.",
