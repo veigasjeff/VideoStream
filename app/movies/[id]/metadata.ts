@@ -50,7 +50,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: video.title,
       description: video.description,
+      images: video.thumbnail ? [{ url: video.thumbnail }] : [], 
       type: "video.movie",
+    },
+    other: {
+      dateCreated: video.uploadDate,    
     },
   }
 }
+
