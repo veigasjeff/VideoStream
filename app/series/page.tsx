@@ -47,7 +47,7 @@ export default function SeriesPage() {
         {/* {superdata.series.map((series) => (
             <Link key={series.id} href={`/series/${series.id}`} className="group"> */}
               {allVideos.map((series) => (
-          <Link key={series.id} href={`/video/${series.id}`} className="group">
+          <Link key={series.id} href={`/series/${series.id}`} className="group">
             <div className="relative aspect-video rounded-lg overflow-hidden bg-muted">
               <Image
                 src={series.thumbnail || "/placeholder.svg"}
