@@ -1,6 +1,20 @@
 {
   "videos": [
     {
+      "id": "love-hurts-2025",
+      "title": "Love Hurts (2025)",
+      "description": "A realtor is pulled back into the life he left behind after his former partner-in-crime resurfaces with an ominous message. With his crime-lord brother also on his trail, he must confront his past and the history he never fully buried.",
+      "videoUrl": "https://short.icu/b3O26PZpO?thumbnail=https://movies.universalpictures.com/media/04-lh-dm-mobile-banner-1080x745-fri-rr-f01-012825-67a29d839d774-1.jpg",
+      "thumbnail": "https://movies.universalpictures.com/media/04-lh-dm-mobile-banner-1080x745-fri-rr-f01-012825-67a29d839d774-1.jpg",
+      "views": 2115,
+      "duration": "1:23:00",
+      "uploadDate": "2025-02-07",
+      "tags": [
+        "action",
+        "comedy"
+      ]
+    },
+    {
       "id": "the-mehta-boys-2025",
       "title": "The Mehta Boys (2025)",
       "description": "A father and son embark on an involuntary 48-hour odyssey, navigating clashing perspectives as they confront the intricate nuances of their strained relationship.",
@@ -52,6 +66,48 @@
       "tags": [
         "romance",
         "comedy"
+      ]
+    },
+    {
+      "id": "presence-2025",
+      "title": "Presence (2025)",
+      "description": "A family becomes convinced they are not alone after moving into their new home in the suburbs.",
+      "videoUrl": "https://short.icu/b3O26PZpO?thumbnail=https://static1.cbrimages.com/wordpress/wp-content/uploads/2025/01/presence.jpg",
+      "thumbnail": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2025/01/presence.jpg",
+      "views": 1499,
+      "duration": "1:24:00",
+      "uploadDate": "2025-01-24",
+      "tags": [
+        "drama",
+        "horror",
+        "thriller"
+      ]
+    },
+    {
+      "id": "kinda-pregnant-2025",
+      "title": " Kinda Pregnant (2025)",
+      "description": "When Lainy's plan to settle down and start a family falls apart, she puts on a fake baby bump, tells a lie and accidentally falls for her dream guy.",
+      "videoUrl": "https://short.icu/cgHoBXeCTi?thumbnail=https://i.gadgets360cdn.com/large/image_4_F_1738751563984.jpg",
+      "thumbnail": "https://i.gadgets360cdn.com/large/image_4_F_1738751563984.jpg",
+      "views": 2153,
+      "duration": "1:37:00",
+      "uploadDate": "2025-02-05",
+      "tags": [
+        "comedy",
+        "drama"
+      ]
+    },
+    {
+      "id": "green-and-gold-2025",
+      "title": "Green and Gold (2025)",
+      "description": "A struggling family farmer wagers everything on a high-stakes Championship bet, while his granddaughter's musical ambitions could be their ticket to a new beginning.",
+      "videoUrl": "https://geo.dailymotion.com/player/xjrxe.html?video=x9dj4km",
+      "thumbnail": "https://i.ytimg.com/vi/cIYZ5rWQNtg/maxresdefault.jpg",
+      "views": 2987,
+      "duration": "1:31:00",
+      "uploadDate": "2025-01-03",
+      "tags": [
+        "drama"
       ]
     },
     {
