@@ -361,6 +361,7 @@ export default function VideoPage({ params }: Props) {
                   />
                 </div>
                 <h3 className="font-medium group-hover:text-primary"style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>{v.title}</h3>
+                
               </Link>
             ))}
           </div>

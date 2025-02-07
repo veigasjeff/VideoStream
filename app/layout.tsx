@@ -624,6 +624,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+      <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-FX1FS2NM81"
+        />
+        <Script id="ga-config" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-FX1FS2NM81');
+          `}
+        </Script>
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -644,6 +658,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navigation />
         <main className="min-h-screen bg-background">{children}</main>
+        
         
         {/* First Ad Script */}
         <Script id="ad-script-1" strategy="lazyOnload">
