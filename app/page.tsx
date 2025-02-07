@@ -111,6 +111,89 @@
 
 
 
+// import { VideoGrid } from "@/components/video-grid"
+// import superdata from "@/data/superdata.json"
+// import type { Metadata } from "next"
+
+// export const metadata: Metadata = {
+//   title: "VideoStreamHub - Watch Movies, Series & More",
+//   description:
+//     "Stream the latest movies, TV series, and exclusive content on VideoStreamHub. Your ultimate entertainment destination.",
+// }
+
+// export default function Home() {
+//   const allVideos = [
+//     ...superdata.videos.map((video) => ({
+//       ...video,
+//       movieTitle: video.title,
+//     })),
+//     ...superdata.series.flatMap((s) =>
+//       s.episodes.map((ep) => ({
+//         ...ep,
+//         seriesTitle: s.title,
+//         seriesId: s.id,
+//       })),
+//     ),
+//   ]
+
+//   return (
+//     <>
+//       <script
+//         type="application/ld+json"
+//         dangerouslySetInnerHTML={{
+//           __html: JSON.stringify({
+//             "@context": "https://schema.org",
+//             "@type": "ItemList",
+//             itemListElement: allVideos.slice(0, 10).map((video, index) => ({
+//               "@type": "ListItem",
+//               position: index + 1,
+//               item: {
+//                 "@type": video.seriesTitle ? "TVEpisode" : "Movie",
+//                 name: video.title,
+//                 url: `https://videostreamhub.vercel.app/video/${video.id}`,
+//                 image: video.thumbnail,
+//                 datePublished: video.uploadDate,
+//                 duration: video.duration,
+//                 ...(video.seriesTitle && {
+//                   partOfSeries: {
+//                     "@type": "TVSeries",
+//                     name: video.seriesTitle,
+//                     url: `https://videostreamhub.vercel.app/video/${video.seriesId}`,
+//                   },
+//                 }),
+//               },
+//             })),
+//           }),
+//         }}
+//       />
+//     <div className="container py-6 space-y-8 mx-auto text-center">
+//   <section>
+//     <h1 className="text-4xl font-bold mb-6">Welcome to VideoStreamHub</h1>
+//     <p className="text-xl mb-8">Discover the latest movies, TV series, and exclusive content.</p>
+//     <h2 className="text-2xl font-bold mb-4">Featured Content</h2>
+//     <VideoGrid videos={allVideos} />
+//   </section>
+// </div>
+
+//     </>
+//   )
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import { VideoGrid } from "@/components/video-grid"
 import superdata from "@/data/superdata.json"
 import type { Metadata } from "next"
@@ -126,12 +209,14 @@ export default function Home() {
     ...superdata.videos.map((video) => ({
       ...video,
       movieTitle: video.title,
+      type: "Movie",
     })),
     ...superdata.series.flatMap((s) =>
       s.episodes.map((ep) => ({
         ...ep,
         seriesTitle: s.title,
         seriesId: s.id,
+        type: "TVEpisode",
       })),
     ),
   ]
@@ -148,34 +233,37 @@ export default function Home() {
               "@type": "ListItem",
               position: index + 1,
               item: {
-                "@type": video.seriesTitle ? "TVEpisode" : "Movie",
+                "@type": video.type,
                 name: video.title,
                 url: `https://videostreamhub.vercel.app/video/${video.id}`,
                 image: video.thumbnail,
                 datePublished: video.uploadDate,
                 duration: video.duration,
-                ...(video.seriesTitle && {
+                ...(video.type === "TVEpisode" && {
                   partOfSeries: {
                     "@type": "TVSeries",
                     name: video.seriesTitle,
                     url: `https://videostreamhub.vercel.app/video/${video.seriesId}`,
                   },
                 }),
+                // ...(video.type === "Movie" && {
+                //   director: video.director,
+                //   actor: video.actors,
+                //   genre: video.genre,
+                // }),
               },
             })),
           }),
         }}
       />
-    <div className="container py-6 space-y-8 mx-auto text-center">
-  <section>
-    <h1 className="text-4xl font-bold mb-6">Welcome to VideoStreamHub</h1>
-    <p className="text-xl mb-8">Discover the latest movies, TV series, and exclusive content.</p>
-    <h2 className="text-2xl font-bold mb-4">Featured Content</h2>
-    <VideoGrid videos={allVideos} />
-  </section>
-</div>
-
+      <div className="container py-6 space-y-8 mx-auto text-center">
+        <section>
+          <h1 className="text-4xl font-bold mb-6">Welcome to VideoStreamHub</h1>
+          <p className="text-xl mb-8">Discover the latest movies, TV series, and exclusive content.</p>
+          <h2 className="text-2xl font-bold mb-4">Featured Content</h2>
+          <VideoGrid videos={allVideos} />
+        </section>
+      </div>
     </>
   )
 }
-
