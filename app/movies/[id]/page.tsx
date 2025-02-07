@@ -454,7 +454,7 @@ export default function VideoPage({ params }: Props) {
                     className="rounded-lg"
                   />
                 </div>
-                <h3 className="font-medium group-hover:text-primary text-center">{v.title}</h3>
+                <h3 className="font-medium group-hover:text-primary"style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>{v.title}</h3>
               </Link>
             ))}
           </div>
