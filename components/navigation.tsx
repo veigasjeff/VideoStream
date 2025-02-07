@@ -72,9 +72,7 @@ export function Navigation() {
           <Link href="/adult" className="text-sm font-medium hover:no-underline">
             Adult
           </Link>
-          <Link href="/admin" className="text-sm font-medium hover:no-underline">
-            Admin
-          </Link>
+         
         </div>
 
         {/* Search Bar */}
