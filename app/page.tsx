@@ -150,7 +150,7 @@ export default function Home() {
               item: {
                 "@type": video.seriesTitle ? "TVEpisode" : "Movie",
                 name: video.title,
-                url: `https://videostreamhub.vercel.app/movies/${video.id}`,
+                url: `https://videostreamhub.vercel.app/video/${video.id}`,
                 image: video.thumbnail,
                 datePublished: video.uploadDate,
                 duration: video.duration,
