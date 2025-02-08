@@ -1063,7 +1063,132 @@
     }
   ],
   "series": [
-    
+    {
+      "id": "apple-cider-vinegar-s01",
+      "title": "Apple Cider Vinegar S01",
+      "description": "The life of wellness guru Belle Gibson, who had a large social media following, where she pretended to be suffering from cancer but keeping the disease under control using self-care therapies. She confessed that none of it was true.",
+      "thumbnail": "https://m.media-amazon.com/images/M/MV5BNGEzZWNkNzMtYTE4Ni00ZGYxLTg5MTItNzkxZWRiOTJhNDAyXkEyXkFqcGc@._V1_.jpg",
+      "episodes": [
+        {
+          "id": "apple-cider-vinegar-s01",
+          "title": "Apple Cider Vinegar S01",
+          "description": "The life of wellness guru Belle Gibson, who had a large social media following, where she pretended to be suffering from cancer but keeping the disease under control using self-care therapies. She confessed that none of it was true.",
+          "videoUrl": "https://short.icu/8RXKGRDJW?thumbnail=https://m.media-amazon.com/images/M/MV5BNGEzZWNkNzMtYTE4Ni00ZGYxLTg5MTItNzkxZWRiOTJhNDAyXkEyXkFqcGc@._V1_.jpg",
+          "thumbnail": "https://m.media-amazon.com/images/M/MV5BNGEzZWNkNzMtYTE4Ni00ZGYxLTg5MTItNzkxZWRiOTJhNDAyXkEyXkFqcGc@._V1_.jpg",
+          "duration": "6:13:00",
+          "rating": 7,
+          "views": 5124,
+          "uploadDate": "2025-02-06",
+          "tags": [
+            "biography",
+            "crime",
+            "drama"
+          ]
+        }
+      ],
+      "views": 5124,
+      "duration": "6:13:00"
+    },
+    {
+      "id": "amandaland-s01",
+      "title": "Amandaland S01",
+      "description": "Amanda, a divorced mother, relocates with her teenagers to South Harlesden. She faces modern parenting issues like teenage rebellion and environmental concerns, while her mother's loneliness adds chaos.",
+      "thumbnail": "https://streamcoimg-a.akamaihd.net/000/153/075/153075-Banner-L2-82d05134ca03e394552ee213bb386d4b.jpg",
+      "episodes": [
+        {
+          "id": "amandaland-s01",
+          "title": "Amandaland S01",
+          "description": "Amanda, a divorced mother, relocates with her teenagers to South Harlesden. She faces modern parenting issues like teenage rebellion and environmental concerns, while her mother's loneliness adds chaos.",
+          "videoUrl": "https://short.icu/6_yoAA4pk?thumbnail=https://streamcoimg-a.akamaihd.net/000/153/075/153075-Banner-L2-82d05134ca03e394552ee213bb386d4b.jpg",
+          "thumbnail": "https://streamcoimg-a.akamaihd.net/000/153/075/153075-Banner-L2-82d05134ca03e394552ee213bb386d4b.jpg",
+          "duration": "2:52:00",
+          "rating": 7.7,
+          "views": 5712,
+          "uploadDate": "2025-02-05",
+          "tags": [
+            "comedy",
+            "drama"
+          ]
+        }
+      ],
+      "views": 5712,
+      "duration": "2:52:00"
+    },
+    {
+      "id": "miss-austen-s01",
+      "title": "Miss Austen S01",
+      "description": "It follows the lives of Jane Austen and Cassandra, her sister.",
+      "thumbnail": "https://resizing.flixster.com/UZ9qkVXWH93exc270h68TLtq1x8=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29143494_b_h10_aa.jpg",
+      "episodes": [
+        {
+          "id": "miss-austen-s01",
+          "title": "Miss Austen S01",
+          "description": "It follows the lives of Jane Austen and Cassandra, her sister.",
+          "videoUrl": "https://short.icu/ERw1MGmI6?thumbnail=https://resizing.flixster.com/UZ9qkVXWH93exc270h68TLtq1x8=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29143494_b_h10_aa.jpg",
+          "thumbnail": "https://resizing.flixster.com/UZ9qkVXWH93exc270h68TLtq1x8=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29143494_b_h10_aa.jpg",
+          "duration": "3:31:00",
+          "rating": 7.2,
+          "views": 3578,
+          "uploadDate": "2025-02-08",
+          "tags": [
+            "drama",
+            "romance"
+          ]
+        }
+      ],
+      "duration": "3:31:00",
+      "views": 3578
+    },
+    {
+      "id": "optics-s01",
+      "title": "Optics S01",
+      "description": "Two young women, unexpectedly promoted, face crises at their PR firm. Managing celebrities and corporate scandals, they uncover a potential firm scandal and suspect sabotage.",
+      "thumbnail": "https://cdn.iview.abc.net.au/thumbs/i/X0_67566b108039f_3600.jpg",
+      "episodes": [
+        {
+          "id": "optics-s01",
+          "title": "Optics S01",
+          "description": "Two young women, unexpectedly promoted, face crises at their PR firm. Managing celebrities and corporate scandals, they uncover a potential firm scandal and suspect sabotage.",
+          "videoUrl": "https://short.icu/KHda7icmV?thumbnail=https://cdn.iview.abc.net.au/thumbs/i/X0_67566b108039f_3600.jpg",
+          "thumbnail": "https://cdn.iview.abc.net.au/thumbs/i/X0_67566b108039f_3600.jpg",
+          "duration": "2:53:00",
+          "rating": 5.9,
+          "views": 3110,
+          "uploadDate": "2025-01-29",
+          "tags": [
+            "comedy",
+            "drama"
+          ]
+        }
+      ],
+      "views": 3110,
+      "duration": "2:53:00"
+    },
+    {
+      "id": "an-t-eilean-s01",
+      "title": "An t-Eilean S01",
+      "description": "Officer Kat Crichton returns to her island home to investigate a case involving a wealthy tycoon.",
+      "thumbnail": "https://i.ytimg.com/vi/xxTfMsPfr9M/maxresdefault.jpg",
+      "episodes": [
+        {
+          "id": "an-t-eilean-s01",
+          "title": "An t-Eilean S01",
+          "description": "Officer Kat Crichton returns to her island home to investigate a case involving a wealthy tycoon.",
+          "videoUrl": "https://short.icu/nK2K_yKAl?thumbnail=https://i.ytimg.com/vi/xxTfMsPfr9M/maxresdefault.jpg",
+          "thumbnail": "https://i.ytimg.com/vi/xxTfMsPfr9M/maxresdefault.jpg",
+          "duration": "3:18:00",
+          "rating": 6.4,
+          "views": 4009,
+          "uploadDate": "2025-01-14",
+          "tags": [
+            "drama",
+            "thriller"
+          ]
+        }
+      ],
+      "views": 4009,
+      "duration": "3:18:00"
+    },
     {
       "id": "the-lost-women-spies-s01",
       "title": "The Lost Women Spies S01",
