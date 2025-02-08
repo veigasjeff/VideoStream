@@ -260,7 +260,7 @@
 "use client"
 import { notFound } from "next/navigation"
 import superdata from "@/data/superdata.json"
-import { StructuredData } from "@/components/structured-data-2"
+import { StructuredData } from "@/components/structured-data"
 import Link from "next/link"
 import Image from "next/image"
 import { VideoPlayer } from "@/components/video-player"
