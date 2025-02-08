@@ -1,6 +1,22 @@
 {
   "videos": [
     {
+      "id": "heart-eyes-2025",
+      "title": "Heart Eyes (2025)",
+      "description": "For the past several years, the \"Heart Eyes Killer\" has wreaked havoc on Valentine's Day by stalking and murdering romantic couples. This Valentine's Day, no couple is safe.",
+      "videoUrl": "https://short.icu/eU7x4cuxu?thumbnail=https://images.savoysystems.co.uk/MSC/16653176.jpg",
+      "thumbnail": "https://images.savoysystems.co.uk/MSC/16653176.jpg",
+      "rating": 6.7,
+      "views": 2119,
+      "duration": "1:29:00",
+      "uploadDate": "2025-02-07",
+      "tags": [
+        "comedy",
+        "horror",
+        "mystery"
+      ]
+    },
+    {
       "id": "love-hurts-2025",
       "title": "Love Hurts (2025)",
       "description": "A realtor is pulled back into the life he left behind after his former partner-in-crime resurfaces with an ominous message. With his crime-lord brother also on his trail, he must confront his past and the history he never fully buried.",
@@ -1214,6 +1230,30 @@
       ],
       "views": 4009,
       "duration": "3:18:00"
+    },
+    {
+      "id": "brian-and-maggie-s01",
+      "title": "Brian and Maggie S01",
+      "description": "Brian and Maggie revisits the infamous 1989 television interview between former Prime Minister Margaret Thatcher and journalist Brian Walden, which marked the end of their friendship and catalysed Thatcher's resignation.",
+      "thumbnail": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fb%2Fgracenote%2Fb051bb5051a5fbfbdf1a0cfa852429da.jpg",
+      "episodes": [
+        {
+          "id": "brian-and-maggie-s01",
+          "title": "Brian and Maggie S01",
+          "description": "Brian and Maggie revisits the infamous 1989 television interview between former Prime Minister Margaret Thatcher and journalist Brian Walden, which marked the end of their friendship and catalysed Thatcher's resignation.",
+          "videoUrl": "https://short.icu/_HOziCi4B?thumbnail=https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fb%2Fgracenote%2Fb051bb5051a5fbfbdf1a0cfa852429da.jpg",
+          "thumbnail": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fb%2Fgracenote%2Fb051bb5051a5fbfbdf1a0cfa852429da.jpg",
+          "duration": "1:32:00",
+          "rating": 6.9,
+          "views": 4331,
+          "uploadDate": "2025-01-29",
+          "tags": [
+            "drama"
+          ]
+        }
+      ],
+      "views": 4331,
+      "duration": "1:32:00"
     },
     {
       "id": "the-lost-women-spies-s01",
