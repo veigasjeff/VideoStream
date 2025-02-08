@@ -298,6 +298,121 @@
 
 
 
+// import { VideoGrid } from "@/components/video-grid"
+// import superdata from "@/data/superdata.json"
+// import type { Metadata } from "next"
+
+// export const metadata: Metadata = {
+//   title: "VideoStreamHub - Watch Movies, Series & More",
+//   description:
+//     "Stream the latest movies, TV series, and exclusive content on VideoStreamHub. Your ultimate entertainment destination.",
+// }
+
+// export default function Home() {
+//   const movies = superdata.videos.map((video) => ({
+//     ...video,
+//     movieTitle: video.title,
+//     type: "Movie",
+
+//   }))
+
+//   const tvSeries = superdata.series.map((series) => ({
+//     ...series,    
+//     type: "TVSeries",
+//     rating: series.rating || (series.episodes.length > 0 ? series.episodes[0].rating : 0), 
+//   }))
+
+//   const allVideos = [
+//     ...movies,
+//     ...tvSeries.flatMap((s) =>
+//       s.episodes.map((ep) => ({
+//         ...ep,
+//         seriesTitle: s.title,
+//         seriesId: s.id,
+//         rating: s.rating, 
+//         type: "TVEpisode",
+//       })),
+//     ),
+//   ]
+
+
+
+
+//   const structuredData = {
+//     "@context": "https://schema.org",
+//     "@graph": [
+//       {
+//         "@type": "ItemList",
+//         itemListElement: movies.map((movie, index) => ({
+//           "@type": "ListItem",
+//           position: index + 1,
+//           item: {
+//             "@type": "Movie",
+//             name: movie.title,
+//             url: `https://videostreamhub.vercel.app/movies/${movie.id}`,
+//             image: movie.thumbnail,
+//             datePublished: movie.uploadDate,
+//             duration: movie.duration,
+//             aggregateRating: {
+//               "@type": "AggregateRating",
+//               ratingValue: movie.rating,
+//               bestRating: 10,
+//               worstRating: 0,
+//               ratingCount: 1,
+//             },
+//           },
+//         })),
+//       },
+//       {
+//         "@type": "ItemList",
+//         itemListElement: tvSeries.map((series, index) => ({
+//           "@type": "ListItem",
+//           position: index + 1,
+//           item: {
+//             "@type": "TVSeries",
+//             name: series.title,
+//             url: `https://videostreamhub.vercel.app/series/${series.id}`,
+//             image: series.thumbnail,
+//             aggregateRating: {
+//               "@type": "AggregateRating",
+//               ratingValue: series.rating || 0, 
+//               bestRating: 10,
+//               worstRating: 0,
+//               ratingCount: 1,
+//             },
+//             numberOfEpisodes: series.episodes.length,
+//             episode: series.episodes.map((episode, epIndex) => ({
+//               "@type": "TVEpisode",
+//               episodeNumber: epIndex + 1,
+//               name: episode.title,
+//               url: `https://videostreamhub.vercel.app/video/${episode.id}`,
+//             })),
+//           },
+//         })),
+//       },
+//     ],
+//   }
+
+//   return (
+//     <>
+//       <script
+//         type="application/ld+json"
+//         dangerouslySetInnerHTML={{
+//           __html: JSON.stringify(structuredData),
+//         }}
+//       />
+//       <div className="container py-6 space-y-8 mx-auto text-center">
+//         <section>
+//           <h1 className="text-4xl font-bold mb-6">Welcome to VideoStreamHub</h1>
+//           <p className="text-xl mb-8">Discover the latest movies, TV series, and exclusive Adult content.</p>
+//           <h2 className="text-2xl font-bold mb-4">Featured Content</h2>
+//           <VideoGrid videos={allVideos} />
+//         </section>
+//       </div>
+//     </>
+//   )
+// }
+
 import { VideoGrid } from "@/components/video-grid"
 import superdata from "@/data/superdata.json"
 import type { Metadata } from "next"
@@ -316,6 +431,12 @@ export default function Home() {
 
   }))
 
+  const adultVideos = superdata.adult.map((video) => ({
+    ...video,
+    movieTitle: video.title,
+    type: "Adult",
+  }))
+
   const tvSeries = superdata.series.map((series) => ({
     ...series,    
     type: "TVSeries",
@@ -324,6 +445,7 @@ export default function Home() {
 
   const allVideos = [
     ...movies,
+    ...adultVideos,
     ...tvSeries.flatMap((s) =>
       s.episodes.map((ep) => ({
         ...ep,
@@ -350,6 +472,28 @@ export default function Home() {
             "@type": "Movie",
             name: movie.title,
             url: `https://videostreamhub.vercel.app/movies/${movie.id}`,
+            image: movie.thumbnail,
+            datePublished: movie.uploadDate,
+            duration: movie.duration,
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: movie.rating,
+              bestRating: 10,
+              worstRating: 0,
+              ratingCount: 1,
+            },
+          },
+        })),
+      },
+      {
+        "@type": "ItemList",
+        itemListElement: movies.map((movie, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          item: {
+            "@type": "Movie",
+            name: movie.title,
+            url: `https://videostreamhub.vercel.app/adult/${movie.id}`,
             image: movie.thumbnail,
             datePublished: movie.uploadDate,
             duration: movie.duration,
@@ -404,7 +548,7 @@ export default function Home() {
       <div className="container py-6 space-y-8 mx-auto text-center">
         <section>
           <h1 className="text-4xl font-bold mb-6">Welcome to VideoStreamHub</h1>
-          <p className="text-xl mb-8">Discover the latest movies, TV series, and exclusive content.</p>
+          <p className="text-xl mb-8">Discover the latest movies, TV series, and exclusive Adult content.</p>
           <h2 className="text-2xl font-bold mb-4">Featured Content</h2>
           <VideoGrid videos={allVideos} />
         </section>
@@ -412,3 +556,5 @@ export default function Home() {
     </>
   )
 }
+
+
