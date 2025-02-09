@@ -522,7 +522,7 @@ export function VideoGrid({ videos }: { videos: Video[] }) {
             </div>
             <div className="mt-2">
               <h3 className="font-medium line-clamp-2 group-hover:text-primary">{video.title}</h3>
-              {video.seriesTitle && <p className="text-sm text-muted-foreground mt-1">{video.seriesTitle}</p>}
+              {/* {video.seriesTitle && <p className="text-sm text-muted-foreground mt-1">{video.seriesTitle}</p>} */}
               <p className="text-sm text-muted-foreground flex items-center mt-1">
                 <Eye className="w-4 h-4 mr-1" />
                 {video.views.toLocaleString()} views
