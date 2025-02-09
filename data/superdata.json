@@ -1,6 +1,21 @@
 {
   "videos": [
     {
+      "id": "black-diamond-2025",
+      "title": "Black Diamond (2025)",
+      "description": "\nFollows a young woman whose idyllic life with her hedge funder boyfriend turns it into a deadly triangle of lust, obsession and murder after meeting a local cowboy handyman.",
+      "videoUrl": "https://geo.dailymotion.com/player/xjrxe.html?video=x9dsvs4",
+      "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/210717c5919098216dc44babd5700089b7d8b7544c317ca1cce33b72007506fc.jpg",
+      "rating": 6.1,
+      "views": 2911,
+      "duration": "1:29:00",
+      "uploadDate": "2025-01-10",
+      "tags": [
+        "action",
+        "thriller"
+      ]
+    },
+    {
       "id": "heart-eyes-2025",
       "title": "Heart Eyes (2025)",
       "description": "For the past several years, the \"Heart Eyes Killer\" has wreaked havoc on Valentine's Day by stalking and murdering romantic couples. This Valentine's Day, no couple is safe.",
