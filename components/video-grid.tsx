@@ -393,6 +393,8 @@
 
 
 
+
+
 import Image from "next/image"
 import Link from "next/link"
 import { Clock, Eye, Film, Tv, Heart } from "lucide-react"
@@ -432,9 +434,16 @@ export function VideoGrid({ videos }: { videos: Video[] }) {
       name: video.title,
       description: video.description || `Watch ${video.title}`,
       duration: video.duration,
-      aggregateRating: video.aggregateRating,
+      // aggregateRating: video.aggregateRating,
       thumbnailUrl: video.thumbnail,
       image: video.thumbnail,
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: video.aggregateRating, // Ensure it defaults to 0 if undefined
+        bestRating: 10,
+        worstRating: 0,
+        ratingCount: 1,
+      },
     }
 
     switch (video.type) {
@@ -442,7 +451,7 @@ export function VideoGrid({ videos }: { videos: Video[] }) {
         return {
           ...baseSchema,
           "@type": "Movie",
-          image: movie.thumbnail,
+         
         }
       case "TVSeries":
         return {
@@ -521,4 +530,5 @@ export function VideoGrid({ videos }: { videos: Video[] }) {
     </div>
   )
 }
+
 
