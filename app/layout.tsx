@@ -686,6 +686,20 @@ export default function RootLayout({
           })('vemtoutcheeg.com',8919677,document.createElement('script'))`}
         </Script>
         {/* <script>(function(d,z,s){s.src='https://'+d+'/400/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('vemtoutcheeg.com',8919677,document.createElement('script'))</script> */}
+        <Script id="ad-script-3" strategy="lazyOnload">
+          {`(function(d,z,s){
+              s.src='https://'+d+'/401/'+z;
+              try {
+                  (document.body || document.documentElement).appendChild(s);
+              } catch(e) {
+                  console.error('Error loading script:', e);
+              }
+          })('gizokraijaw.net',8919691,document.createElement('script'))`}
+        </Script>
+
+
+
+        {/* <script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('gizokraijaw.net',8919691,document.createElement('script'))</script> */}
       </body>
     </html>
   )
