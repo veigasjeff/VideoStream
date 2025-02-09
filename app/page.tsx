@@ -539,12 +539,12 @@ export default function Home() {
 
   return (
     <>
-      {/* <script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(structuredData),
         }}
-      /> */}
+      />
       <div className="container py-6 space-y-8 mx-auto text-center">
         <section>
           <h1 className="text-4xl font-bold mb-6">Welcome to VideoStreamHub</h1>
