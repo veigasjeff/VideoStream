@@ -1095,6 +1095,83 @@
   ],
   "series": [
     {
+      "id": " cassandra-s01",
+      "title": " Cassandra S01",
+      "description": "Germany's oldest smart home awakens its AI helper Cassandra after decades when a new family moves in. Cassandra, determined never to be abandoned again, manipulates events using the home's resources to become part of the family.",
+      "thumbnail": "https://www.heavenofhorror.com/wp-content/uploads/2025/02/Cassandra-2025-Netflix-series-review.jpg",
+      "episodes": [
+        {
+          "id": " cassandra-s01",
+          "title": " Cassandra S01",
+          "description": "Germany's oldest smart home awakens its AI helper Cassandra after decades when a new family moves in. Cassandra, determined never to be abandoned again, manipulates events using the home's resources to become part of the family.",
+          "videoUrl": "https://short.icu/KTsi418-P?thumbnail=https://www.heavenofhorror.com/wp-content/uploads/2025/02/Cassandra-2025-Netflix-series-review.jpg",
+          "thumbnail": "https://www.heavenofhorror.com/wp-content/uploads/2025/02/Cassandra-2025-Netflix-series-review.jpg",
+          "duration": "4:56:00",
+          "rating": 6.3,
+          "views": 2611,
+          "uploadDate": "2025-02-06",
+          "tags": [
+            "sci-fi",
+            "horror",
+            "thriller"
+          ]
+        }
+      ],
+      "duration": "4:56:00",
+      "views": 2611
+    },
+    {
+      "id": "the-count-of-monte-cristo-s01",
+      "title": "The Count Of Monte Cristo S01",
+      "description": "Edmond Dantes, a sailor falsely accused of treason, is imprisoned in the Château d'If off Marseille. After escaping, and adopting the identity of the Count of Monte Cristo, he plans revenge against those who wrongly accused him.",
+      "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/5bcd825e5afb6b39d36c2acc26883f2cc120af6f3757334593aa87cdce837ad3.jpg",
+      "episodes": [
+        {
+          "id": "the-count-of-monte-cristo-s01",
+          "title": "The Count Of Monte Cristo S01",
+          "description": "Edmond Dantes, a sailor falsely accused of treason, is imprisoned in the Château d'If off Marseille. After escaping, and adopting the identity of the Count of Monte Cristo, he plans revenge against those who wrongly accused him.",
+          "videoUrl": "https://short.icu/fLYvtdgZN?thumbnail=https://m.media-amazon.com/images/S/pv-target-images/5bcd825e5afb6b39d36c2acc26883f2cc120af6f3757334593aa87cdce837ad3.jpg",
+          "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/5bcd825e5afb6b39d36c2acc26883f2cc120af6f3757334593aa87cdce837ad3.jpg",
+          "duration": "6:58:00",
+          "rating": 7.8,
+          "views": 2931,
+          "uploadDate": "2025-01-13",
+          "tags": [
+            "adventure",
+            "drama"
+          ]
+        }
+      ],
+      "views": 2931,
+      "duration": "6:58:00"
+    },
+    {
+      "id": "on-call-s01",
+      "title": "On Call S01",
+      "description": "Follows a pair of police officers on patrol as they respond to a new radio call, arriving on the scene to resolve incidents.",
+      "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/368eff53f31a7cec3eccf4af8a63d32f08b4d87b595af1f48a602c0e9587bb3c.jpg",
+      "episodes": [
+        {
+          "id": "on-call-s01",
+          "title": "On Call S01",
+          "description": "Follows a pair of police officers on patrol as they respond to a new radio call, arriving on the scene to resolve incidents.",
+          "videoUrl": "https://short.icu/6GsIwm_4C?thumbnail=https://m.media-amazon.com/images/S/pv-target-images/368eff53f31a7cec3eccf4af8a63d32f08b4d87b595af1f48a602c0e9587bb3c.jpg",
+          "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/368eff53f31a7cec3eccf4af8a63d32f08b4d87b595af1f48a602c0e9587bb3c.jpg",
+          "duration": "3:55:00",
+          "rating": 7.6,
+          "views": 4013,
+          "uploadDate": "2025-01-09",
+          "tags": [
+            "action",
+            "crime",
+            "drama"
+          ]
+        }
+      ],
+      "views": 4013,
+      "duration": "3:55:00"
+    },
+    {
       "id": "bada-naam-karenge-s01",
       "title": "Bada Naam Karenge S01",
       "description": "Rishabh and Surbhi's arranged marriage hits turbulence as past secrets resurface. Amid light moments, they navigate an unfolding bond, torn between desires and cultural norms",
@@ -1269,6 +1346,30 @@
       ],
       "views": 4331,
       "duration": "1:32:00"
+    },
+    {
+      "id": "playing-nice-s01",
+      "title": "Playing Nice S01",
+      "description": "Two couples discover their toddlers were switched at birth in a hospital mix-up and face the horrifying dilemma of keeping the sons they have raised and loved, or reclaiming their biological child.",
+      "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/8343630afa4e00ea6178e9369927146bc36d7bad7fda5300405424cb968324ef.jpg",
+      "episodes": [
+        {
+          "id": "playing-nice-s01",
+          "title": "Playing Nice S01",
+          "description": "Two couples discover their toddlers were switched at birth in a hospital mix-up and face the horrifying dilemma of keeping the sons they have raised and loved, or reclaiming their biological child.",
+          "videoUrl": "https://short.icu/G4BEjJnlh?thumbnail=https://m.media-amazon.com/images/S/pv-target-images/8343630afa4e00ea6178e9369927146bc36d7bad7fda5300405424cb968324ef.jpg",
+          "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/8343630afa4e00ea6178e9369927146bc36d7bad7fda5300405424cb968324ef.jpg",
+          "duration": "3:11:00",
+          "rating": 7.1,
+          "views": 3120,
+          "uploadDate": "2025-01-05",
+          "tags": [
+            "drama"
+          ]
+        }
+      ],
+      "views": 3120,
+      "duration": "3:11:00"
     },
     {
       "id": "the-lost-women-spies-s01",
