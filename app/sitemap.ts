@@ -120,5 +120,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(video.uploadDate || Date.now()),
   })) || [];
 
-  return [...staticUrls, ...videoUrls, ...seriesUrls, ...episodeUrls, ...adultUrls];
+  return [...staticUrls, ...videoUrls,  ...episodeUrls, ...adultUrls];
+  // return [...staticUrls, ...videoUrls, ...seriesUrls, ...episodeUrls, ...adultUrls];
 }
