@@ -47,6 +47,22 @@
       "rating": 5.4
     },
     {
+      "id": "peter-pans-neverland-nightmare-2025",
+      "title": "Peter Pans Neverland Nightmare (2025)",
+      "description": "Wendy Darling strikes out in an attempt to rescue her brother Michael from 'the clutches of the evil Peter Pan.' Along the way she meets Tinkerbell, who will be seen taking heroin, believing that it's pixie dust.",
+      "videoUrl": "https://short.icu/PHvOGMaBo?thumbnail=https://image.tmdb.org/t/p/w1280/tHv9oYcVel8KG9Eb0B39VxMSEmV.jpg",
+      "thumbnail": "https://image.tmdb.org/t/p/w1280/tHv9oYcVel8KG9Eb0B39VxMSEmV.jpg",
+      "rating": 6.2,
+      "views": 4930,
+      "duration": "1:29:00",
+      "uploadDate": "2025-01-13",
+      "tags": [
+        "adventure",
+        "horror",
+        "thriller"
+      ]
+    },
+    {
       "id": "the-mehta-boys-2025",
       "title": "The Mehta Boys (2025)",
       "description": "A father and son embark on an involuntary 48-hour odyssey, navigating clashing perspectives as they confront the intricate nuances of their strained relationship.",
@@ -817,8 +833,22 @@
         "romance"
       ],
       "rating": 6.1
+    },
+    {
+      "id": "you-are-cordially-invited-dubbed-2025",
+      "title": "You are Cordially Invited (2025) Hindi Dubbed",
+      "description": "A woman (Reese Witherspoon) planning her sister’s perfect wedding and the father (Will Ferrell) of a young bride-to-be find out that they are double booked for their destination wedding at a remote resort on an island off the Carolina coast. When both parties decide to share the small venue, chaos ensues and our cast of characters begin to face their own insecurities learning more about themselves.",
+      "videoUrl": "https://short.icu/938UOcUwW?thumbnail=https://i.ytimg.com/vi/vUuFuMD7CXA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBOYZUhdsC-eB1Jb937R5gldZAscQ",
+      "thumbnail": "https://i.ytimg.com/vi/vUuFuMD7CXA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBOYZUhdsC-eB1Jb937R5gldZAscQ",
+      "rating": 5.5,
+      "views": 2111,
+      "duration": "1:51:00",
+      "uploadDate": "2025-01-30",
+      "tags": [
+        "comedy",
+        "romance"
+      ]
     }
-  
   ],
   "adult": [
     {
@@ -1172,6 +1202,32 @@
       ],
       "duration": "4:56:00",
       "views": 2611
+    },
+    {
+      "id": "hounds-hill-s01",
+      "title": "Hounds Hill S01",
+      "description": "Famous writer Mikolaj returns to hometown facing blackmail over a book about a past murder. His activist father opposes local corruption. Mikolaj's journalist wife investigates, uncovering dark secrets tied to the town's tragic history.",
+      "thumbnail": "https://www.heavenofhorror.com/wp-content/uploads/2025/01/Hounds-Hill-Netflix-Series-Review-1200x720.jpg",
+      "episodes": [
+        {
+          "id": "hounds-hill-s01",
+          "title": "Hounds Hill S01",
+          "description": "Famous writer Mikolaj returns to hometown facing blackmail over a book about a past murder. His activist father opposes local corruption. Mikolaj's journalist wife investigates, uncovering dark secrets tied to the town's tragic history.",
+          "videoUrl": "https://short.icu/XcZG2MtwTb?thumbnail=https://www.heavenofhorror.com/wp-content/uploads/2025/01/Hounds-Hill-Netflix-Series-Review-1200x720.jpg",
+          "thumbnail": "https://www.heavenofhorror.com/wp-content/uploads/2025/01/Hounds-Hill-Netflix-Series-Review-1200x720.jpg",
+          "duration": "5:17:00",
+          "rating": 5.9,
+          "views": 4210,
+          "uploadDate": "2025-01-08",
+          "tags": [
+            "drama",
+            "mystery",
+            "thriller"
+          ]
+        }
+      ],
+      "duration": "5:17:00",
+      "views": 4210
     },
     {
       "id": "the-count-of-monte-cristo-s01",
