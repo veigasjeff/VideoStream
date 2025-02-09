@@ -103,10 +103,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(video.uploadDate || Date.now()),
   }));        
 
-  const seriesUrls = superdata.series.map((series) => ({
-    url: `${baseUrl}/series/${series.id}`,
-    lastModified: new Date(),
-  }));
+  // const seriesUrls = superdata.series.map((series) => ({
+  //   url: `${baseUrl}/series/${series.id}`,
+  //   lastModified: new Date(),
+  // }));
 
   const episodeUrls = superdata.series.flatMap((series) =>
     series.episodes.map((episode) => ({
