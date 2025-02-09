@@ -1095,6 +1095,58 @@
   ],
   "series": [
     {
+      "id": "prison-cell-211-s01",
+      "title": "Prison Cell 211 S01",
+      "description": "Follows a riot that took place at a state prison in the Mexican border town of Ciudad Juárez on Dec 31, 2022 that left several dead.",
+      "thumbnail": "https://resizing.flixster.com/1AzdMOLIWfLtgreKSg6vti5ztxk=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29223127_b_h10_aa.jpg",
+      "episodes": [
+        {
+          "id": "prison-cell-211-s01",
+          "title": "Prison Cell 211 S01",
+          "description": "Follows a riot that took place at a state prison in the Mexican border town of Ciudad Juárez on Dec 31, 2022 that left several dead.",
+          "videoUrl": "https://short.icu/sugwOHGmk?thumbnail=https://resizing.flixster.com/1AzdMOLIWfLtgreKSg6vti5ztxk=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29223127_b_h10_aa.jpg",
+          "thumbnail": "https://resizing.flixster.com/1AzdMOLIWfLtgreKSg6vti5ztxk=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29223127_b_h10_aa.jpg",
+          "duration": "3:44:00",
+          "rating": 5.9,
+          "views": 4013,
+          "uploadDate": "2025-02-05",
+          "tags": [
+            "crime",
+            "drama",
+            "thriller"
+          ]
+        }
+      ],
+      "duration": "3:44:00",
+      "views": 4013
+    },
+    {
+      "id": "subteran-s01",
+      "title": "Subteran S01",
+      "description": "A mother working in IT who ends up fighting undercover against the Bucharest criminals who have changed her life.",
+      "thumbnail": "https://resizing.flixster.com/SFE9lBUawrz-9l4VcjAN28MlzBo=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29163641_b_h10_ab.jpg",
+      "episodes": [
+        {
+          "id": "subteran-s01",
+          "title": "Subteran S01",
+          "description": "A mother working in IT who ends up fighting undercover against the Bucharest criminals who have changed her life.",
+          "videoUrl": "https://short.icu/ye3mrVNl8?thumbnail=https://resizing.flixster.com/SFE9lBUawrz-9l4VcjAN28MlzBo=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29163641_b_h10_ab.jpg",
+          "thumbnail": "https://resizing.flixster.com/SFE9lBUawrz-9l4VcjAN28MlzBo=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29163641_b_h10_ab.jpg",
+          "duration": "4:29:00",
+          "rating": 6.4,
+          "views": 3717,
+          "uploadDate": "2025-01-08",
+          "tags": [
+            "crime",
+            "drama",
+            "thriller"
+          ]
+        }
+      ],
+      "views": 3717,
+      "duration": "4:29:00"
+    },
+    {
       "id": "cassandra-s01",
       "title": "Cassandra S01",
       "description": "Germany's oldest smart home awakens its AI helper Cassandra after decades when a new family moves in. Cassandra, determined never to be abandoned again, manipulates events using the home's resources to become part of the family.",
