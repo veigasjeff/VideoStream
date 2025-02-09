@@ -395,6 +395,7 @@
 
 
 
+
 import Image from "next/image"
 import Link from "next/link"
 import { Clock, Eye, Film, Tv, Heart } from "lucide-react"
@@ -405,6 +406,7 @@ interface Video {
   thumbnail: string
   duration: string
   aggregateRating: number
+  ratingValue: number
   views: number
   seriesTitle?: string
   seriesId?: string
@@ -434,12 +436,11 @@ export function VideoGrid({ videos }: { videos: Video[] }) {
       name: video.title,
       description: video.description || `Watch ${video.title}`,
       duration: video.duration,
-      // aggregateRating: video.aggregateRating,
       thumbnailUrl: video.thumbnail,
       image: video.thumbnail,
       aggregateRating: {
         "@type": "AggregateRating",
-        ratingValue: video.aggregateRating, // Ensure it defaults to 0 if undefined
+        ratingValue: video.rating, // Ensure it defaults to 0 if undefined
         bestRating: 10,
         worstRating: 0,
         ratingCount: 1,
@@ -530,5 +531,6 @@ export function VideoGrid({ videos }: { videos: Video[] }) {
     </div>
   )
 }
+
 
 
