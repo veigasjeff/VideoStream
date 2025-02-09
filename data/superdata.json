@@ -63,6 +63,21 @@
       ]
     },
     {
+      "id": "luccas-world-2025",
+      "title": "Luccas World (2025)",
+      "description": "Determined to help her son, who has cerebral palsy, Bárbara takes her family to India for an experimental treatment.",
+      "videoUrl": "https://short.icu/MeZeLdPLx?thumbnail=https://occ-0-8407-1361.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABa3Qo1KVTUQ37Bsp2IosTn7WUKCPycwk-1e0q1shYERx4HkCYwIkrjBJQOwkyH_DZjiLz0t34QI-85qyj4_pOyapfHnKWtZSCLvnQmlmHzcyyhWNjdG4LavOjdTOaz-RpC8p0uHbAQkh7B4LAcf9NU0Zj5Y_zVOH22YFXdpB7o7hOAptkCy2vkM1lYS6ciw.jpg?r=5b7",
+      "thumbnail": "https://mp4moviez.ind.in/files/luccas-world.webp",
+      "rating": 6.7,
+      "views": 13600,
+      "duration": "3010",
+      "uploadDate": "2025-01-31",
+      "tags": [
+        "drama",
+        "romance"
+      ]
+    },
+    {
       "id": "the-mehta-boys-2025",
       "title": "The Mehta Boys (2025)",
       "description": "A father and son embark on an involuntary 48-hour odyssey, navigating clashing perspectives as they confront the intricate nuances of their strained relationship.",
@@ -1279,6 +1294,31 @@
       ],
       "views": 4013,
       "duration": "3:55:00"
+    },
+    {
+      "id": "sweet-magnolias-s04",
+      "title": "Sweet Magnolias S04",
+      "description": "Three South Carolina women, best friends since high school, shepherd one another through the complexities of romance, career and family.",
+      "thumbnail": "https://i.ytimg.com/vi/jAVjNVYIIv4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDmIt8FY_58zKmr00mOWpk91yVYKg",
+      "episodes": [
+        {
+          "id": "sweet-magnolias-s04",
+          "title": "Sweet Magnolias S04",
+          "description": "Three South Carolina women, best friends since high school, shepherd one another through the complexities of romance, career and family.",
+          "videoUrl": "https://short.icu/oNbsKy1ug?thumbnail=https://i.ytimg.com/vi/jAVjNVYIIv4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDmIt8FY_58zKmr00mOWpk91yVYKg",
+          "thumbnail": "https://i.ytimg.com/vi/jAVjNVYIIv4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDmIt8FY_58zKmr00mOWpk91yVYKg",
+          "duration": "8:24:00",
+          "rating": 7.3,
+          "views": 3013,
+          "uploadDate": "2025-02-06",
+          "tags": [
+            "drama",
+            "romance"
+          ]
+        }
+      ],
+      "views": 3013,
+      "duration": "8:24:00"
     },
     {
       "id": "bada-naam-karenge-s01",
