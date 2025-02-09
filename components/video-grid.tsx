@@ -455,12 +455,13 @@ export function VideoGrid({ videos }: { videos: Video[] }) {
         return {
           ...baseSchema,
           "@type": "Movie",
-         
+          url: `https://videostreamhub.vercel.app/movies/${video.id}`,
         }
       case "TVSeries":
         return {
           ...baseSchema,
           "@type": "TVSeries",
+          url: `https://videostreamhub.vercel.app/series/${video.id}`,
         }
       case "TVEpisode":
         return {
@@ -476,6 +477,7 @@ export function VideoGrid({ videos }: { videos: Video[] }) {
           ...baseSchema,
           "@type": "Movie",
           contentRating: "Adult",
+          url: `https://videostreamhub.vercel.app/adult/${video.id}`,
         }
       default:
         return {}
