@@ -426,56 +426,58 @@ export function VideoGrid({ videos }: { videos: Video[] }) {
     }
   }
 
-  // const getSchemaData = (video: Video) => {
-  //   const baseSchema = {
-  //     "@context": "https://schema.org",
-  //     name: video.title,
-  //     description: video.description || `Watch ${video.title}`,
-  //     duration: video.duration,
-  //     aggregateRating: video.aggregateRating,
-  //     thumbnailUrl: video.thumbnail,
-  //   }
+  const getSchemaData = (video: Video) => {
+    const baseSchema = {
+      "@context": "https://schema.org",
+      name: video.title,
+      description: video.description || `Watch ${video.title}`,
+      duration: video.duration,
+      aggregateRating: video.aggregateRating,
+      thumbnailUrl: video.thumbnail,
+      image: video.thumbnail,
+    }
 
-  //   switch (video.type) {
-  //     case "Movie":
-  //       return {
-  //         ...baseSchema,
-  //         "@type": "Movie",
-  //       }
-  //     case "TVSeries":
-  //       return {
-  //         ...baseSchema,
-  //         "@type": "TVSeries",
-  //       }
-  //     case "TVEpisode":
-  //       return {
-  //         ...baseSchema,
-  //         "@type": "TVEpisode",
-  //         partOfSeries: {
-  //           "@type": "TVSeries",
-  //           name: video.seriesTitle,
-  //         },
-  //       }
-  //     case "Adult":
-  //       return {
-  //         ...baseSchema,
-  //         "@type": "Movie",
-  //         contentRating: "Adult",
-  //       }
-  //     default:
-  //       return {}
-  //   }
-  // }
+    switch (video.type) {
+      case "Movie":
+        return {
+          ...baseSchema,
+          "@type": "Movie",
+          image: movie.thumbnail,
+        }
+      case "TVSeries":
+        return {
+          ...baseSchema,
+          "@type": "TVSeries",
+        }
+      case "TVEpisode":
+        return {
+          ...baseSchema,
+          "@type": "TVEpisode",
+          partOfSeries: {
+            "@type": "TVSeries",
+            name: video.seriesTitle,
+          },
+        }
+      case "Adult":
+        return {
+          ...baseSchema,
+          "@type": "Movie",
+          contentRating: "Adult",
+        }
+      default:
+        return {}
+    }
+  }
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {videos.length > 0 ? (
         videos.map((video) => (
           <Link key={video.id} href={getVideoUrl(video)} className="group block">
-            {/* <script
+            <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{ __html: JSON.stringify(getSchemaData(video)) }}
-            /> */}
+            />
             <div className="relative aspect-video rounded-lg overflow-hidden">
               <Image
                 src={video.thumbnail || "/placeholder.svg"}
