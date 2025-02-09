@@ -270,7 +270,7 @@ interface Video {
   title: string
   thumbnail: string
   duration: string
-  // aggregateRating: number
+  aggregateRating: number
   views: number
   seriesTitle?: string
   seriesId?: string
@@ -300,6 +300,7 @@ export function VideoGrid({ videos }: { videos: Video[] }) {
       name: video.title,
       description: video.description || `Watch ${video.title}`,
       duration: video.duration,
+      aggregateRating: video.aggregateRating,
       thumbnailUrl: video.thumbnail,
     }
 
