@@ -558,6 +558,9 @@
 // }
 
 
+
+
+
 import { VideoGrid } from "@/components/video-grid"
 import superdata from "@/data/superdata.json"
 import type { Metadata } from "next"
@@ -582,9 +585,9 @@ export default function Home() {
   }))
 
   const tvSeries = superdata.series.map((series) => ({
-    ...series,    
+    ...series,
     type: "TVSeries",
-    rating: series.rating || (series.episodes.length > 0 ? series.episodes[0].rating : 0), 
+    rating: series.rating || (series.episodes.length > 0 ? series.episodes[0].rating : 0),
   }))
 
   const allVideos = [
@@ -595,14 +598,83 @@ export default function Home() {
         ...ep,
         seriesTitle: s.title,
         seriesId: s.id,
-        rating: s.rating, 
+        rating: s.rating,
         type: "TVEpisode",
       })),
     ),
   ]
 
+  const uwatchfreeSchema = JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://videostreamhub.vercel.app/#organization",
+        "name": "VideoStreamHub - Watch Movies, Series & More",
+        "url": "https://videostreamhub.vercel.app/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://videostreamhub.vercel.app/og_image.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://videostreamhub.vercel.app/#website",
+        "url": "https://videostreamhub.vercel.app/",
+        "name": "VideoStreamHub - Watch Movies, Series & More",
+        "publisher": { "@id": "https://videostreamhub.vercel.app/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://videostreamhub.vercel.app/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://videostreamhub.vercel.app/#webpage",
+        "url": "https://videostreamhub.vercel.app/",
+        "name": "Movie Streaming Platform",
+        "datePublished": "2024-01-13T13:00:00+00:00",
+        "dateModified": "2024-01-13T13:13:00+00:00",
+        "isPartOf": { "@id": "https://videostreamhub.vercel.app/#website" },
+        "inLanguage": "en-US",
+        "mainEntity": {
+          "@type": "Article",
+          "@id": "https://videostreamhub.vercel.app/#article",
+          "url": "https://videostreamhub.vercel.app/",
+          "headline": "VideoStreamHub - Watch Movies, Series & More",
+          "datePublished": "2024-01-13T13:00:00+00:00",
+          "dateModified": "2024-01-13T13:13:00+00:00",
+          "author": {
+            "@type": "Person",
+            "@id": "https://gravatar.com/drtrailer2022",
+            "name": "Dr Trailer",
+            "url": "https://gravatar.com/drtrailer2022",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://gravatar.com/drtrailer2022",
+              "caption": "Dr Trailer",
+              "inLanguage": "en-US"
+            }
+          },
+          "publisher": { "@id": "https://videostreamhub.vercel.app/#organization" }
+        }
+      }
+    ]
+  });
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: uwatchfreeSchema }}
+      />
+
       <div className="container py-6 space-y-8 mx-auto text-center">
         <section>
           <h1 className="text-4xl font-bold mb-6">Welcome to VideoStreamHub</h1>
