@@ -460,91 +460,148 @@ export default function Home() {
 
 
 
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "ItemList",
-        itemListElement: movies.map((movie, index) => ({
-          "@type": "ListItem",
-          position: index + 1,
-          item: {
-            "@type": "Movie",
-            name: movie.title,
-            url: `https://videostreamhub.vercel.app/movies/${movie.id}`,
-            image: movie.thumbnail,
-            datePublished: movie.uploadDate,
-            duration: movie.duration,
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: movie.rating,
-              bestRating: 10,
-              worstRating: 0,
-              ratingCount: 1,
-            },
-          },
-        })),
+  // const structuredData = {
+  //   "@context": "https://schema.org",
+  //   "@graph": [
+  //     {
+  //       "@type": "ItemList",
+  //       itemListElement: movies.map((movie, index) => ({
+  //         "@type": "ListItem",
+  //         position: index + 1,
+  //         item: {
+  //           "@type": "Movie",
+  //           name: movie.title,
+  //           url: `https://videostreamhub.vercel.app/movies/${movie.id}`,
+  //           image: movie.thumbnail,
+  //           datePublished: movie.uploadDate,
+  //           duration: movie.duration,
+  //           aggregateRating: {
+  //             "@type": "AggregateRating",
+  //             ratingValue: movie.rating,
+  //             bestRating: 10,
+  //             worstRating: 0,
+  //             ratingCount: 1,
+  //           },
+  //         },
+  //       })),
+  //     },
+  //     {
+  //       "@type": "ItemList",
+  //       itemListElement: movies.map((movie, index) => ({
+  //         "@type": "ListItem",
+  //         position: index + 1,
+  //         item: {
+  //           "@type": "Movie",
+  //           name: movie.title,
+  //           url: `https://videostreamhub.vercel.app/adult/${movie.id}`,
+  //           image: movie.thumbnail,
+  //           datePublished: movie.uploadDate,
+  //           duration: movie.duration,
+  //           aggregateRating: {
+  //             "@type": "AggregateRating",
+  //             ratingValue: movie.rating,
+  //             bestRating: 10,
+  //             worstRating: 0,
+  //             ratingCount: 1,
+  //           },
+  //         },
+  //       })),
+  //     },
+  //     {
+  //       "@type": "ItemList",
+  //       itemListElement: tvSeries.map((series, index) => ({
+  //         "@type": "ListItem",
+  //         position: index + 1,
+  //         item: {
+  //           "@type": "TVSeries",
+  //           name: series.title,
+  //           url: `https://videostreamhub.vercel.app/series/${series.id}`,
+  //           image: series.thumbnail,
+  //           aggregateRating: {
+  //             "@type": "AggregateRating",
+  //             ratingValue: series.rating || 0, 
+  //             bestRating: 10,
+  //             worstRating: 0,
+  //             ratingCount: 1,
+  //           },
+  //           numberOfEpisodes: series.episodes.length,
+  //           episode: series.episodes.map((episode, epIndex) => ({
+  //             "@type": "TVEpisode",
+  //             episodeNumber: epIndex + 1,
+  //             name: episode.title,
+  //             url: `https://videostreamhub.vercel.app/series/${episode.id}`,
+  //           })),
+  //         },
+  //       })),
+  //     },
+  //   ],
+  // }
+
+  const getSchemaData = (video: Video) => {
+    const baseSchema = {
+      "@context": "https://schema.org",
+      name: video.title,
+      description: video.description || `Watch ${video.title}`,
+      duration: video.duration,
+      thumbnailUrl: video.thumbnail,
+      image: video.thumbnail,
+      dateCreated: video.uploadDate || undefined, 
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: video.rating, // Ensure it defaults to 0 if undefined
+        bestRating: 10,
+        worstRating: 0,
+        ratingCount: 1,
       },
-      {
-        "@type": "ItemList",
-        itemListElement: movies.map((movie, index) => ({
-          "@type": "ListItem",
-          position: index + 1,
-          item: {
-            "@type": "Movie",
-            name: movie.title,
-            url: `https://videostreamhub.vercel.app/adult/${movie.id}`,
-            image: movie.thumbnail,
-            datePublished: movie.uploadDate,
-            duration: movie.duration,
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: movie.rating,
-              bestRating: 10,
-              worstRating: 0,
-              ratingCount: 1,
-            },
-          },
-        })),
-      },
-      {
-        "@type": "ItemList",
-        itemListElement: tvSeries.map((series, index) => ({
-          "@type": "ListItem",
-          position: index + 1,
-          item: {
+    }
+
+    switch (video.type) {
+      case "Movie":
+        return {
+          ...baseSchema,
+          "@type": "Movie",
+          url: `https://videostreamhub.vercel.app/movies/${video.id}`,
+        }
+      case "TVSeries":
+        return {
+          ...baseSchema,
+          "@type": "TVSeries",
+          url: `https://videostreamhub.vercel.app/series/${video.id}`,
+        }
+      case "TVEpisode":
+        return {
+          ...baseSchema,
+          "@type": "TVEpisode",
+          partOfSeries: {
             "@type": "TVSeries",
-            name: series.title,
-            url: `https://videostreamhub.vercel.app/series/${series.id}`,
-            image: series.thumbnail,
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: series.rating || 0, 
-              bestRating: 10,
-              worstRating: 0,
-              ratingCount: 1,
-            },
-            numberOfEpisodes: series.episodes.length,
-            episode: series.episodes.map((episode, epIndex) => ({
-              "@type": "TVEpisode",
-              episodeNumber: epIndex + 1,
-              name: episode.title,
-              url: `https://videostreamhub.vercel.app/series/${episode.id}`,
-            })),
+            name: video.seriesTitle,
           },
-        })),
-      },
-    ],
+        }
+      case "Adult":
+        return {
+          ...baseSchema,
+          "@type": "Movie",
+          contentRating: "Adult",
+          url: `https://videostreamhub.vercel.app/adult/${video.id}`,
+        }
+      default:
+        return {}
+    }
   }
+
 
   return (
     <>
-      <script
+      {/* <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(structuredData),
         }}
-      />
+      /> */}
+        <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(getSchemaData(video)) }}
+            />
       <div className="container py-6 space-y-8 mx-auto text-center">
         <section>
           <h1 className="text-4xl font-bold mb-6">Welcome to VideoStreamHub</h1>
