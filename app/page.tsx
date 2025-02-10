@@ -529,7 +529,7 @@ export default function Home() {
               "@type": "TVEpisode",
               episodeNumber: epIndex + 1,
               name: episode.title,
-              url: `https://videostreamhub.vercel.app/video/${episode.id}`,
+              url: `https://videostreamhub.vercel.app/series/${episode.id}`,
             })),
           },
         })),
