@@ -650,6 +650,12 @@ export default function Home() {
           "headline": "VideoStreamHub - Watch Movies, Series & More",
           "datePublished": "2024-01-13T13:00:00+00:00",
           "dateModified": "2024-01-13T13:13:00+00:00",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://videostreamhub.vercel.app/og_image.jpg",
+            "width": 1280,
+            "height": 720
+          },
           "author": {
             "@type": "Person",
             "@id": "https://gravatar.com/drtrailer2022",
