@@ -5,10 +5,10 @@
 // export default function SeriesPage() {
   
 //   return (
-//     <div className="container py-6 space-y-8 ml-2">
-//       <h1 className="text-3xl font-bold mb-6 ml-2">Tv Series</h1>
+//     <div className="container py-6 space-y-8 ">
+//       <h1 className="text-3xl font-bold mb-6 ">Tv Series</h1>
       
-//       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ml-2">
+//       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
 //         {superdata.series.map((series) => (
 //           <Link key={series.id} href={`/series/${series.id}`} className="group">
 //             <div className="relative aspect-video rounded-lg overflow-hidden bg-muted">
@@ -40,10 +40,10 @@
 //   ]
 
 //   return (
-//     <div className="container py-6 space-y-8 ml-2">
-//       <h1 className="text-3xl font-bold mb-6 ml-2">TV Series</h1>
+//     <div className="container py-6 space-y-8 ">
+//       <h1 className="text-3xl font-bold mb-6 ">TV Series</h1>
       
-//       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ml-2">
+//       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
 //         {/* {superdata.series.map((series) => (
 //             <Link key={series.id} href={`/series/${series.id}`} className="group"> */}
 //               {allVideos.map((series) => (
@@ -102,10 +102,10 @@ export default function SeriesPage() {
   ]
 
   return (
-    <div className="container py-6 space-y-8 ml-2">
-      <h1 className="text-3xl font-bold mb-6 ml-2">TV Series</h1>
+    <div className="container py-6 space-y-8 ">
+      <h1 className="text-3xl font-bold mb-6 ">TV Series</h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ml-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
         {/* {superdata.series.map((series) => (
             <Link key={series.id} href={`/series/${series.id}`} className="group"> */}
         {allVideos.map((series) => (
