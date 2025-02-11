@@ -96,9 +96,7 @@ export function Navigation() {
           <Link href="/adult" className="text-sm font-medium hover:no-underline" onClick={() => setIsOpen(false)}>
             Adult
           </Link>
-          <Link href="/admin" className="text-sm font-medium hover:no-underline" onClick={() => setIsOpen(false)}>
-            Admin
-          </Link>
+       
 
           {/* Search Bar (Mobile) */}
           <div className="w-half max-w-sm px-4">
