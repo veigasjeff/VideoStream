@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://videostreamhub.vercel.app/sitemap.xml
