@@ -654,7 +654,12 @@ export default function RootLayout({
             }),
           }}
         />
-        
+          <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
       </head>
       <body className={inter.className}>
         <Navigation />
@@ -670,9 +675,10 @@ export default function RootLayout({
               } catch(e) {
                   console.error('Error loading script:', e);
               }
-          })('groleegni.net',8845819,document.createElement('script'))`}
+          })('groleegni.net',8919674,document.createElement('script'))`}
         </Script>
 
+        {/* <script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('groleegni.net',8919674,document.createElement('script'))</script> */}
         {/* Second Ad Script */}
         <Script id="ad-script-2" strategy="lazyOnload">
           {`(function(d,z,s){
@@ -682,8 +688,23 @@ export default function RootLayout({
               } catch(e) {
                   console.error('Error loading script:', e);
               }
-          })('vemtoutcheeg.com',8845846,document.createElement('script'))`}
+          })('vemtoutcheeg.com',8919677,document.createElement('script'))`}
         </Script>
+        {/* <script>(function(d,z,s){s.src='https://'+d+'/400/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('vemtoutcheeg.com',8919677,document.createElement('script'))</script> */}
+        <Script id="ad-script-3" strategy="lazyOnload">
+          {`(function(d,z,s){
+              s.src='https://'+d+'/401/'+z;
+              try {
+                  (document.body || document.documentElement).appendChild(s);
+              } catch(e) {
+                  console.error('Error loading script:', e);
+              }
+          })('gizokraijaw.net',8919691,document.createElement('script'))`}
+        </Script>
+
+
+
+        {/* <script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('gizokraijaw.net',8919691,document.createElement('script'))</script> */}
       </body>
     </html>
   )

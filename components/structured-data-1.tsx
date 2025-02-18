@@ -88,6 +88,13 @@ export function StructuredData({ video }: StructuredDataProps) {
     duration: video.duration,
     thumbnailUrl: video.thumbnail,
     url: `https://videostreamhub.vercel.app/adult/${video.id}`,
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: video.rating,
+      bestRating: 10,
+      worstRating: 0,
+      ratingCount: 1,
+    },
     interactionStatistic: {
       "@type": "InteractionCounter",
       interactionType: { "@type": "WatchAction" },

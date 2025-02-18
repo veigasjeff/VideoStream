@@ -1,6 +1,37 @@
 {
   "videos": [
     {
+      "id": "black-diamond-2025",
+      "title": "Black Diamond (2025)",
+      "description": "\nFollows a young woman whose idyllic life with her hedge funder boyfriend turns it into a deadly triangle of lust, obsession and murder after meeting a local cowboy handyman.",
+      "videoUrl": "https://geo.dailymotion.com/player/xjrxe.html?video=x9dt8u4",
+      "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/210717c5919098216dc44babd5700089b7d8b7544c317ca1cce33b72007506fc.jpg",
+      "rating": 6.1,
+      "views": 2911,
+      "duration": "1:29:00",
+      "uploadDate": "2025-01-10",
+      "tags": [
+        "action",
+        "thriller"
+      ]
+    },
+    {
+      "id": "heart-eyes-2025",
+      "title": "Heart Eyes (2025)",
+      "description": "For the past several years, the \"Heart Eyes Killer\" has wreaked havoc on Valentine's Day by stalking and murdering romantic couples. This Valentine's Day, no couple is safe.",
+      "videoUrl": "https://short.icu/eU7x4cuxu?thumbnail=https://images.savoysystems.co.uk/MSC/16653176.jpg",
+      "thumbnail": "https://images.savoysystems.co.uk/MSC/16653176.jpg",
+      "rating": 6.7,
+      "views": 2119,
+      "duration": "1:29:00",
+      "uploadDate": "2025-02-07",
+      "tags": [
+        "comedy",
+        "horror",
+        "mystery"
+      ]
+    },
+    {
       "id": "love-hurts-2025",
       "title": "Love Hurts (2025)",
       "description": "A realtor is pulled back into the life he left behind after his former partner-in-crime resurfaces with an ominous message. With his crime-lord brother also on his trail, he must confront his past and the history he never fully buried.",
@@ -12,20 +43,84 @@
       "tags": [
         "action",
         "comedy"
+      ],
+      "rating": 5.4
+    },
+    {
+      "id": "henry-danger-the-movie-2025",
+      "title": "Henry Danger: The Movie (2025)",
+      "description": "A theatrical film based on the Nickelodeon Show 'Henry Danger.'",
+      "videoUrl": "https://short.icu/ANVm_UPed?thumbnail=https://i.ytimg.com/vi/RISVGV9SbDM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAQBehFhS8tv7iQldoG7kZ6v80Dng",
+      "thumbnail": "https://i.ytimg.com/vi/RISVGV9SbDM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAQBehFhS8tv7iQldoG7kZ6v80Dng",
+      "rating": 5,
+      "views": 3771,
+      "duration": "1:26:00",
+      "uploadDate": "2025-01-17",
+      "tags": [
+        "action",
+        "sci-fi",
+        "adventure"
+      ] 
+    },
+    {
+      "id": "man-with-no-past-2025",
+      "title": "Man With No Past (2025)",
+      "description": "Amnesiac man awakens in unknown city, seeks truth about past. Aided by allies, infiltrates powerful gang, engages in time-transcending battle while fate looms.",
+      "videoUrl": "https://short.icu/B7RKfbMdr?thumbnail=https://i.ytimg.com/vi/NrY4GuKoQwc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA7h3zp9SJjPgUxqT_Su7JR1cpY-w",
+      "thumbnail": "https://i.ytimg.com/vi/NrY4GuKoQwc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA7h3zp9SJjPgUxqT_Su7JR1cpY-w",
+      "rating": 4.4,
+      "views": 2388,
+      "duration": "1:42:00",
+      "uploadDate": "2025-01-14",
+      "tags": [
+        "action",
+        "drama"
+      ]
+    },
+    {
+      "id": "peter-pans-neverland-nightmare-2025",
+      "title": "Peter Pans Neverland Nightmare (2025)",
+      "description": "Wendy Darling strikes out in an attempt to rescue her brother Michael from 'the clutches of the evil Peter Pan.' Along the way she meets Tinkerbell, who will be seen taking heroin, believing that it's pixie dust.",
+      "videoUrl": "https://short.icu/PHvOGMaBo?thumbnail=https://image.tmdb.org/t/p/w1280/tHv9oYcVel8KG9Eb0B39VxMSEmV.jpg",
+      "thumbnail": "https://image.tmdb.org/t/p/w1280/tHv9oYcVel8KG9Eb0B39VxMSEmV.jpg",
+      "rating": 6.2,
+      "views": 4930,
+      "duration": "1:29:00",
+      "uploadDate": "2025-01-13",
+      "tags": [
+        "adventure",
+        "horror",
+        "thriller"
+      ]
+    },
+    {
+      "id": "luccas-world-2025",
+      "title": "Luccas World (2025)",
+      "description": "Determined to help her son, who has cerebral palsy, Bárbara takes her family to India for an experimental treatment.",
+      "videoUrl": "https://short.icu/MeZeLdPLx?thumbnail=https://occ-0-8407-1361.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABa3Qo1KVTUQ37Bsp2IosTn7WUKCPycwk-1e0q1shYERx4HkCYwIkrjBJQOwkyH_DZjiLz0t34QI-85qyj4_pOyapfHnKWtZSCLvnQmlmHzcyyhWNjdG4LavOjdTOaz-RpC8p0uHbAQkh7B4LAcf9NU0Zj5Y_zVOH22YFXdpB7o7hOAptkCy2vkM1lYS6ciw.jpg?r=5b7",
+      "thumbnail": "https://mp4moviez.ind.in/files/luccas-world.webp",
+      "rating": 6.7,
+      "views": 1360,
+      "duration": "1:36:00",
+      "uploadDate": "2025-01-31",
+      "tags": [
+        "drama",
+        "romance"
       ]
     },
     {
       "id": "the-mehta-boys-2025",
       "title": "The Mehta Boys (2025)",
       "description": "A father and son embark on an involuntary 48-hour odyssey, navigating clashing perspectives as they confront the intricate nuances of their strained relationship.",
-      "videoUrl": "https://geo.dailymotion.com/player/xjrxe.html?video=x9doc80",
+      "videoUrl": "https://short.icu/qzExMsMvCy?thumbnail=https://pimwp.s3-accelerate.amazonaws.com/2025/01/Untitled-design-2025-01-29T195340.696.jpg",
       "thumbnail": "https://pimwp.s3-accelerate.amazonaws.com/2025/01/Untitled-design-2025-01-29T195340.696.jpg",
       "views": 2130,
       "duration": "1:56:00",
       "uploadDate": "2025-02-07",
       "tags": [
         "drama"
-      ]
+      ],
+      "rating": 7.5
     },
     {
       "id": "mrs-2025",
@@ -38,7 +133,8 @@
       "uploadDate": "2025-02-07",
       "tags": [
         "comedy.drama"
-      ]
+      ],
+      "rating": 6.9
     },
     {
       "id": "anuja-2025",
@@ -52,7 +148,8 @@
       "tags": [
         "drama",
         "short"
-      ]
+      ],
+      "rating": 6.5
     },
     {
       "id": "deva-2025",
@@ -67,7 +164,8 @@
         "action",
         "drama",
         "thriller"
-      ]
+      ],
+      "rating": 7.9
     },
     {
       "id": "the-perfect-setting-2025",
@@ -81,7 +179,8 @@
       "tags": [
         "romance",
         "comedy"
-      ]
+      ],
+      "rating": 7.8
     },
     {
       "id": "presence-2025",
@@ -96,13 +195,14 @@
         "drama",
         "horror",
         "thriller"
-      ]
+      ],
+      "rating": 6.7
     },
     {
       "id": "kinda-pregnant-2025",
       "title": " Kinda Pregnant (2025)",
       "description": "When Lainy's plan to settle down and start a family falls apart, she puts on a fake baby bump, tells a lie and accidentally falls for her dream guy.",
-      "videoUrl": "https://short.icu/cgHoBXeCTi?thumbnail=https://i.gadgets360cdn.com/large/image_4_F_1738751563984.jpg",
+      "videoUrl": "https://short.icu/cgHoBXeCT?thumbnail=https://i.gadgets360cdn.com/large/image_4_F_1738751563984.jpg",
       "thumbnail": "https://i.gadgets360cdn.com/large/image_4_F_1738751563984.jpg",
       "views": 2153,
       "duration": "1:37:00",
@@ -110,12 +210,13 @@
       "tags": [
         "comedy",
         "drama"
-      ]
+      ],
+      "rating": 4.9
     },
     {
       "id": "green-and-gold-2025",
       "title": "Green and Gold (2025)",
-      "description": "A struggling family farmer wagers everything on a high-stakes Championship bet, while his granddaughter's musical ambitions could be their ticket to a new beginning.",
+      "description": "Foreclosure looms over Wisconsin dairy farmer Buck (Craig T. Nelson). With mounting debt and the land his family has cultivated for four generations at risk, Buck refuses to give up his legacy without a fight. Buck’s granddaughter (Madison Lawlor) works alongside him but dreams of a career in music. Her aspirations are fanned by an emerging friendship with a famous musician (Brandon Sklenar), but chasing her dreams might take her far from the farm. With time running out, Buck places a daring Super Bowl bet on his beloved Green Bay Packers, risking it all to save everything he holds dear.",
       "videoUrl": "https://geo.dailymotion.com/player/xjrxe.html?video=x9dj4km",
       "thumbnail": "https://i.ytimg.com/vi/cIYZ5rWQNtg/maxresdefault.jpg",
       "views": 2987,
@@ -123,12 +224,13 @@
       "uploadDate": "2025-01-03",
       "tags": [
         "drama"
-      ]
+      ],
+      "rating": 7.1
     },
     {
       "id": "sniper-the-last-stand-2025",
       "title": "Sniper:The Last Stand (2025)",
-      "description": "An expert sniper leads a special ops team in Costa Verde to prevent a dangerous arms dealer from deploying a lethal weapon. While mentoring a rookie shooter, he struggles with his new leadership role as the mission grows deadlier.",
+      "description": "To stop an arms dealer (Arnold Vosloo) from unleashing a deadly superweapon, Ace sniper Brandon Beckett (Chad Michael Collins) and Agent Zero (Ryan Robbins) are deployed to Costa Verde to lead a group of elite soldiers against an unrelenting militia. Taking an untested sniper under his wing, Beckett faces his newest challenge: giving orders instead of receiving them. With both time and ammo running low in a race to save humanity, the team must overcome all odds just to survive.",
       "videoUrl": "https://short.icu/-8myjPwzi?thumbnail=https://i.ytimg.com/vi/gcqiVzKnkWA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBl0_C5bWuQnwpzZBODkTJ5YY5aDg",
       "thumbnail": "https://i.ytimg.com/vi/gcqiVzKnkWA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBl0_C5bWuQnwpzZBODkTJ5YY5aDg",
       "views": 1789,
@@ -138,12 +240,13 @@
         "action",
         "thriller",
         "drama"
-      ]
+      ],
+      "rating": 4.4
     },
     {
       "id": "wish-you-were-here-2025",
       "title": "Wish You Were Here (2025)",
-      "description": "A woman searching for a spark finds a whirlwind night of romance with a man only to discover he is terminally ill and commits to helping him spend his last days living life to the fullest.",
+      "description": "Julia Stiles makes her directorial debut in a brilliantly warm and romantic film based on the bestselling novel,  Wish You Were Here. Isabelle Fuhrman, Mena Massoud, Jennifer Grey and Kelsey Grammer star in a fascinating movie about leaving the everyday world behind to take a chance on true romance. When the perfect night with a perfect stranger ends suddenly the next morning, Charlotte searches for answers and meaning in her disappointing life until she uncovers a secret that changes everything.",
       "videoUrl": "https://short.icu/lrMArwkGe?thumbnail=https://ntvb.tmsimg.com/assets/p29045819_v_h8_ab.jpg?w=1280&h=720",
       "thumbnail": "https://ntvb.tmsimg.com/assets/p29045819_v_h8_ab.jpg?w=1280&h=720",
       "views": 1387,
@@ -152,12 +255,13 @@
       "tags": [
         "romance",
         "drama"
-      ]
+      ],
+      "rating": 4.3
     },
     {
       "id": "youre-cordially-invited-2025",
       "title": "Youre Cordially Invited (2025)",
-      "description": "When two weddings are double-booked at the same venue, the father of one bride and the sister of the other bride try to preserve the wedding weekend.",
+      "description": "A woman (Reese Witherspoon) planning her sister’s perfect wedding and the father (Will Ferrell) of a young bride-to-be find out that they are double booked for their destination wedding at a remote resort on an island off the Carolina coast. When both parties decide to share the small venue, chaos ensues and our cast of characters begin to face their own insecurities learning more about themselves.",
       "videoUrl": "https://short.icu/WgYcsGCK3?thumbnail=https://i.ytimg.com/vi/vUuFuMD7CXA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBOYZUhdsC-eB1Jb937R5gldZAscQ",
       "thumbnail": "https://i.ytimg.com/vi/vUuFuMD7CXA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBOYZUhdsC-eB1Jb937R5gldZAscQ",
       "views": 1780,
@@ -166,12 +270,13 @@
       "tags": [
         "comedy",
         "romance"
-      ]
+      ],
+      "rating": 5.5
     },
     {
       "id": "valiant-one-2025",
       "title": "Valiant One (2025)",
-      "description": "With tensions between North and South Korea, a US helicopter crashes on the North Korean side. Now the survivors must work together to protect a civilian tech specialist and find their way out without the help of US military support.",
+      "description": "With tensions between North and South Korea, a US helicopter crashes on the North Korean side. Now the survivors must work together to protect a civilian tech specialist and find their way out without the help of US military support.A routine mission goes awry when a U.S. army helicopter crashes deep within North Korean territory. Now, a team of non-combat tech specialists, led by Captain Edward Brockman (Stokes), must navigate the hostile terrain and fend off North Korean forces as they desperately race to escort a civilian tech specialist across the treacherous Demilitarized Zone.",
       "videoUrl": "https://short.icu/NgKhc5eKjn?thumbnail=https://dx35vtwkllhj9.cloudfront.net/briarcliffentertainment/valiant-one/images/regions/us/share.jpg",
       "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKg_LkwAakgZhR79jsXslJxw5gR6hahLoHrw&s",
       "views": 2940,
@@ -181,7 +286,8 @@
         "war",
         "drama",
         "thriller"
-      ]
+      ],
+      "rating": 2.4
     },
     {
       "id": "companion-2025",
@@ -196,12 +302,13 @@
         "sci-fi",
         "thriller",
         "comedy"
-      ]
+      ],
+      "rating": 4
     },
     {
       "id": "creep-box-2025",
       "title": "Creep Box (2025)",
-      "description": "A scientist uses groundbreaking technology to communicate with the deceased but once he is through the looking glass, there is no turning back.",
+      "description": "A scientist uses groundbreaking technology to communicate with the deceased but once he is through the looking glass, there is no turning back. A technician for a shadowy tech firm whose devices allow for communication with the dead investigates both a murder case and a suicide looking for answers. As his mind begins to slip, he slowly starts to descend into obsession.",
       "videoUrl": "https://short.icu/AZUyKwJxX?thumbnail=https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2Ff%2Fplex%2Ffd75ad50-f5ff-45d3-b42b-cfcc71f8696b.jpg",
       "thumbnail": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2Ff%2Fplex%2Ffd75ad50-f5ff-45d3-b42b-cfcc71f8696b.jpg",
       "views": 2701,
@@ -210,7 +317,8 @@
       "tags": [
         "sci-fi",
         "drama"
-      ]
+      ],
+      "rating": 5.5
     },
     {
       "id": "shudh-shakahari-2025",
@@ -224,7 +332,8 @@
       "tags": [
         "romance",
         "drama"
-      ]
+      ],
+      "rating": 7.6
     },
     {
       "id": "piglet-2025",
@@ -238,12 +347,13 @@
       "tags": [
         "horror",
         "drama"
-      ]
+      ],
+      "rating": 2.5
     },
     {
       "id": "into-the-deep-2025",
       "title": "Into The Deep (2025)",
-      "description": "Modern day pirates on the hunt for sunken drugs kidnap a boat of tourists and force them to dive into shark infested waters to retrieve the contraband.",
+      "description": "Richard Dreyfuss returns to face off against the ocean’s most deadly predator in this jaws-some underwater thriller. Off the coast of Madagascar, a young father and his daughter, Cassidy, share a playful swim until a looming shark attack shatters their idyllic moment. Traumatised by the incident, Cassidy grows into adulthood plagued by fear, until her grandfather, Seamus, an oceanography professor, takes her under his wing to conquer her demons. Years later, Cassidy, now married to Gregg, embarks on a dive expedition to Reunion Island, only to find herself entangled in a perilous situation involving modern-day pirates and a vengeful great white shark. Forced to confront her deepest fears to survive, Cassidy must navigate treacherous waters both physical and psychological, grappling with her past trauma while facing imminent danger.",
       "videoUrl": "https://geo.dailymotion.com/player/xjrxe.html?video=x9dlefm",
       "thumbnail": "https://www.heavenofhorror.com/wp-content/uploads/2025/01/Into-the-deep-2025-shark-thriller-review-1200x720.jpg",
       "views": 3912,
@@ -253,41 +363,13 @@
         "action",
         "drama",
         "thriller"
-      ]
-    },
-    {
-      "id": "ad-vitam-hindi-2025",
-      "title": " Ad Vitam (2025) Hindi Full Movie",
-      "description": "After escaping an attempted murder, Franck Lazareff must find his wife Leo, who has been kidnapped by a mysterious group of armed men. He is caught up by his past and plunged into a state affair that is beyond him.\n\n",
-      "videoUrl": "https://geo.dailymotion.com/player/xjrxe.html?video=x9dlefm",
-      "thumbnail": "https://www.heavenofhorror.com/wp-content/uploads/2025/01/Ad-Vitam-2025-Netflix-Thriller.jpg",
-      "views": 1250,
-      "duration": "1:38:00",
-      "uploadDate": "2025-01-11",
-      "tags": [
-        "action.crime",
-        "drama"
-      ]
-    },
-    {
-      "id": "the-love-scam-2025",
-      "title": "The Love Scam (2025) Hindi Full Movie",
-      "description": "Drowning in debt, two brothers concoct a plan to scam a wealthy heiress and save their home in Naples - but unexpected love soon complicates the scheme.",
-      "videoUrl": "https://short.icu/x28ZhrvQ8?thumbnail=https://occ-0-8407-1361.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABbMCBe-H0oKbGvPDYjmGXoC7Mga09j51PW_l4nox_ZZKFFE2ROJQ1V37rXRk5R1n8ZgfcZpw72P_95bw9-IAF1h3VPtm67EoX22-.jpg?r=627",
-      "thumbnail": "https://i.ytimg.com/vi/gEuPm4UcjHs/maxresdefault.jpg",
-      "views": 1239,
-      "duration": "1:41:00",
-      "uploadDate": "2025-01-17",
-      "tags": [
-        "comedy",
-        "drama",
-        "romance"
-      ]
+      ],
+      "rating": 3
     },
     {
       "id": "alarum-2025",
-      "title": "Alarum (2025) Full Movie",
-      "description": "Two rogue spies go off-grid, marry, and come under attack at their remote cabin hideaway by various intel agencies seeking a stolen hard drive.",
+      "title": "Alarum (2025) ",
+      "description": "An action-thriller about two married spies caught in the crosshairs of an international intelligence network that will stop at nothing to obtain a critical asset. Joe (Eastwood) and Lara (Fitzgerald) are agents living off the grid whose quiet retreat at a winter resort is blown to shreds when members of the old guard suspect the two may have joined an elite team of rogue spies, known as  ALARUM. Two rogue spies go off-grid, marry, and come under attack at their remote cabin hideaway by various intel agencies seeking a stolen hard drive.",
       "videoUrl": "https://short.icu/sTAVXl2rT?thumbnail=https://i.ytimg.com/vi/WxmVAtUmSiw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAYl3hxXoOdJ8sde8BO-8ek2IE43A",
       "thumbnail": "https://i.ytimg.com/vi/WxmVAtUmSiw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAYl3hxXoOdJ8sde8BO-8ek2IE43A",
       "views": 1575,
@@ -297,12 +379,13 @@
         "action",
         "crime",
         "thriller"
-      ]
+      ],
+      "rating": 3
     },
     {
       "id": "den-of-thieves2-pantera-2025",
-      "title": "Den of Thieves 2: Pantera (2025) Full Movie",
-      "description": "Big Nick is back on the hunt in Europe and closing in on Donnie, who is embroiled in the treacherous world of diamond thieves and the infamous Panther mafia, as they plot a massive heist of the world's largest diamond exchange.",
+      "title": "Den of Thieves 2: Pantera (2025) ",
+      "description": "The sequel picks up with Big Nick tracking down bad guys on the streets of Europe and getting closer to capturing Donnie (Jackson). Donnie, meanwhile, has become caught up in the dangerous world of diamond thieves and the Panther mafia, as a heist on the world's largest diamond exchange is being planned. Big Nick is back on the hunt in Europe and closing in on Donnie, who is embroiled in the treacherous world of diamond thieves and the infamous Panther mafia, as they plot a massive heist of the world's largest diamond exchange.",
       "videoUrl": "https://short.icu/Xpu88aRvZ?thumbnail=https://weliveentertainment.com/wp-content/uploads/2025/01/https-3A-2F-2Fcdn.evbuc_.com-2Fimages-2F924038513-2F575655774365-2F1-2Foriginal.20241228-023925.jpg",
       "thumbnail": "https://weliveentertainment.com/wp-content/uploads/2025/01/https-3A-2F-2Fcdn.evbuc_.com-2Fimages-2F924038513-2F575655774365-2F1-2Foriginal.20241228-023925.jpg",
       "views": 3250,
@@ -312,11 +395,12 @@
         "action",
         "crime",
         "drama"
-      ]
+      ],
+      "rating": 4
     },
     {
-      "id": "the-gardene-2025",
-      "title": "The Gardene (2025) Full Movie",
+      "id": "the-gardener-2025",
+      "title": "The Gardener (2025) ",
       "description": "Serge holds a state secret. He, his family and gardener Leo appear on a government death list. They attempt to devise a plan to stay alive.",
       "videoUrl": "https://short.icu/v52QrwiEV?thumbnail=https://i.ytimg.com/vi/ZLrAVWhRDh0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDZ1Vq_Om_wO0lWpXk9wUHAfYguuA",
       "thumbnail": "https://i.ytimg.com/vi/ZLrAVWhRDh0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDZ1Vq_Om_wO0lWpXk9wUHAfYguuA",
@@ -327,18 +411,20 @@
         "action",
         "drama",
         "thriller"
-      ]
+      ],
+      "rating": 4.2
     },
     {
       "id": "polar-opposites-2025",
-      "title": "Polar Opposites (2025) Full Movie",
+      "title": "Polar Opposites (2025) ",
       "description": "Emma needs to get to Antarctica to reach her father and travels to South America but can't get on a boat for the last leg. She sneaks onto a cruise ship and meets engineer Andy.",
       "videoUrl": "https://geo.dailymotion.com/player/xjrxe.html?video=x9cbhs2",
       "thumbnail": "https://ntvb.tmsimg.com/assets/p29052225_b_h8_aa.jpg?w=1280&h=720",
       "views": 750,
       "duration": "1:24:00",
       "uploadDate": "2025-01-11",
-      "tags": []
+      "tags": [],
+      "rating": 6.2
     },
     {
       "id": "back-in-action-2025",
@@ -353,11 +439,12 @@
         "spy",
         "drama",
         "comedy"
-      ]
+      ],
+      "rating": 5.5
     },
     {
       "id": "sky-force-2025",
-      "title": "Sky Force (2025) Full Movie",
+      "title": "Sky Force (2025) ",
       "description": "Skyforce unravels a gripping tale inspired by true events from one of the deadliest air strikes between India and Pakistan. A hero lost, a comrade's quest for truth-an epic tribute to bravery, sacrifice, and unbreakable courage.",
       "videoUrl": "https://short.icu/U7oboifKW?thumbnail=https://img.mensxp.com/media/content/2025/Jan/header_67931f6768aa6.jpeg",
       "thumbnail": "https://www.chennaitop10.com/wp-content/uploads/2025/01/et00371539-rmgsshjdlz-landscape.jpg",
@@ -369,12 +456,13 @@
         "movie",
         "drama",
         "2025"
-      ]
+      ],
+      "rating": 7.6
     },
     {
       "id": "wolf-man-2025",
-      "title": "Wolf Man (2025) Full Movie",
-      "description": "A family at a remote farmhouse is attacked by an unseen animal, but as the night stretches on, the father begins to transform into something unrecognizable.",
+      "title": "Wolf Man (2025) ",
+      "description": "Christopher Abbott ( Poor Things,  It Comes at Night) stars as Blake, a San Francisco husband and father, who inherits his remote childhood home in rural Oregon after his own father vanishes and is presumed dead. With his marriage to his high-powered wife, Charlotte (Emmy winner Julia Garner; Ozark, Inventing Anna), fraying, Blake persuades Charlotte to take a break from the city and visit the property with their young daughter, Ginger. But as the family approaches the farmhouse in the dead of night, they’re attacked by an unseen animal and, in a desperate escape, barricade themselves inside the home as the creature prowls the perimeter. As the night stretches on, however, Blake begins to behave strangely, transforming into something unrecognizable, and Charlotte will be forced to decide whether the terror within their house is more lethal than the danger without.",
       "videoUrl": "https://short.icu/Gywk04CCK?thumbnail=https://indieentertainmentmedia.com/wp-content/uploads/2025/01/wolfmanbanner-599x330-1.jpg",
       "thumbnail": "https://indieentertainmentmedia.com/wp-content/uploads/2025/01/wolfmanbanner-599x330-1.jpg",
       "views": 3420,
@@ -384,12 +472,13 @@
         "horror",
         "drama",
         "thriller"
-      ]
+      ],
+      "rating": 5.7
     },
     {
       "id": "peter-pans-neverland-nightmare-2025",
       "title": "Peter Pans Neverland Nightmare (2025)",
-      "description": "Wendy Darling strikes out in an attempt to rescue her brother Michael from 'the clutches of the evil Peter Pan.' Along the way she meets Tinkerbell, who will be seen taking heroin, believing that it's pixie dust.",
+      "description": "Wendy Darling strikes out in an attempt to rescue her brother Michael from 'the clutches of the evil Peter Pan.' Along the way she meets Tinkerbell, who will be seen taking heroin, believing that it's pixie dust.The newest entry into the Poohniverse follows Wendy Darling as she strikes out in an attempt to rescue her brother Michael from the clutches of the evil  Peter Pan who intends to send him to Neverland. Along the way she meets Tinkerbell, who is twisted in this version of the story.",
       "videoUrl": "https://short.icu/PHvOGMaBo?thumbnail=https://i.ytimg.com/vi/YP4Lr5xIYDc/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/YP4Lr5xIYDc/maxresdefault.jpg",
       "views": 500,
@@ -399,7 +488,8 @@
         "horror",
         "mystery",
         "thriller"
-      ]
+      ],
+      "rating": 6.2
     },
     {
       "id": "the-bear-lake-murders-2025",
@@ -413,7 +503,8 @@
       "tags": [
         "drama",
         "thriller"
-      ]
+      ],
+      "rating": 5.1
     },
     {
       "id": "unstoppable-2025",
@@ -427,7 +518,8 @@
       "tags": [
         "sports",
         "drama"
-      ]
+      ],
+      "rating": 6.8
     },
     {
       "id": "sons-of-ecstasy-2025",
@@ -442,7 +534,8 @@
         "drama",
         "thriller",
         "documentry"
-      ]
+      ],
+      "rating": 5.6
     },
     {
       "id": "my-argentine-heart-2025",
@@ -456,7 +549,8 @@
       "tags": [
         "comedy",
         "romance"
-      ]
+      ],
+      "rating": 6.3
     },
     {
       "id": "flight-risk-2025",
@@ -471,7 +565,8 @@
         "action",
         "crime",
         "thriller"
-      ]
+      ],
+      "rating": 5.5
     },
     {
       "id": "presence-2025",
@@ -486,7 +581,8 @@
         "drama",
         "horror",
         "thriller"
-      ]
+      ],
+      "rating": 6.7
     },
     {
       "id": "star-trek-section31-2025",
@@ -501,7 +597,8 @@
         "action",
         "drama",
         "sci-fi"
-      ]
+      ],
+      "rating": 3.8
     },
     {
       "id": "sweet-dreams-2025",
@@ -516,7 +613,8 @@
         "romance",
         "drama",
         ""
-      ]
+      ],
+      "rating": 5.7
     },
     {
       "id": "match-fixing-2025",
@@ -531,7 +629,8 @@
         "war",
         "drama",
         "thriller"
-      ]
+      ],
+      "rating": 6.5
     },
     {
       "id": "emergency-2025",
@@ -546,7 +645,8 @@
         "biography",
         "drama",
         "history"
-      ]
+      ],
+      "rating": 5.2
     },
     {
       "id": "mission-grey-house-2025",
@@ -561,7 +661,8 @@
         "action",
         "drama",
         "thriller"
-      ]
+      ],
+      "rating": 8.2
     },
     {
       "id": "ek-anchaahi-jalan-2025",
@@ -575,7 +676,8 @@
       "tags": [
         "romance",
         "drama"
-      ]
+      ],
+      "rating": 4.4
     },
     {
       "id": "fateh-2025",
@@ -590,7 +692,8 @@
         "action",
         "crime",
         "thriller"
-      ]
+      ],
+      "rating": 7.4
     },
     {
       "id": "hum-aapke-hai-wo-2025",
@@ -603,7 +706,8 @@
       "uploadDate": "2025-01-03",
       "tags": [
         "drama"
-      ]
+      ],
+      "rating": 3.5
     },
     {
       "id": "personal-trainer-2025",
@@ -618,7 +722,8 @@
         "crime",
         "drama",
         "thriller"
-      ]
+      ],
+      "rating": 8.5
     },
     {
       "id": "hisaab-barabar-2025",
@@ -633,7 +738,8 @@
         "comedy",
         "drama",
         "thriller"
-      ]
+      ],
+      "rating": 5.8
     },
     {
       "id": "the-storyteller-2025",
@@ -648,10 +754,245 @@
         "action",
         "drama",
         "thriller"
+      ],
+      "rating": 7
+    },
+    {
+      "id": "luccas-world-hindi-dubbed-2025",
+      "title": " Luccas World Hindi Dubbed (2025)",
+      "description": "Determined to help her son, who has cerebral palsy, Bárbara takes her family to India for an experimental treatment.",
+      "videoUrl": "https://short.icu/YiXMC1reZ?thumbnail=https://occ-0-8407-1361.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABa3Qo1KVTUQ37Bsp2IosTn7WUKCPycwk-1e0q1shYERx4HkCYwIkrjBJQOwkyH_DZjiLz0t34QI-85qyj4_pOyapfHnKWtZSCLvnQmlmHzcyyhWNjdG4LavOjdTOaz-RpC8p0uHbAQkh7B4LAcf9NU0Zj5Y_zVOH22YFXdpB7o7hOAptkCy2vkM1lYS6ciw.jpg?r=5b7",
+      "thumbnail": "https://mp4moviez.ind.in/files/luccas-world.webp",
+      "rating": 6.7,
+      "views": 2981,
+      "duration": "1:36:00",
+      "uploadDate": "2025-01-31",
+      "tags": [
+        "drama",
+        "romance"
       ]
-    }   
+    },
+    {
+      "id": "mordern-society-2025",
+      "title": "Mordern Society (2025)",
+      "description": "The complexities of marriage, relationships, and desire. One fateful night, after a party, the two couples make a shocking decision - they decide to swap partners. As they navigate this new and uncharted territory, they must confront their own desires, insecurities, and fears. As the series unfolds, the consequences of their actions become clear.",
+      "videoUrl": "https://short.icu/EIkznxb3R?thumbnail=https://www.mastram.app/media/posters/2025-01-30e836ce76bdda40acb4238210382322ea.jpg",
+      "thumbnail": "https://www.mastram.app/media/posters/2025-01-30e836ce76bdda40acb4238210382322ea.jpg",
+      "rating": 4.4,
+      "views": 1890,
+      "duration": "21:24",
+      "uploadDate": "2025-02-02",
+      "tags": [
+        "drama",
+        "romance"
+      ]
+    },
+    {
+      "id": "saale-aashiq-2025",
+      "title": "Saale Aashiq (2025)",
+      "description": "The story is about standing up to the hate politics, age-old traditions and an eventual death threats as a couple faces opposition from their respective families.",
+      "videoUrl": "https://short.icu/Mlg2yErs7?thumbnail=https://assets.gadgets360cdn.com/pricee/assets/product/202501/Saale_Aashiq_1_1737030430.jpg?downsize=400:*",
+      "thumbnail": "https://assets.gadgets360cdn.com/pricee/assets/product/202501/Saale_Aashiq_1_1737030430.jpg?downsize=400:*",
+      "rating": 6.8,
+      "views": 3956,
+      "duration": "2:00:00",
+      "uploadDate": "2025-02-01",
+      "tags": [
+        "drama",
+        "romance"
+      ]
+    },
+    {
+      "id": "companion-hindi-dubbed-2025",
+      "title": "Companion Hindi Dubbed (2025)",
+      "description": "A weekend getaway with friends at a remote cabin turns into chaos after it's revealed that one of the guests is a robot companion.",
+      "videoUrl": "https://short.icu/1A4wE0qJs?thumbnail=https://assets-in.bmscdn.com/discovery-catalog/events/et00414405-dymreksjva-landscape.jpg",
+      "thumbnail": "https://assets-in.bmscdn.com/discovery-catalog/events/et00414405-dymreksjva-landscape.jpg",
+      "rating": 7.4,
+      "views": 2795,
+      "duration": "1:37:00",
+      "uploadDate": "2025-01-31",
+      "tags": [
+        "si-fi",
+        "drama",
+        "thriller"
+      ]
+    },
+    {
+      "id": "kinda-pregnant-hindi-dubbed-2025",
+      "title": "Kinda Pregnant Hindi Dubbed (2025)",
+      "description": "When Lainy's plan to settle down and start a family falls apart, she puts on a fake baby bump, tells a lie and accidentally falls for her dream guy.",
+      "videoUrl": "https://short.icu/sVqkCnFjF?thumbnail=https://i.gadgets360cdn.com/large/image_4_F_1738751563984.jpg",
+      "thumbnail": "https://i.gadgets360cdn.com/large/image_4_F_1738751563984.jpg",
+      "rating": 4.5,
+      "views": 1595,
+      "duration": "1:37:00",
+      "uploadDate": "2025-02-05",
+      "tags": [
+        "comedy",
+        "drama"
+      ]
+    },
+    {
+      "id": "presence-hindi-dubbed-2025",
+      "title": "Presence (2025) Hindi Dubbed ",
+      "description": "A family becomes convinced they are not alone after moving into their new home in the suburbs.",
+      "videoUrl": "https://short.icu/vn3MawEwy?thumbnail=https://m.media-amazon.com/images/M/MV5BM2M0MTBhYzAtYzVhMi00NGUzLTg3YzItMTY4YWU2MjA5YTA0XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_QL75_UX500_CR0,0,500,281_.jpg",
+      "thumbnail": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2F0%2Fgracenote%2F02559c23b429be4a1c5e78b4617df92f.jpg",
+      "rating": 6.7,
+      "views": 2005,
+      "duration": "1:24:00",
+      "uploadDate": "2025-02-05",
+      "tags": [
+        "drama",
+        "horror",
+        "thriller"
+      ]
+    },
+    {
+      "id": "ad-vitam-hindi-dubbed-2025",
+      "title": " Ad Vitam (2025) Hindi Dubbed",
+      "description": "After escaping an attempted murder, Franck Lazareff must find his wife Leo, who has been kidnapped by a mysterious group of armed men. He is caught up by his past and plunged into a state affair that is beyond him. After escaping an attempted murder, Franck Lazarev must find his wife Léo, who has been kidnapped by a mysterious group of armed men. He is caught up by his past as a former member of the French Elite Intervention Squad (GIGN) and pulled into a state affair far beyond his control.\n\n",
+      "videoUrl": "https://geo.dailymotion.com/player/xjrxe.html?video=x9dlefm",
+      "thumbnail": "https://www.heavenofhorror.com/wp-content/uploads/2025/01/Ad-Vitam-2025-Netflix-Thriller.jpg",
+      "views": 1250,
+      "duration": "1:38:00",
+      "uploadDate": "2025-01-11",
+      "tags": [
+        "action.crime",
+        "drama"
+      ],
+      "rating": 5
+    },
+    {
+      "id": "the-love-scam-dubbed-2025",
+      "title": "The Love Scam (2025) Hindi Dubbed",
+      "description": "Drowning in debt, two brothers concoct a plan to scam a wealthy heiress and save their home in Naples - but unexpected love soon complicates the scheme.",
+      "videoUrl": "https://short.icu/x28ZhrvQ8?thumbnail=https://occ-0-8407-1361.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABbMCBe-H0oKbGvPDYjmGXoC7Mga09j51PW_l4nox_ZZKFFE2ROJQ1V37rXRk5R1n8ZgfcZpw72P_95bw9-IAF1h3VPtm67EoX22-.jpg?r=627",
+      "thumbnail": "https://i.ytimg.com/vi/gEuPm4UcjHs/maxresdefault.jpg",
+      "views": 1239,
+      "duration": "1:41:00",
+      "uploadDate": "2025-01-17",
+      "tags": [
+        "comedy",
+        "drama",
+        "romance"
+      ],
+      "rating": 6.1
+    },
+    {
+      "id": "you-are-cordially-invited-dubbed-2025",
+      "title": "You are Cordially Invited (2025) Hindi Dubbed",
+      "description": "A woman (Reese Witherspoon) planning her sister’s perfect wedding and the father (Will Ferrell) of a young bride-to-be find out that they are double booked for their destination wedding at a remote resort on an island off the Carolina coast. When both parties decide to share the small venue, chaos ensues and our cast of characters begin to face their own insecurities learning more about themselves.",
+      "videoUrl": "https://short.icu/938UOcUwW?thumbnail=https://i.ytimg.com/vi/vUuFuMD7CXA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBOYZUhdsC-eB1Jb937R5gldZAscQ",
+      "thumbnail": "https://i.ytimg.com/vi/vUuFuMD7CXA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBOYZUhdsC-eB1Jb937R5gldZAscQ",
+      "rating": 5.5,
+      "views": 2111,
+      "duration": "1:51:00",
+      "uploadDate": "2025-01-30",
+      "tags": [
+        "comedy",
+        "romance"
+      ]
+    }
   ],
   "adult": [
+    {
+      "id": "belyas-2025",
+      "title": "Belyas (2025)",
+      "description": "A housewife who is tired of her controlling husband takes a different turn when two young prostitutes rent their apartment. As she befriends the two. She begins to admire the sexual freedom they have.",
+      "videoUrl": "https://geo.dailymotion.com/player/xjrxe.html?video=x9dth04",
+      "thumbnail": "https://i.ytimg.com/vi/rvPT3W5sEBU/sddefault.jpg",
+      "rating": 5.5,
+      "views": 3111,
+      "duration": "1:10:00",
+      "uploadDate": "2025-02-07",
+      "tags": [
+        "adult",
+        "hot",
+        "drama"
+      ]
+    },
+    {
+      "id": "teachers-pet-2025",
+      "title": "Teachers Pet (2025)",
+      "description": "Robin, a young student, is obsessed with Tanya, his teacher. He then sees Tanya kissing a female student, so he blackmails her. When Robin believes that he is in control, he learns Tanya's dark personality.",
+      "videoUrl": "https://short.icu/BPzayARiDj?thumbnail=https://i.ibb.co.com/SwsNyh8/Teachers-Pet-2024-Filipino-Hot-Short-Film-Vivamax.jpg",
+      "thumbnail": "https://i.ibb.co.com/SwsNyh8/Teachers-Pet-2024-Filipino-Hot-Short-Film-Vivamax.jpg",
+      "rating": 7.1,
+      "views": 4991,
+      "duration": "1:05:00",
+      "uploadDate": "2025-01-03",
+      "tags": [
+        "adult",
+        "hot",
+        "drama"
+      ]
+    },
+    {
+      "id": "halimuyak-2025",
+      "title": "Halimuyak (2025)",
+      "description": "Mikee falls for a beautiful perfumer, but their romance is jeopardized when a mysterious fragrance connects their pasts. As secrets unravel, they must confront painful truths and fight to keep their newfound love alive.",
+      "videoUrl": "https://short.icu/zF-7RGENG?thumbnail=https://simkl.in/fanart/17/1706376553a8d57816_w.jpg",
+      "thumbnail": "https://simkl.in/fanart/17/1706376553a8d57816_w.jpg",
+      "rating": 6.9,
+      "views": 3001,
+      "duration": "1:10:00",
+      "uploadDate": "2025-01-09",
+      "tags": [
+        "adult",
+        "hot",
+        "drama"
+      ]
+    },
+    {
+      "id": "balam-pichkari-part1-2025",
+      "title": "Balam Pichkari Part 1 (2025)",
+      "description": "Ramu marries into a village of only women, where every woman desires him except his wife. Can he reunite with Jumki?",
+      "videoUrl": "https://short.icu/0og7-qZHT?thumbnail=https://m3.imgdf.xyz/mm/Balam.Pichkari.Part01E01_Ullu.png",
+      "thumbnail": "https://m3.imgdf.xyz/mm/Balam.Pichkari.Part01E01_Ullu.png",
+      "rating": 5.3,
+      "views": 2899,
+      "duration": "1:30:00",
+      "uploadDate": "2025-02-07",
+      "tags": [
+        "adult",
+        "hot",
+        "drama"
+      ]
+    },
+    {
+      "id": "dekho-magar-pyar-se-part1-2025",
+      "title": "Dekho Magar Pyar Se Part 1 (2025)",
+      "description": "Prashant's peculiar condition draws Bhushan and Snehlata into his life. As secrets and betrayals surface, a gripping tale of trust, manipulation, and revenge takes an unexpected turn.",
+      "videoUrl": "https://short.icu/8tMPjYhpPJ?thumbnail=https://imb.rest/wp-content/uploads/2025/01/photo_2025-01-27_23-18-06.jpg",
+      "thumbnail": "https://imb.rest/wp-content/uploads/2025/01/photo_2025-01-27_23-18-06.jpg",
+      "rating": 5.5,
+      "views": 2790,
+      "duration": "1:43:00",
+      "uploadDate": "2025-01-27",
+      "tags": [
+        "adult",
+        "hot",
+        "drama"
+      ]
+    },
+    {
+      "id": "utha-le-jaunga-2025",
+      "title": "Utha Le Jaunga (2025)",
+      "description": "Balwant and Saket bring their sister's husband, Nitin, home to fulfill ambitions, but unforeseen events turn everything upside down.",
+      "videoUrl": "https://short.icu/Vp3U30R1M?thumbnail=https://i.ytimg.com/vi/ziM2PLaej5o/sddefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/ziM2PLaej5o/sddefault.jpg",
+      "rating": 5.5,
+      "views": 1200,
+      "duration": "1:19:00",
+      "uploadDate": "2025-01-15",
+      "tags": [
+        "adult",
+        "hot",
+        "drama"
+      ]
+    },
     {
       "id": "rakhwala-2025",
       "title": "Rakhwala (2025)",
@@ -665,7 +1006,8 @@
         "adult",
         "hot",
         "drama"
-      ]
+      ],
+      "rating": 4.5
     },
     {
       "id": "badmash-2025",
@@ -680,7 +1022,8 @@
         "adult",
         "hot",
         "drama"
-      ]
+      ],
+      "rating": 5.3
     },
     
     {
@@ -696,7 +1039,8 @@
         "adult",
         "hot",
         "drama"
-      ]
+      ],
+      "rating": 4.7
     },
     {
       "id": "pati-patni-aur-woh-dukaan-2025",
@@ -711,7 +1055,8 @@
         "adult",
         "hot",
         "drama"
-      ]
+      ],
+      "rating": 5.7
     },
     {
       "id": "kamya-ki-kamna-2025",
@@ -726,7 +1071,8 @@
         "adult",
         "hot",
         "drama"
-      ]
+      ],
+      "rating": 3.7
     },
     {
       "id": "las-ilusyunadas-2025",
@@ -741,7 +1087,8 @@
         "adult",
         "hot",
         "drama"
-      ]
+      ],
+      "rating": 6.5
     },
     {
       "id": "the-pursuit-of-lust-2025",
@@ -756,7 +1103,8 @@
         "adult",
         "hot",
         "drama"
-      ]
+      ],
+      "rating": 5.9
     },
     {
       "id": "wow-mani-2025",
@@ -771,7 +1119,8 @@
         "adult",
         "hot",
         "drama"
-      ]
+      ],
+      "rating": 5.2
     },
     {
       "id": "sponsor-2025",
@@ -786,7 +1135,8 @@
         "adult",
         "hot",
         "drama"
-      ]
+      ],
+      "rating": 4.7
     },
     {
       "id": "mere-angane-mein-2025",
@@ -801,7 +1151,8 @@
         "adult",
         "hot",
         "drama"
-      ]
+      ],
+      "rating": 4.4
     },
     {
       "id": "jija-sali-2025",
@@ -816,7 +1167,8 @@
         "adult",
         "hot",
         "drama"
-      ]
+      ],
+      "rating": 5.6
     },
     {
       "id": "chup-chup-ke-2025",
@@ -831,7 +1183,8 @@
         "adult",
         "hot",
         "drama"
-      ]
+      ],
+      "rating": 5.2
     },
     {
       "id": "hiram-na-sandali-2025",
@@ -846,14 +1199,443 @@
         "adult",
         "hot",
         "drama"
+      ],
+      "rating": 6.2
+    },
+    {
+      "id": "murder-2025",
+      "title": "Murder (2025)",
+      "description": "Murder – 2025 – Hindi Hot Web Series – TriFlicks. Latest videos Most viewed videos Longest videos Popular videos Random videos.",
+      "videoUrl": "https://short.icu/X3t2iyboW?thumbnail=https://m3.imgdf.xyz/mm/Murder.E04.Triflicks.jpg",
+      "thumbnail": "https://m3.imgdf.xyz/mm/Murder.E04.Triflicks.jpg",
+      "rating": 5.3,
+      "views": 4666,
+      "duration": "2:06:00",
+      "uploadDate": "2025-01-31",
+      "tags": [
+        "adult",
+        "hot",
+        "drama"
+      ]
+    },
+    {
+      "id": "virgin-nimmi-2025",
+      "title": "Virgin Nimmi (2025)",
+      "description": " Virgin Nimmi 2025 Jugnu Originals Hot Web Series Starring Pihu Singh and Pooja Poddar. Virgin Nimmi Season 1 [Jugnu] Web Series",
+      "videoUrl": "https://short.icu/jsdHrnzrF?thumbnail=https://i.ytimg.com/vi/wVjarK2zCpk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAnJzCva-5Lr5-tQkibXx8IyK3Vnw",
+      "thumbnail": "https://i.ytimg.com/vi/wVjarK2zCpk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAnJzCva-5Lr5-tQkibXx8IyK3Vnw",
+      "rating": 6.1,
+      "views": 3791,
+      "duration": "1:45:00",
+      "uploadDate": "2025-01-24",
+      "tags": [
+        "adult",
+        "hot",
+        "drama"
+      ]
+    },
+    {
+      "id": "shanno-chudail-2025",
+      "title": "Shanno Chudail (2025) ",
+      "description": "A mysterious witch arrives in a peaceful village, enchanting the residents with her beauty. As strange events unfold, the villagers must uncover her true intentions before their community falls under her dark spell.",
+      "videoUrl": "https://short.icu/N2X9Bp5eS?thumbnail=https://s10.imagetwist.com/th/67311/wwj527nphdvg.jpg",
+      "thumbnail": "https://s10.imagetwist.com/th/67311/wwj527nphdvg.jpg",
+      "rating": 6.1,
+      "views": 4011,
+      "duration": "3:23:00",
+      "uploadDate": "2025-02-01",
+      "tags": [
+        "adult",
+        "hot",
+        "drama"
       ]
     }
   ],
   "series": [
     {
+      "id": "prison-cell-211-s01",
+      "title": "Prison Cell 211 S01",
+      "description": "Follows a riot that took place at a state prison in the Mexican border town of Ciudad Juárez on Dec 31, 2022 that left several dead.",
+      "thumbnail": "https://resizing.flixster.com/1AzdMOLIWfLtgreKSg6vti5ztxk=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29223127_b_h10_aa.jpg",
+      "episodes": [
+        {
+          "id": "prison-cell-211-s01",
+          "title": "Prison Cell 211 S01",
+          "description": "Follows a riot that took place at a state prison in the Mexican border town of Ciudad Juárez on Dec 31, 2022 that left several dead.",
+          "videoUrl": "https://short.icu/sugwOHGmk?thumbnail=https://resizing.flixster.com/1AzdMOLIWfLtgreKSg6vti5ztxk=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29223127_b_h10_aa.jpg",
+          "thumbnail": "https://resizing.flixster.com/1AzdMOLIWfLtgreKSg6vti5ztxk=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29223127_b_h10_aa.jpg",
+          "duration": "3:44:00",
+          "rating": 5.9,
+          "views": 4013,
+          "uploadDate": "2025-02-05",
+          "tags": [
+            "crime",
+            "drama",
+            "thriller"
+          ]
+        }
+      ],
+      "duration": "3:44:00",
+      "views": 4013
+    },
+    {
+      "id": "subteran-s01",
+      "title": "Subteran S01",
+      "description": "A mother working in IT who ends up fighting undercover against the Bucharest criminals who have changed her life.",
+      "thumbnail": "https://resizing.flixster.com/SFE9lBUawrz-9l4VcjAN28MlzBo=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29163641_b_h10_ab.jpg",
+      "episodes": [
+        {
+          "id": "subteran-s01",
+          "title": "Subteran S01",
+          "description": "A mother working in IT who ends up fighting undercover against the Bucharest criminals who have changed her life.",
+          "videoUrl": "https://short.icu/ye3mrVNl8?thumbnail=https://resizing.flixster.com/SFE9lBUawrz-9l4VcjAN28MlzBo=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29163641_b_h10_ab.jpg",
+          "thumbnail": "https://resizing.flixster.com/SFE9lBUawrz-9l4VcjAN28MlzBo=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29163641_b_h10_ab.jpg",
+          "duration": "4:29:00",
+          "rating": 6.4,
+          "views": 3717,
+          "uploadDate": "2025-01-08",
+          "tags": [
+            "crime",
+            "drama",
+            "thriller"
+          ]
+        }
+      ],
+      "views": 3717,
+      "duration": "4:29:00"
+    },
+    {
+      "id": "cassandra-s01",
+      "title": "Cassandra S01",
+      "description": "Germany's oldest smart home awakens its AI helper Cassandra after decades when a new family moves in. Cassandra, determined never to be abandoned again, manipulates events using the home's resources to become part of the family.",
+      "thumbnail": "https://www.heavenofhorror.com/wp-content/uploads/2025/02/Cassandra-2025-Netflix-series-review.jpg",
+      "episodes": [
+        {
+          "id": "cassandra-s01",
+          "title": "Cassandra S01",
+          "description": "Germany's oldest smart home awakens its AI helper Cassandra after decades when a new family moves in. Cassandra, determined never to be abandoned again, manipulates events using the home's resources to become part of the family.",
+          "videoUrl": "https://short.icu/KTsi418-P?thumbnail=https://www.heavenofhorror.com/wp-content/uploads/2025/02/Cassandra-2025-Netflix-series-review.jpg",
+          "thumbnail": "https://www.heavenofhorror.com/wp-content/uploads/2025/02/Cassandra-2025-Netflix-series-review.jpg",
+          "duration": "4:56:00",
+          "rating": 6.3,
+          "views": 2611,
+          "uploadDate": "2025-02-06",
+          "tags": [
+            "sci-fi",
+            "horror",
+            "thriller"
+          ]
+        }
+      ],
+      "duration": "4:56:00",
+      "views": 2611
+    },
+    {
+      "id": "hounds-hill-s01",
+      "title": "Hounds Hill S01",
+      "description": "Famous writer Mikolaj returns to hometown facing blackmail over a book about a past murder. His activist father opposes local corruption. Mikolaj's journalist wife investigates, uncovering dark secrets tied to the town's tragic history.",
+      "thumbnail": "https://www.heavenofhorror.com/wp-content/uploads/2025/01/Hounds-Hill-Netflix-Series-Review-1200x720.jpg",
+      "episodes": [
+        {
+          "id": "hounds-hill-s01",
+          "title": "Hounds Hill S01",
+          "description": "Famous writer Mikolaj returns to hometown facing blackmail over a book about a past murder. His activist father opposes local corruption. Mikolaj's journalist wife investigates, uncovering dark secrets tied to the town's tragic history.",
+          "videoUrl": "https://short.icu/XcZG2MtwTb?thumbnail=https://www.heavenofhorror.com/wp-content/uploads/2025/01/Hounds-Hill-Netflix-Series-Review-1200x720.jpg",
+          "thumbnail": "https://www.heavenofhorror.com/wp-content/uploads/2025/01/Hounds-Hill-Netflix-Series-Review-1200x720.jpg",
+          "duration": "5:17:00",
+          "rating": 5.9,
+          "views": 4210,
+          "uploadDate": "2025-01-08",
+          "tags": [
+            "drama",
+            "mystery",
+            "thriller"
+          ]
+        }
+      ],
+      "duration": "5:17:00",
+      "views": 4210
+    },
+    {
+      "id": "the-count-of-monte-cristo-s01",
+      "title": "The Count Of Monte Cristo S01",
+      "description": "Edmond Dantes, a sailor falsely accused of treason, is imprisoned in the Château d'If off Marseille. After escaping, and adopting the identity of the Count of Monte Cristo, he plans revenge against those who wrongly accused him.",
+      "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/5bcd825e5afb6b39d36c2acc26883f2cc120af6f3757334593aa87cdce837ad3.jpg",
+      "episodes": [
+        {
+          "id": "the-count-of-monte-cristo-s01",
+          "title": "The Count Of Monte Cristo S01",
+          "description": "Edmond Dantes, a sailor falsely accused of treason, is imprisoned in the Château d'If off Marseille. After escaping, and adopting the identity of the Count of Monte Cristo, he plans revenge against those who wrongly accused him.",
+          "videoUrl": "https://short.icu/fLYvtdgZN?thumbnail=https://m.media-amazon.com/images/S/pv-target-images/5bcd825e5afb6b39d36c2acc26883f2cc120af6f3757334593aa87cdce837ad3.jpg",
+          "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/5bcd825e5afb6b39d36c2acc26883f2cc120af6f3757334593aa87cdce837ad3.jpg",
+          "duration": "6:58:00",
+          "rating": 7.8,
+          "views": 2931,
+          "uploadDate": "2025-01-13",
+          "tags": [
+            "adventure",
+            "drama"
+          ]
+        }
+      ],
+      "views": 2931,
+      "duration": "6:58:00"
+    },
+    {
+      "id": "on-call-s01",
+      "title": "On Call S01",
+      "description": "Follows a pair of police officers on patrol as they respond to a new radio call, arriving on the scene to resolve incidents.",
+      "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/368eff53f31a7cec3eccf4af8a63d32f08b4d87b595af1f48a602c0e9587bb3c.jpg",
+      "episodes": [
+        {
+          "id": "on-call-s01",
+          "title": "On Call S01",
+          "description": "Follows a pair of police officers on patrol as they respond to a new radio call, arriving on the scene to resolve incidents.",
+          "videoUrl": "https://short.icu/6GsIwm_4C?thumbnail=https://m.media-amazon.com/images/S/pv-target-images/368eff53f31a7cec3eccf4af8a63d32f08b4d87b595af1f48a602c0e9587bb3c.jpg",
+          "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/368eff53f31a7cec3eccf4af8a63d32f08b4d87b595af1f48a602c0e9587bb3c.jpg",
+          "duration": "3:55:00",
+          "rating": 7.6,
+          "views": 4013,
+          "uploadDate": "2025-01-09",
+          "tags": [
+            "action",
+            "crime",
+            "drama"
+          ]
+        }
+      ],
+      "views": 4013,
+      "duration": "3:55:00"
+    },
+    {
+      "id": "sweet-magnolias-s04",
+      "title": "Sweet Magnolias S04",
+      "description": "Three South Carolina women, best friends since high school, shepherd one another through the complexities of romance, career and family.",
+      "thumbnail": "https://i.ytimg.com/vi/jAVjNVYIIv4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDmIt8FY_58zKmr00mOWpk91yVYKg",
+      "episodes": [
+        {
+          "id": "sweet-magnolias-s04",
+          "title": "Sweet Magnolias S04",
+          "description": "Three South Carolina women, best friends since high school, shepherd one another through the complexities of romance, career and family.",
+          "videoUrl": "https://short.icu/oNbsKy1ug?thumbnail=https://i.ytimg.com/vi/jAVjNVYIIv4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDmIt8FY_58zKmr00mOWpk91yVYKg",
+          "thumbnail": "https://i.ytimg.com/vi/jAVjNVYIIv4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDmIt8FY_58zKmr00mOWpk91yVYKg",
+          "duration": "8:24:00",
+          "rating": 7.3,
+          "views": 3013,
+          "uploadDate": "2025-02-06",
+          "tags": [
+            "drama",
+            "romance"
+          ]
+        }
+      ],
+      "views": 3013,
+      "duration": "8:24:00"
+    },
+    {
+      "id": "bada-naam-karenge-s01",
+      "title": "Bada Naam Karenge S01",
+      "description": "Rishabh and Surbhi's arranged marriage hits turbulence as past secrets resurface. Amid light moments, they navigate an unfolding bond, torn between desires and cultural norms",
+      "thumbnail": "https://blog.reelgood.com/wp-content/uploads/2025/02/sdqsdq.jpg?wsr",
+      "episodes": [
+        {
+          "id": "bada-naam-karenge-s01",
+          "title": "Bada Naam Karenge S01",
+          "description": "Rishabh and Surbhi's arranged marriage hits turbulence as past secrets resurface. Amid light moments, they navigate an unfolding bond, torn between desires and cultural norms",
+          "videoUrl": "https://short.icu/o08xRfJQh?thumbnail=https://blog.reelgood.com/wp-content/uploads/2025/02/sdqsdq.jpg?wsr",
+          "thumbnail": "https://blog.reelgood.com/wp-content/uploads/2025/02/sdqsdq.jpg?wsr",
+          "duration": "7:13:00",
+          "rating": 9.5,
+          "views": 5234,
+          "uploadDate": "2025-02-07",
+          "tags": [
+            "drama",
+            "family",
+            "romance"
+          ]
+        }
+      ],
+      "duration": "7:13:00",
+      "views": 5234
+    },
+    {
+      "id": "apple-cider-vinegar-s01",
+      "title": "Apple Cider Vinegar S01",
+      "description": "The life of wellness guru Belle Gibson, who had a large social media following, where she pretended to be suffering from cancer but keeping the disease under control using self-care therapies. She confessed that none of it was true.",
+      "thumbnail": "https://m.media-amazon.com/images/M/MV5BNGEzZWNkNzMtYTE4Ni00ZGYxLTg5MTItNzkxZWRiOTJhNDAyXkEyXkFqcGc@._V1_.jpg",
+      "episodes": [
+        {
+          "id": "apple-cider-vinegar-s01",
+          "title": "Apple Cider Vinegar S01",
+          "description": "The life of wellness guru Belle Gibson, who had a large social media following, where she pretended to be suffering from cancer but keeping the disease under control using self-care therapies. She confessed that none of it was true.",
+          "videoUrl": "https://short.icu/8RXKGRDJW?thumbnail=https://m.media-amazon.com/images/M/MV5BNGEzZWNkNzMtYTE4Ni00ZGYxLTg5MTItNzkxZWRiOTJhNDAyXkEyXkFqcGc@._V1_.jpg",
+          "thumbnail": "https://m.media-amazon.com/images/M/MV5BNGEzZWNkNzMtYTE4Ni00ZGYxLTg5MTItNzkxZWRiOTJhNDAyXkEyXkFqcGc@._V1_.jpg",
+          "duration": "6:13:00",
+          "rating": 7,
+          "views": 5124,
+          "uploadDate": "2025-02-06",
+          "tags": [
+            "biography",
+            "crime",
+            "drama"
+          ]
+        }
+      ],
+      "views": 5124,
+      "duration": "6:13:00"
+    },
+    {
+      "id": "amandaland-s01",
+      "title": "Amandaland S01",
+      "description": "Amanda, a divorced mother, relocates with her teenagers to South Harlesden. She faces modern parenting issues like teenage rebellion and environmental concerns, while her mother's loneliness adds chaos.",
+      "thumbnail": "https://streamcoimg-a.akamaihd.net/000/153/075/153075-Banner-L2-82d05134ca03e394552ee213bb386d4b.jpg",
+      "episodes": [
+        {
+          "id": "amandaland-s01",
+          "title": "Amandaland S01",
+          "description": "Amanda, a divorced mother, relocates with her teenagers to South Harlesden. She faces modern parenting issues like teenage rebellion and environmental concerns, while her mother's loneliness adds chaos.",
+          "videoUrl": "https://short.icu/6_yoAA4pk?thumbnail=https://streamcoimg-a.akamaihd.net/000/153/075/153075-Banner-L2-82d05134ca03e394552ee213bb386d4b.jpg",
+          "thumbnail": "https://streamcoimg-a.akamaihd.net/000/153/075/153075-Banner-L2-82d05134ca03e394552ee213bb386d4b.jpg",
+          "duration": "2:52:00",
+          "rating": 7.7,
+          "views": 5712,
+          "uploadDate": "2025-02-05",
+          "tags": [
+            "comedy",
+            "drama"
+          ]
+        }
+      ],
+      "views": 5712,
+      "duration": "2:52:00"
+    },
+    {
+      "id": "miss-austen-s01",
+      "title": "Miss Austen S01",
+      "description": "It follows the lives of Jane Austen and Cassandra, her sister.",
+      "thumbnail": "https://resizing.flixster.com/UZ9qkVXWH93exc270h68TLtq1x8=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29143494_b_h10_aa.jpg",
+      "episodes": [
+        {
+          "id": "miss-austen-s01",
+          "title": "Miss Austen S01",
+          "description": "It follows the lives of Jane Austen and Cassandra, her sister.",
+          "videoUrl": "https://short.icu/ERw1MGmI6?thumbnail=https://resizing.flixster.com/UZ9qkVXWH93exc270h68TLtq1x8=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29143494_b_h10_aa.jpg",
+          "thumbnail": "https://resizing.flixster.com/UZ9qkVXWH93exc270h68TLtq1x8=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29143494_b_h10_aa.jpg",
+          "duration": "3:31:00",
+          "rating": 7.2,
+          "views": 3578,
+          "uploadDate": "2025-02-08",
+          "tags": [
+            "drama",
+            "romance"
+          ]
+        }
+      ],
+      "duration": "3:31:00",
+      "views": 3578
+    },
+    {
+      "id": "optics-s01",
+      "title": "Optics S01",
+      "description": "Two young women, unexpectedly promoted, face crises at their PR firm. Managing celebrities and corporate scandals, they uncover a potential firm scandal and suspect sabotage.",
+      "thumbnail": "https://cdn.iview.abc.net.au/thumbs/i/X0_67566b108039f_3600.jpg",
+      "episodes": [
+        {
+          "id": "optics-s01",
+          "title": "Optics S01",
+          "description": "Two young women, unexpectedly promoted, face crises at their PR firm. Managing celebrities and corporate scandals, they uncover a potential firm scandal and suspect sabotage.",
+          "videoUrl": "https://short.icu/KHda7icmV?thumbnail=https://cdn.iview.abc.net.au/thumbs/i/X0_67566b108039f_3600.jpg",
+          "thumbnail": "https://cdn.iview.abc.net.au/thumbs/i/X0_67566b108039f_3600.jpg",
+          "duration": "2:53:00",
+          "rating": 5.9,
+          "views": 3110,
+          "uploadDate": "2025-01-29",
+          "tags": [
+            "comedy",
+            "drama"
+          ]
+        }
+      ],
+      "views": 3110,
+      "duration": "2:53:00"
+    },
+    {
+      "id": "an-t-eilean-s01",
+      "title": "An t-Eilean S01",
+      "description": "Officer Kat Crichton returns to her island home to investigate a case involving a wealthy tycoon.",
+      "thumbnail": "https://i.ytimg.com/vi/xxTfMsPfr9M/maxresdefault.jpg",
+      "episodes": [
+        {
+          "id": "an-t-eilean-s01",
+          "title": "An t-Eilean S01",
+          "description": "Officer Kat Crichton returns to her island home to investigate a case involving a wealthy tycoon.",
+          "videoUrl": "https://short.icu/nK2K_yKAl?thumbnail=https://i.ytimg.com/vi/xxTfMsPfr9M/maxresdefault.jpg",
+          "thumbnail": "https://i.ytimg.com/vi/xxTfMsPfr9M/maxresdefault.jpg",
+          "duration": "3:18:00",
+          "rating": 6.4,
+          "views": 4009,
+          "uploadDate": "2025-01-14",
+          "tags": [
+            "drama",
+            "thriller"
+          ]
+        }
+      ],
+      "views": 4009,
+      "duration": "3:18:00"
+    },
+    {
+      "id": "brian-and-maggie-s01",
+      "title": "Brian and Maggie S01",
+      "description": "Brian and Maggie revisits the infamous 1989 television interview between former Prime Minister Margaret Thatcher and journalist Brian Walden, which marked the end of their friendship and catalysed Thatcher's resignation.",
+      "thumbnail": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fb%2Fgracenote%2Fb051bb5051a5fbfbdf1a0cfa852429da.jpg",
+      "episodes": [
+        {
+          "id": "brian-and-maggie-s01",
+          "title": "Brian and Maggie S01",
+          "description": "Brian and Maggie revisits the infamous 1989 television interview between former Prime Minister Margaret Thatcher and journalist Brian Walden, which marked the end of their friendship and catalysed Thatcher's resignation.",
+          "videoUrl": "https://short.icu/_HOziCi4B?thumbnail=https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fb%2Fgracenote%2Fb051bb5051a5fbfbdf1a0cfa852429da.jpg",
+          "thumbnail": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fb%2Fgracenote%2Fb051bb5051a5fbfbdf1a0cfa852429da.jpg",
+          "duration": "1:32:00",
+          "rating": 6.9,
+          "views": 4331,
+          "uploadDate": "2025-01-29",
+          "tags": [
+            "drama"
+          ]
+        }
+      ],
+      "views": 4331,
+      "duration": "1:32:00"
+    },
+    {
+      "id": "playing-nice-s01",
+      "title": "Playing Nice S01",
+      "description": "Two couples discover their toddlers were switched at birth in a hospital mix-up and face the horrifying dilemma of keeping the sons they have raised and loved, or reclaiming their biological child.",
+      "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/8343630afa4e00ea6178e9369927146bc36d7bad7fda5300405424cb968324ef.jpg",
+      "episodes": [
+        {
+          "id": "playing-nice-s01",
+          "title": "Playing Nice S01",
+          "description": "Two couples discover their toddlers were switched at birth in a hospital mix-up and face the horrifying dilemma of keeping the sons they have raised and loved, or reclaiming their biological child.",
+          "videoUrl": "https://short.icu/G4BEjJnlh?thumbnail=https://m.media-amazon.com/images/S/pv-target-images/8343630afa4e00ea6178e9369927146bc36d7bad7fda5300405424cb968324ef.jpg",
+          "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/8343630afa4e00ea6178e9369927146bc36d7bad7fda5300405424cb968324ef.jpg",
+          "duration": "3:11:00",
+          "rating": 7.1,
+          "views": 3120,
+          "uploadDate": "2025-01-05",
+          "tags": [
+            "drama"
+          ]
+        }
+      ],
+      "views": 3120,
+      "duration": "3:11:00"
+    },
+    {
       "id": "the-lost-women-spies-s01",
       "title": "The Lost Women Spies S01",
-      "description": "Follows a Los Angeles Police Department (LAPD) Special Weapons and Tactics (SWAT) team as they battle crime in Los Angeles, California.",
+      "description": "Vera Atkins' files were kept sealed until after she died, but the story of the female spies and the spy-mistress who led them, which has remained secret for over fifty years, can now be revealed.\n\n",
       "thumbnail": "https://historyuk.s3.eu-west-2.amazonaws.com/s3fs-public/styles/768x432/public/2025-01/the_lost_women_spies-min_0.jpg?VersionId=qOS7yYoLD60gdQC0t_bLI5rPnEqEnYdC&itok=RBKOOiLm",
       "videoUrl": "https://short.icu/pfLMt5f_E?thumbnail=https://movies.mxdwn.com/wp-content/uploads/2024/11/september-5-1280x720.jpg",
       "duration": "4.48:00",
@@ -862,16 +1644,18 @@
         {
           "id": "the-lost-women-spies-s01",
           "title": "The Lost Women Spies S01",
-          "description": "Full Complete Series 01 English. All Episodes in on Video. ",
+          "description": "Vera Atkins' files were kept sealed until after she died, but the story of the female spies and the spy-mistress who led them, which has remained secret for over fifty years, can now be revealed.",
           "videoUrl": "https://short.icu/iDLx08s1s?thumbnail=https://historyuk.s3.eu-west-2.amazonaws.com/s3fs-public/styles/768x432/public/2025-01/the_lost_women_spies-min_0.jpg?VersionId=qOS7yYoLD60gdQC0t_bLI5rPnEqEnYdC&itok=RBKOOiLm",
           "thumbnail": "https://historyuk.s3.eu-west-2.amazonaws.com/s3fs-public/styles/768x432/public/2025-01/the_lost_women_spies-min_0.jpg?VersionId=qOS7yYoLD60gdQC0t_bLI5rPnEqEnYdC&itok=RBKOOiLm",
           "duration": "4.48:00",
           "views": 1000,
           "uploadDate": "2024-01-15",
           "tags": [
-            "sports",
-            "documentary"
-          ]
+            "horror",
+            "war",
+            "drama"
+          ],
+          "rating": 6.9
         }
       ]
     },
@@ -896,7 +1680,8 @@
             "crime",
             "drama",
             "thriller"
-          ]
+          ],
+          "rating": 6.8
         }
       ]
     },
@@ -920,7 +1705,8 @@
           "tags": [
             "dream",
             "thriller"
-          ]
+          ],
+          "rating": 7.6
         }
       ]
     },
@@ -943,7 +1729,8 @@
             "crime",
             "drama",
             "thriller"
-          ]
+          ],
+          "rating": 7.6
         }
       ],
       "views": 3210,
@@ -968,7 +1755,8 @@
             "action",
             "crime",
             "drama"
-          ]
+          ],
+          "rating": 8.1
         }
       ],
       "views": 5121,
@@ -993,7 +1781,8 @@
             "action",
             "drama",
             "thriller"
-          ]
+          ],
+          "rating": 7.5
         }
       ],
       "views": 3678,
@@ -1018,7 +1807,8 @@
             "crime",
             "drama",
             "thriller"
-          ]
+          ],
+          "rating": 7.5
         }
       ],
       "views": 1250,
@@ -1043,7 +1833,8 @@
             "western",
             "action",
             "crama"
-          ]
+          ],
+          "rating": 7
         }
       ],
       "views": 2134,
@@ -1068,7 +1859,8 @@
             "cirme",
             "mystery",
             "drama"
-          ]
+          ],
+          "rating": 6.1
         }
       ],
       "views": 4129,
@@ -1091,7 +1883,8 @@
           "uploadDate": "2024-12-15",
           "tags": [
             "drama"
-          ]
+          ],
+          "rating": 5.1
         }
       ],
       "views": 2581,
@@ -1115,7 +1908,8 @@
           "tags": [
             "crime",
             "drama"
-          ]
+          ],
+          "rating": 8
         }
       ],
       "views": 4112,
@@ -1139,7 +1933,8 @@
           "tags": [
             "drama",
             "medical"
-          ]
+          ],
+          "rating": 8.5
         }
       ],
       "views": 1567,
@@ -1163,7 +1958,8 @@
           "tags": [
             "medical",
             "drama"
-          ]
+          ],
+          "rating": 8.5
         }
       ],
       "views": 3114,
@@ -1188,11 +1984,64 @@
             "action",
             "drama",
             "thriller"
-          ]
+          ],
+          "rating": 7.5
         }
       ],
       "views": 2111,
       "duration": "8:36:00"
+    },
+    {
+      "id": "cassandra-s01-hindi-dubbed",
+      "title": "Cassandra S01 Hindi Dubbed",
+      "description": "Germany's oldest smart home awakens its AI helper Cassandra after decades when a new family moves in. Cassandra, determined never to be abandoned again, manipulates events using the home's resources to become part of the family.",
+      "thumbnail": "https://www.heavenofhorror.com/wp-content/uploads/2025/02/Cassandra-2025-Netflix-series-review.jpg",
+      "episodes": [
+        {
+          "id": "cassandra-s01-hindi-dubbed",
+          "title": "Cassandra S01 Hindi Dubbed",
+          "description": "Germany's oldest smart home awakens its AI helper Cassandra after decades when a new family moves in. Cassandra, determined never to be abandoned again, manipulates events using the home's resources to become part of the family.",
+          "videoUrl": "https://short.icu/KmCMipR0w?thumbnail=https://www.heavenofhorror.com/wp-content/uploads/2025/02/Cassandra-2025-Netflix-series-review.jpg",
+          "thumbnail": "https://www.heavenofhorror.com/wp-content/uploads/2025/02/Cassandra-2025-Netflix-series-review.jpg",
+          "duration": "4:56:00",
+          "rating": 6.3,
+          "views": 2210,
+          "uploadDate": "2025-02-06",
+          "tags": [
+            "sci-fi",
+            "horror",
+            "thriller"
+          ]
+        }
+      ],
+      "views": 2210,
+      "duration": "4:56:00"
+    },
+    {
+      "id": "the-are-murders-s01-hindi-dubbed",
+      "title": "The Are Murders S01 Hindi Dubbed",
+      "description": "A Stockholm detective under internal investigation heads to a ski resort to unwind, until a young girl's disappearance compels her back to work.",
+      "thumbnail": "https://resizing.flixster.com/OShEj0pSnpNh1KFzhHpAuCpBdaM=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29168277_b_h10_ab.jpg",
+      "episodes": [
+        {
+          "id": "the-are-murders-s01-hindi-dubbed",
+          "title": "The Are Murders S01 Hindi Dubbed",
+          "description": "A Stockholm detective under internal investigation heads to a ski resort to unwind, until a young girl's disappearance compels her back to work.",
+          "videoUrl": "https://short.icu/SqTkc9bRi?thumbnail=https://resizing.flixster.com/OShEj0pSnpNh1KFzhHpAuCpBdaM=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29168277_b_h10_ab.jpg",
+          "thumbnail": "https://resizing.flixster.com/OShEj0pSnpNh1KFzhHpAuCpBdaM=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29168277_b_h10_ab.jpg",
+          "duration": "3:37:00",
+          "rating": 6.7,
+          "views": 4120,
+          "uploadDate": "2025-02-06",
+          "tags": [
+            "crime",
+            "drama",
+            "mystery"
+          ]
+        }
+      ],
+      "views": 4120,
+      "duration": "3:37:00"
     }
   ]
 }

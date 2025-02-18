@@ -12,6 +12,13 @@
 //     description: video.description,
 //     duration: video.duration,
 //     thumbnailUrl: video.thumbnail,
+//     aggregateRating: {
+//       "@type": "AggregateRating",
+//       ratingValue: video.rating,
+//       bestRating: 10,
+//       worstRating: 0,
+//       ratingCount: 1,
+//     },
 //     interactionStatistic: {
 //       "@type": "InteractionCounter",
 //       interactionType: { "@type": "WatchAction" },
@@ -45,17 +52,24 @@ export function StructuredData({ video }: StructuredDataProps) {
     name: video.title,
     description: video.description,
     duration: video.duration,
-    thumbnailUrl: video.thumbnail,
-    url: `https://videostreamhub.vercel.app/video/${video.id}`,
+    thumbnailUrl: video.thumbnail, 
+    url: `https://videostreamhub.vercel.app/series/${video.id}`,
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: video.rating,
+      bestRating: 10,
+      worstRating: 0,
+      ratingCount: 1,
+    },
     dateCreated: video.uploadDate || undefined, 
     episodeNumber: video.episodeNumber,
     seasonNumber: video.seasonNumber,
     partOfSeries: {
       "@type": "TVSeries",
-      name: video.seriesTitle,
-      url: `https://videostreamhub.vercel.app/series/${video.seriesId}`,
+      name: video.title,
+      url: `https://videostreamhub.vercel.app/series/${video.id}`,
     },
-    interactionStatistic: {
+     interactionStatistic: {
       "@type": "InteractionCounter",
       interactionType: { "@type": "WatchAction" },
       userInteractionCount: video.views,
