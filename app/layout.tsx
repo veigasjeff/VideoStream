@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { Navigation } from "@/components/navigation"
+import Navbar from "../components/Navbar"; // Import the Navbar component
+import Footer from "../components/Footer"; // Import the Footer component
 import type React from "react"
 import Script from "next/script"
 
@@ -91,9 +93,10 @@ export default function RootLayout({
         
       </head>
       <body className={inter.className}>
+      <Navbar /> {/* Place the Navbar here */}
         <Navigation />
         <main className="min-h-screen bg-background">{children}</main>
-        
+        <Footer /> {/* Footer added here */}
         
         {/* First Ad Script */}
         <Script id="ad-script-1" strategy="lazyOnload">
