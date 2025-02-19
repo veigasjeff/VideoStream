@@ -559,7 +559,7 @@ export default function VideoPage({ params }: Props) {
                     objectFit="cover"
                     className="rounded-lg"
                   /> */}
-                   <div className="relative w-full h-full">
+                  <div className="relative w-full aspect-[16/9]">
                 <Image
                  src={v.thumbnail || "/placeholder.svg"}
                  alt={v.title}
