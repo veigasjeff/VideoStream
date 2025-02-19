@@ -564,7 +564,7 @@ export default function VideoPage({ params }: Props) {
                  src={v.thumbnail || "/placeholder.svg"}
                  alt={v.title}
                   quality={90}
-                  fill
+                  objectFit="cover"
                   loading="lazy"
                   className="rounded-lg"
                   style={{
