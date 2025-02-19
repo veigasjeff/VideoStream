@@ -1316,6 +1316,32 @@
   ],
   "series": [
     {
+      "id": "unforgotten-s06",
+      "title": "Unforgotten S06",
+      "description": "London detectives investigate crimes from the past, unravelling secrets left buried for years.",
+      "thumbnail": "https://i.ytimg.com/vi/eTzopNGt3uo/maxresdefault.jpg",
+      "episodes": [
+        {
+          "id": "unforgotten-s06",
+          "title": "Unforgotten S06",
+          "description": "London detectives investigate crimes from the past, unravelling secrets left buried for years.",
+          "videoUrl": "https://short.icu/zOFe2iqHC0?thumbnail=https://i.ytimg.com/vi/eTzopNGt3uo/maxresdefault.jpg",
+          "thumbnail": "https://i.ytimg.com/vi/eTzopNGt3uo/maxresdefault.jpg",
+          "duration": "4:41:00",
+          "rating": 8.4,
+          "views": 3999,
+          "uploadDate": "2025-02-19",
+          "tags": [
+            "crime",
+            "drama",
+            "mystery"
+          ]
+        }
+      ],
+      "views": 3999,
+      "duration": "4:41:00"
+    },
+    {
       "id": "the-are-murders-s01",
       "title": "The Are Murders S01",
       "description": "A Stockholm detective under internal investigation heads to a ski resort to unwind, until a young girl's disappearance compels her back to work.",
