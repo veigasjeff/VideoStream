@@ -531,7 +531,7 @@ export default function VideoPage({ params }: Props) {
 
       <div className="container py-6 justify-center items-center">
         {/* Video Player Component */}
-        <div className="mb-6">
+        <div className="mb-6 px-4 md:px-8 lg:px-12">
           <VideoPlayer video={video} />
           <p className="text-muted-foreground mb-6 mt-5 text-center">{video.description}</p>
         </div>
