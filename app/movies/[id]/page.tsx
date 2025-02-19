@@ -538,51 +538,56 @@ export default function VideoPage({ params }: Props) {
 
         {/* Recommended Videos Section */}
         <div className="px-4 md:px-8 lg:px-12"> {/* Added padding for spacing */}
-  <h2 className="text-2xl font-semibold mb-4 text-center">Recommended Movies</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-center">Recommended Movies</h2>
 
-  {recommendedVideos.length > 0 ? (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"> 
-      {recommendedVideos.map((v) => (
-        <Link key={v.id} href={`/movies/${v.id}`} className="block group">
-          <div className="relative w-full"> {/* Ensure responsiveness */}
-            {/* "Movies" Label on the Top Left */}
-            <div className="absolute top-2 left-2 bg-primary text-primary-foreground px-2 py-1 text-xs rounded-md flex items-center">
-              <Film className="w-3 h-3 mr-1" />
-              Movies
-            </div>
-
-            {/* Video Thumbnail */}
-            <div className="relative w-full h-[180px]">
-              <Image
-                src={v.thumbnail || "/placeholder.svg"}
-                alt={v.title}
-                quality={90}
-                fill
-                loading="lazy"
-                className="rounded-lg"
-                style={{
-                  objectFit: "cover",
-                  filter: "contrast(1.1) saturate(1.1) brightness(1.0) hue-rotate(0deg)",
-                }}
-              />
-            </div>
-
-            {/* Video Duration */}
-            <div className="absolute bottom-2 right-2 bg-black/80 text-white px-2 py-1 text-xs rounded-md flex items-center">
-              <Clock className="w-3 h-3 mr-1" />
-              {v.duration}
-            </div>
+        {recommendedVideos.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {recommendedVideos.map((v) => (
+              <Link key={v.id} href={`/movies/${v.id}`} className="block group">
+               <div className="relative w-full">
+                  {/* "Adult" Label on the Top Left */}
+                  <div className="absolute top-2 left-2 bg-primary text-primary-foreground px-2 py-1 text-xs rounded-md flex items-center">
+                  <Film className="w-3 h-3 mr-1" />
+                  Movies
+                  </div>
+                  {/* <Image
+                    src={v.thumbnail || "/placeholder.svg"}
+                    alt={v.title}
+                    width={1200} // Adjusted for better performance
+                    height={170}
+                    quality={90}
+                    objectFit="cover"
+                    className="rounded-lg"
+                  /> */}
+                   <div className="relative w-full h-[180px]">
+                <Image
+                 src={v.thumbnail || "/placeholder.svg"}
+                 alt={v.title}
+                  quality={90}
+                  fill
+                  loading="lazy"
+                  className="rounded-lg"
+                  style={{
+                    objectFit: "cover",
+                    filter: "contrast(1.1) saturate(1.1) brightness(1.0) hue-rotate(0deg)",
+                  }}
+                />
+              </div>
+                    <div className="absolute bottom-2 right-2 bg-black/80 text-white px-2 py-1 text-xs rounded-md flex items-center">
+                    <Clock className="w-3 h-3 mr-1" />
+                    {v.duration}
+                  </div>
+                </div>
+               
+                <h3 className="font-medium group-hover:text-primary"style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>{v.title}</h3>
+              </Link>
+            ))}
           </div>
-
-          {/* Video Title */}
-          <h3 className="font-medium group-hover:text-primary text-center">{v.title}</h3>
-        </Link>
-      ))}
-    </div>
-  ) : (
-    <p className="text-center">No recommended movies available.</p>
-  )}
-</div>
+        ) : (
+          <p className="text-center">No recommended movies available.</p>
+        )}
+      </div>
+      </div>
     </>
   )
 }
