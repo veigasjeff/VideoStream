@@ -560,8 +560,8 @@ export default function VideoPage({ params }: Props) {
                   /> */}
                    <div className="relative w-[320px] h-[180px]">
                 <Image
-                  src={video.thumbnail || "/placeholder.svg"}
-                  alt={video.title}
+                 src={v.thumbnail || "/placeholder.svg"}
+                 alt={v.title}
                   quality={90}
                   fill
                   loading="lazy"
