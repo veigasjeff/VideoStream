@@ -565,7 +565,7 @@ export default function VideoPage({ params }: Props) {
                   quality={90}
                   fill
                   loading="lazy"
-                  className="transition-transform group-hover:scale-105"
+                  className="rounded-lg"
                   style={{
                     objectFit: "cover",
                     filter: "contrast(1.1) saturate(1.1) brightness(1.0) hue-rotate(0deg)",
