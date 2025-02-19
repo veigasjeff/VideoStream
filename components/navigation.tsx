@@ -1,46 +1,9 @@
-// import Link from "next/link"
-// import { Search } from "lucide-react"
-// import { Input } from "@/components/ui/input"
-
-// export function Navigation() {
-//   return (
-//     <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 ml-2">
-//       <div className="container flex h-14 items-center">
-//         <Link href="/" className="flex items-center space-x-2">
-//           <span className="font-bold">VideoStream</span>
-//         </Link>
-//         <div className="flex items-center space-x-4 mx-6">
-//           <Link href="/series" className="text-sm font-medium hover:no-underline">
-//             Tv Series
-//           </Link>
-//           <Link href="/movies" className="text-sm font-medium hover:no-underline">
-//             Movies
-//           </Link>
-//           <Link href="/adult" className="text-sm font-medium hover:no-underline">
-//             Adult
-//           </Link>
-//           <Link href="/admin" className="text-sm font-medium hover:no-underline">
-//             Admin
-//           </Link>
-//         </div>
-//         <div className="flex-1 flex items-center space-x-2">
-//           <div className="relative w-full max-w-sm">
-//             <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
-//             <Input placeholder="Search videos..." className="pl-8" />
-//           </div>
-//         </div>
-//       </div>
-//     </nav>
-//   )
-// }
-
-
 "use client";
 
 import { useState } from "react";
 import Link from "next/link";
 import { Search, Menu, X } from "lucide-react";
-import { Input } from "@/components/ui/input";
+// import { Input } from "@/components/ui/input";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -76,12 +39,12 @@ export function Navigation() {
         </div>
 
         {/* Search Bar */}
-        <div className="hidden lg:flex flex-1 items-center space-x-2 ml-2">
+        {/* <div className="hidden lg:flex flex-1 items-center space-x-2 ml-2">
           <div className="relative w-half max-w-sm">
             <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
             <Input placeholder="Search videos..." className="pl-8" />
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Mobile Menu */}
@@ -99,12 +62,12 @@ export function Navigation() {
        
 
           {/* Search Bar (Mobile) */}
-          <div className="w-half max-w-sm px-4">
+          {/* <div className="w-half max-w-sm px-4">
             <div className="relative">
               <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
               <Input placeholder="Search videos..." className="pl-8" />
             </div>
-          </div>
+          </div> */}
         </div>
       )}
     </nav>

@@ -1,6 +1,51 @@
 {
   "videos": [
     {
+      "id": "one-of-them-days-2025",
+      "title": "One Of Them Days (2025)",
+      "description": "When best friends and roommates Dreux and Alyssa discover Alyssa's boyfriend has blown their rent money, the duo finds themselves going to extremes in a race against the clock to avoid eviction and keep their friendship intact.",
+      "videoUrl": "https://short.icu/0Fxr1iISy?thumbnail=https://i.ytimg.com/vi/StbJiumDNOA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDFCgUzubJGnRE6CFvp0RJoyMNpBA",
+      "thumbnail": "https://i.ytimg.com/vi/StbJiumDNOA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDFCgUzubJGnRE6CFvp0RJoyMNpBA",
+      "rating": 6.8,
+      "views": 3398,
+      "duration": "1:37:00",
+      "uploadDate": "2025-01-17",
+      "tags": [
+        "comedy",
+        "drama"
+      ]
+    },
+    {
+      "id": "marked-men-2025",
+      "title": "Marked Men (2025)",
+      "description": "Shaw has loved Rule since she saw him, but Rule doesn't see her as a suitable match, but a night of drinking and secrets leads them to question if they can be together without ruining their relationship...or each other.",
+      "videoUrl": "https://short.icu/TOWfW7xlW?thumbnail=https://ntvb.tmsimg.com/assets/p27860692_v_h8_ab.jpg?w=1280&h=720",
+      "thumbnail": "https://ntvb.tmsimg.com/assets/p27860692_v_h8_ab.jpg?w=1280&h=720",
+      "rating": 5.1,
+      "views": 2786,
+      "duration": "1:33:00",
+      "uploadDate": "2025-01-21",
+      "tags": [
+        "romance",
+        "drama"
+      ]
+    },
+    {
+      "id": "the-wish-swap-2025",
+      "title": "The Wish Swap (2025) ",
+      "description": "When Casey and Henry celebrate their birthdays at the same restaurant, they make birthday wishes at the same time, which are granted. However, they end up getting each other's wishes. Stars Emily Tennant and Jake Foy.",
+      "videoUrl": "https://short.icu/GlYZdc5Mm?thumbnail=https://ntvb.tmsimg.com/assets/p29138741_v_h8_aa.jpg?w=1280&h=720",
+      "thumbnail": "https://ntvb.tmsimg.com/assets/p29138741_v_h8_aa.jpg?w=1280&h=720",
+      "rating": 6.7,
+      "views": 2451,
+      "duration": "1:24:00",
+      "uploadDate": "2025-02-08",
+      "tags": [
+        "romance",
+        "drama"
+      ]
+    },
+    {
       "id": "black-diamond-2025",
       "title": "Black Diamond (2025)",
       "description": "\nFollows a young woman whose idyllic life with her hedge funder boyfriend turns it into a deadly triangle of lust, obsession and murder after meeting a local cowboy handyman.",
