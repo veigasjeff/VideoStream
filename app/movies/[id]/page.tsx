@@ -216,7 +216,7 @@ export default function VideoPage({ params }: Props) {
             </a>
           </div>
         )}
-
+ <div className="px-4 md:px-8 lg:px-12">
         <h2 className="text-2xl font-semibold mb-4 text-center">Recommended Movies</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {recommendedVideos.map((v) => (
@@ -226,7 +226,7 @@ export default function VideoPage({ params }: Props) {
                   <Film className="w-3 h-3 mr-1" /> Movies
                 </div>
                 <div className="relative w-full aspect-[16/9]">
-                  <Image src={v.thumbnail || "/placeholder.svg"} alt={v.title} quality={90} fill loading="lazy" className="rounded-lg" style={{ objectFit: "cover" }} />
+                  <Image src={v.thumbnail || "/placeholder.svg"} alt={v.title} quality={90} fill loading="lazy" className="transition-transform group-hover:scale-105 rounded-lg" style={{ objectFit: "cover" }} />
                 </div>
                 <div className="absolute bottom-2 right-2 bg-black/80 text-white px-2 py-1 text-xs rounded-md flex items-center">
                   <Clock className="w-3 h-3 mr-1" /> {v.duration}
@@ -236,6 +236,7 @@ export default function VideoPage({ params }: Props) {
             </Link>
           ))}
         </div>
+      </div>
       </div>
     </>
   )
