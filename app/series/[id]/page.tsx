@@ -246,7 +246,7 @@ import { StructuredData } from "@/components/structured-data"
 import Link from "next/link"
 import Image from "next/image"
 import { VideoPlayer } from "@/components/video-player"
-import { Clock, Eye, Film, Tv, Heart } from "lucide-react"
+import { Clock, Tv } from "lucide-react"
 import { useMemo } from "react"
 
 interface Props {
@@ -269,9 +269,11 @@ function getRecommendedSeries(currentSeriesId: string, limit = 500) {
 
 export default function VideoPage({ params }: Props) {
   const video = findVideo(params.id)
+
   if (!video) {
     notFound()
   }
+
   const recommendedSeries = useMemo(() => getRecommendedSeries(video.seriesId), [video.seriesId])
 
   return (
@@ -280,21 +282,34 @@ export default function VideoPage({ params }: Props) {
       <h1 className="text-3xl font-bold pt-10 text-center">{video.title}</h1>
 
       <div className="container py-6 justify-center items-center">
-        {/* Video Player Component */}
+        {/* Main Ad Video */}
+        <div className="mb-6 px-4 md:px-8 lg:px-12">
+          <video
+            src={adVideoUrl}
+            controls
+            className="w-full rounded-lg"
+          />
+        </div>
+
+        {/* Main Video Player */}
         <div className="mb-6 px-4 md:px-8 lg:px-12">
           <VideoPlayer video={video} />
           <p className="text-muted-foreground mb-6 mt-5 text-center">{video.description}</p>
         </div>
 
-        {/* Ad Video Section */}
+        {/* Popup Ad Video */}
         <div className="mb-6 px-4 md:px-8 lg:px-12">
-          <h2 className="text-2xl font-semibold mb-4 text-center">Advertisement</h2>
-          <VideoPlayer video={{ url: adVideoUrl, title: "Advertisement" }} />
+          <video
+            src={popupAdUrl}
+            controls
+            className="w-full rounded-lg"
+          />
         </div>
 
         {/* Recommended Series Section */}
         <div className="px-4 md:px-8 lg:px-12">
           <h2 className="text-2xl font-semibold mb-4 text-center">Recommended Series</h2>
+
           {recommendedSeries.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {recommendedSeries.map((s) => (
@@ -323,7 +338,7 @@ export default function VideoPage({ params }: Props) {
                       {s.duration}
                     </div>
                   </div>
-                  <h3 className="font-medium group-hover:text-primary text-center" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>{s.title}</h3>
+                  <h3 className="font-medium group-hover:text-primary text-center">{s.title}</h3>
                 </Link>
               ))}
             </div>
