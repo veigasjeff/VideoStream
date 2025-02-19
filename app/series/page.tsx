@@ -32,7 +32,7 @@ export default function SeriesPage() {
                     "contrast(1.1) saturate(1.1) brightness(1.0) hue-rotate(0deg)", // Image filter effects
                 }}
               /> */}
-              <div className="relative w-full h-full">
+             <div className="relative w-full aspect-[16/9]">
                 <Image
                   src={series.thumbnail || "/placeholder.svg"}
                   alt={series.title}

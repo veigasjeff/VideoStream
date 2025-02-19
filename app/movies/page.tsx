@@ -135,7 +135,7 @@ export default function VideosPage() {
                   "contrast(1.1) saturate(1.1) brightness(1.0) hue-rotate(0deg)", // Image filter effects
               }}
               /> */}
-              <div className="relative w-full h-full">
+              <div className="relative w-full aspect-[16/9]">
                 <Image
                   src={video.thumbnail || "/placeholder.svg"}
                   alt={video.title}

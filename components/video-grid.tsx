@@ -108,7 +108,8 @@ export function VideoGrid({ videos }: { videos: Video[] }) {
                   filter: "contrast(1.1) saturate(1.1) brightness(1.0) hue-rotate(0deg)",
                 }}
               /> */}
-              <div className="relative w-[320px] h-[180px]">
+              {/* <div className="relative w-[320px] h-[180px]"> */}
+              <div className="relative w-full aspect-[16/9]">
                 <Image
                   src={video.thumbnail || "/placeholder.svg"}
                   alt={video.title}
