@@ -99,8 +99,6 @@ export function VideoGrid({ videos }: { videos: Video[] }) {
               {/* <Image
                 src={video.thumbnail || "/placeholder.svg"}
                 alt={video.title}
-                width={320}
-                height={180}
                 quality={90}
                 layout="fill"
                 objectFit="cover"
@@ -110,20 +108,20 @@ export function VideoGrid({ videos }: { videos: Video[] }) {
                   filter: "contrast(1.1) saturate(1.1) brightness(1.0) hue-rotate(0deg)",
                 }}
               /> */}
-              <Image
-                src={video.thumbnail || "/placeholder.svg"}
-                alt={video.title}
-                width={320}
-                height={180}
-                quality={90}
-                // loading="lazy"
-                priority // Ensures faster loading for LCP
-                objectFit="cover"
-                className="transition-transform group-hover:scale-105"
-                style={{
-                  filter: "contrast(1.1) saturate(1.1) brightness(1.0) hue-rotate(0deg)",
-                }}
-              />
+              <div className="relative w-[320px] h-[180px]">
+                <Image
+                  src={video.thumbnail || "/placeholder.svg"}
+                  alt={video.title}
+                  quality={90}
+                  fill
+                  loading="lazy"
+                  className="transition-transform group-hover:scale-105"
+                  style={{
+                    objectFit: "cover",
+                    filter: "contrast(1.1) saturate(1.1) brightness(1.0) hue-rotate(0deg)",
+                  }}
+                />
+              </div>
               <div className="absolute bottom-2 right-2 bg-black/80 text-white px-2 py-1 text-xs rounded-md flex items-center">
                 <Clock className="w-3 h-3 mr-1" />
                 {video.duration}

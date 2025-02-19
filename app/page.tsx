@@ -41,8 +41,6 @@ export default function Home() {
     ),
   ]
 
-
-
   return (
     <>
       <div className="container py-6 space-y-8 mx-auto text-center">
