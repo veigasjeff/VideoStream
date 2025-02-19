@@ -137,17 +137,17 @@ function getRecommendedSeries(currentSeriesId: string, limit = 500) {
 
 export default function VideoPage({ params }: Props) {
   const video = findVideo(params.id)
-  const [showPopupAd, setShowPopupAd] = useState(false)
   const [showMainVideo, setShowMainVideo] = useState(false)
+  const [showPopupAd, setShowPopupAd] = useState(false)
+
+  useEffect(() => {
+    const popupTimer = setTimeout(() => setShowPopupAd(true), 10000)
+    return () => clearTimeout(popupTimer)
+  }, [])
 
   if (!video) {
     notFound()
   }
-
-  useEffect(() => {
-    const timer = setTimeout(() => setShowPopupAd(true), 10000)
-    return () => clearTimeout(timer)
-  }, [])
 
   const recommendedSeries = useMemo(() => getRecommendedSeries(video.seriesId), [video.seriesId])
 
@@ -167,8 +167,8 @@ export default function VideoPage({ params }: Props) {
         </div>
 
         {showPopupAd && (
-          <div className="fixed bottom-5 right-5 bg-black p-2 rounded-lg shadow-lg">
-            <VideoPlayer video={{ url: popupAdUrl }} />
+          <div className="fixed bottom-4 right-4 bg-black p-2 rounded-lg shadow-lg">
+            <VideoPlayer video={{ url: popupAdUrl }} autoPlay muted controls />
           </div>
         )}
 
@@ -202,7 +202,7 @@ export default function VideoPage({ params }: Props) {
                       {s.duration}
                     </div>
                   </div>
-                  <h3 className="font-medium group-hover:text-primary text-center">{s.title}</h3>
+                  <h3 className="font-medium group-hover:text-primary text-center" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>{s.title}</h3>
                 </Link>
               ))}
             </div>
