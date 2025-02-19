@@ -3,11 +3,11 @@
 // import superdata from "@/data/superdata.json"
 
 // export default function SeriesPage() {
-  
+
 //   return (
 //     <div className="container py-6 space-y-8 ">
 //       <h1 className="text-3xl font-bold mb-6 ">Tv Series</h1>
-      
+
 //       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
 //         {superdata.series.map((series) => (
 //           <Link key={series.id} href={`/series/${series.id}`} className="group">
@@ -42,7 +42,7 @@
 //   return (
 //     <div className="container py-6 space-y-8 ">
 //       <h1 className="text-3xl font-bold mb-6 ">TV Series</h1>
-      
+
 //       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
 //         {/* {superdata.series.map((series) => (
 //             <Link key={series.id} href={`/series/${series.id}`} className="group"> */}
@@ -102,7 +102,7 @@ export default function SeriesPage() {
   ]
 
   return (
-    <div className="container py-6 space-y-8 ">
+    <div className="container py-6 space-y-8 px-4 md:px-8 lg:px-12">
       <h1 className="text-3xl font-bold mb-6 ">TV Series</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
@@ -111,7 +111,7 @@ export default function SeriesPage() {
         {allVideos.map((series) => (
           <Link key={series.id} href={`/series/${series.id}`} className="group">
             <div className="relative aspect-video rounded-lg overflow-hidden bg-muted">
-              <Image
+              {/* <Image
                 src={series.thumbnail || "/placeholder.svg"}
                 alt={series.title}
                 quality={90}
@@ -121,8 +121,21 @@ export default function SeriesPage() {
                   filter:
                     "contrast(1.1) saturate(1.1) brightness(1.0) hue-rotate(0deg)", // Image filter effects
                 }}
-              />
-
+              /> */}
+              <div className="relative w-full h-full">
+                <Image
+                  src={series.thumbnail || "/placeholder.svg"}
+                  alt={series.title}
+                  quality={90}
+                  fill
+                  loading="lazy"
+                  className="transition-transform group-hover:scale-105"
+                  style={{
+                    objectFit: "cover",
+                    filter: "contrast(1.1) saturate(1.1) brightness(1.0) hue-rotate(0deg)",
+                  }}
+                />
+              </div>
               {/* Display 'Series' label for series titles */}
               {series.title && (
                 <div className="absolute top-2 left-2 flex space-x-2">
