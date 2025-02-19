@@ -537,7 +537,7 @@ export default function VideoPage({ params }: Props) {
         </div>
 
         {/* Recommended Videos Section */}
-        <div className="px-4 md:px-8 lg:px-12"> {/* Added padding for spacing */}
+        <div className="px-4 md:px-8 lg:px-12 gap-4"> {/* Added padding for spacing */}
         <h2 className="text-2xl font-semibold mb-4 text-center">Recommended Movies</h2>
 
         {recommendedVideos.length > 0 ? (
