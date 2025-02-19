@@ -251,11 +251,10 @@ async function getVideo(slug: string) {
   try {
     const response = await fetch("/api/list", { cache: "no-store" });
     if (!response.ok) throw new Error("Failed to fetch video data");
-
     const data = await response.json();
     return data.items?.find((video: any) => video.slug === slug) || null;
   } catch (error) {
-    console.error("Error fetching video:", error);
+    console.error("❌ Error fetching video:", error);
     return null;
   }
 }
@@ -264,26 +263,21 @@ async function getAllVideos() {
   try {
     const response = await fetch("/api/list", { cache: "no-store" });
     if (!response.ok) throw new Error("Failed to fetch video list");
-
     const data = await response.json();
     return data.items || [];
   } catch (error) {
-    console.error("Error fetching videos:", error);
+    console.error("❌ Error fetching videos:", error);
     return [];
   }
 }
 
 async function fetchGithubInfo() {
   try {
-    const response = await fetch(
-      "https://raw.githubusercontent.com/rndsouza2024/info/main/info.json",
-      { cache: "no-store" }
-    );
+    const response = await fetch("https://raw.githubusercontent.com/rndsouza2024/info/main/info.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`GitHub responded with ${response.status}`);
-
     return await response.json();
   } catch (error) {
-    console.warn("Failed to fetch GitHub info.json:", error);
+    console.warn("❌ Failed to fetch GitHub info.json:", error);
     return {};
   }
 }
@@ -296,7 +290,6 @@ export default function WatchPage({ params }: { params: { slug: string } }) {
   const [githubThumbnails, setGithubThumbnails] = useState<Record<string, any>>({});
   const [showAd, setShowAd] = useState(true);
   const [adSkipped, setAdSkipped] = useState(false);
-  const [skipButtonVisible, setSkipButtonVisible] = useState(false);
   const [countdown, setCountdown] = useState(8);
   const [showPopupAd, setShowPopupAd] = useState(false);
 
@@ -306,45 +299,33 @@ export default function WatchPage({ params }: { params: { slug: string } }) {
   useEffect(() => {
     async function fetchData() {
       if (!params || !params.slug) {
-        console.error("Invalid video slug");
+        console.error("❌ Invalid video slug");
         return;
       }
-
       setLoading(true);
-
-      const [videoData, allVideos, githubData] = await Promise.all([
-        getVideo(params.slug),
-        getAllVideos(),
-        fetchGithubInfo(),
-      ]);
-
+      const [videoData, allVideos, githubData] = await Promise.all([getVideo(params.slug), getAllVideos(), fetchGithubInfo()]);
       if (!videoData) {
         router.push("/404");
         return;
       }
-
       const githubInfo = githubData[videoData.name] || {};
       setVideo({
         ...videoData,
         thumbnailUrl: githubInfo?.thumbnailUrl ?? videoData?.thumbnailUrl ?? "",
         description: githubInfo?.description ?? videoData?.description ?? "No description available",
       });
-
       setGithubThumbnails(githubData);
-      const filteredVideos = allVideos
-        .filter((v) => v.slug !== params.slug)
-        .map((video) => {
-          const githubInfo = githubData[video.name] || {};
-          return {
-            ...video,
-            thumbnailUrl: githubInfo?.thumbnailUrl ?? video?.thumbnailUrl ?? "",
-            description: githubInfo?.description ?? video?.description ?? "No description available",
-          };
-        });
-      shuffleVideos(filteredVideos);
+      const filteredVideos = allVideos.filter((v) => v.slug !== params.slug).map((video) => {
+        const githubInfo = githubData[video.name] || {};
+        return {
+          ...video,
+          thumbnailUrl: githubInfo?.thumbnailUrl ?? video?.thumbnailUrl ?? "",
+          description: githubInfo?.description ?? video?.description ?? "No description available",
+        };
+      });
+      setRecommended(filteredVideos.slice(0, 4));
       setLoading(false);
     }
-
     fetchData();
   }, [params.slug]);
 
@@ -353,7 +334,7 @@ export default function WatchPage({ params }: { params: { slug: string } }) {
       const timer = setInterval(() => setCountdown((prev) => prev - 1), 1000);
       return () => clearInterval(timer);
     } else if (countdown === 0) {
-      setSkipButtonVisible(true);
+      setShowAd(false);
     }
   }, [showAd, countdown]);
 
@@ -362,55 +343,35 @@ export default function WatchPage({ params }: { params: { slug: string } }) {
     return () => clearTimeout(popupTimer);
   }, []);
 
-  function shuffleVideos(videos: any[]) {
-    setRecommended([...videos].sort(() => Math.random() - 0.5).slice(0, 4));
-  }
-
   if (loading) return <p className="text-center text-gray-500">Loading...</p>;
 
   return (
-    <div className="bg-gray-100 py-8 px-4">
-      {showAd && !adSkipped && (
+    <div className="bg-gray-100 py-8 px-4 relative">
+      <button onClick={() => router.back()} className="mb-4 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700">← Back</button>
+      {showAd && !adSkipped ? (
         <div className="relative w-full aspect-video mb-4">
-          <video autoPlay muted loop onEnded={() => setShowAd(false)} className="w-full">
+          <video autoPlay muted onEnded={() => setShowAd(false)} className="w-full h-full object-cover">
             <source src={adVideoUrl} type="video/mp4" />
           </video>
-          {skipButtonVisible && (
-            <button onClick={() => setShowAd(false)} className="absolute bottom-4 left-4 bg-gray-800 text-white px-4 py-2 rounded">
-              Skip Ad
-            </button>
-          )}
+          <div className="absolute bottom-4 left-4 text-white">
+            <p>Skip in {countdown}s</p>
+          </div>
+        </div>
+      ) : (
+        <div className="aspect-video relative mb-4">
+          <iframe src={`https://short.icu/${video.slug}?thumbnail=${encodeURIComponent(video.thumbnailUrl)}`} className="absolute inset-0 w-full h-full" allowFullScreen />
         </div>
       )}
-
-      {!showAd && (
-        <iframe
-          src={`https://short.icu/${video.slug}?thumbnail=${encodeURIComponent(video.thumbnailUrl)}`}
-          className="w-full aspect-video"
-          allowFullScreen
-        />
-      )}
-
+      <h1 className="text-3xl font-bold text-gray-800 mb-4">{video.name.replace(/\.[^/.]+$/, "")}</h1>
+      <p className="text-lg text-gray-700">{video.description}</p>
       {showPopupAd && (
-        <div className="fixed bottom-5 right-5 w-80 bg-black text-white p-4 rounded shadow-lg">
-          <button onClick={() => setShowPopupAd(false)} className="absolute top-2 right-2">✖</button>
-          <video autoPlay muted loop className="w-full rounded">
+        <div className="fixed bottom-5 right-5 w-80 bg-black text-white p-4 rounded-lg shadow-lg">
+          <button onClick={() => setShowPopupAd(false)} className="absolute top-2 right-2 text-gray-400 hover:text-white">✖</button>
+          <video autoPlay muted loop className="w-full rounded-lg mt-8">
             <source src={popupAdUrl} type="video/mp4" />
           </video>
         </div>
       )}
-
-      <h2 className="text-xl font-bold">Recommended Videos</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {recommended.map((rec, index) => (
-          <Link key={index} href={`/watch/${rec.slug}`}>
-            <div className="p-4 border bg-white rounded shadow-lg">
-              <Image src={rec.thumbnailUrl} alt="Thumbnail" width={320} height={180} className="rounded" />
-              <h3>{rec.name.replace(/\.[^/.]+$/, "")}</h3>
-            </div>
-          </Link>
-        ))}
-      </div>
     </div>
   );
 }
