@@ -41,7 +41,7 @@ export default function AdultVideoPage({ params }: Props) {
       <h1 className="text-3xl font-bold pt-10 text-center">{video.title}</h1>
 
       <div className="container py-6 justify-center items-center">
-        <div className="mb-6">
+      <div className="mb-6 px-4 md:px-8 lg:px-12">
           <VideoPlayer video={video} />
           <p className="text-muted-foreground mb-6 mt-4 text-center">{video.description}</p>
         </div>
