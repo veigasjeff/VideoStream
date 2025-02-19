@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import superdata from "@/data/superdata.json"
-import { Clock, Eye,  Heart } from "lucide-react"
+import { Clock, Eye, Heart } from "lucide-react"
 export default function AdultPage() {
   // Combine adult content with adultTitle
   const allVideos = [
@@ -24,7 +24,7 @@ export default function AdultPage() {
                 layout="fill"
                 objectFit="cover"
               /> */}
-                <div className="relative w-full h-full">
+              <div className="relative w-full aspect-[16/9]">
                 <Image
                   src={video.thumbnail || "/placeholder.svg"}
                   alt={video.title}
@@ -44,30 +44,30 @@ export default function AdultPage() {
                 //   Adult
                 // </div>
                 <div className="absolute top-2 left-2 flex space-x-2">
-                <div className="bg-primary text-primary-foreground px-2 py-1 text-xs rounded-md flex items-center">
-                <Heart className="w-3 h-3 mr-1" />
-                  Adult
-                </div>
-                {/* <div className="bg-secondary text-secondary-foreground px-2 py-1 text-xs rounded-md flex items-center">
+                  <div className="bg-primary text-primary-foreground px-2 py-1 text-xs rounded-md flex items-center">
+                    <Heart className="w-3 h-3 mr-1" />
+                    Adult
+                  </div>
+                  {/* <div className="bg-secondary text-secondary-foreground px-2 py-1 text-xs rounded-md flex items-center">
                   <span>TV</span>
                 </div> */}
-              </div>
+                </div>
               )}
-                 <div className="absolute bottom-2 right-2 bg-black/80 text-white px-2 py-1 text-xs rounded-md flex items-center">
-              <Clock className="w-3 h-3 mr-1" />
-              {video.duration}
+              <div className="absolute bottom-2 right-2 bg-black/80 text-white px-2 py-1 text-xs rounded-md flex items-center">
+                <Clock className="w-3 h-3 mr-1" />
+                {video.duration}
+              </div>
+
             </div>
-            
-            </div>
-         
+
             <div className="mt-2 ">
 
               <h3 className="font-medium line-clamp-2 group-hover:text-primary">{video.title}</h3>
               <p className="text-sm text-muted-foreground mt-1 line-clamp-2">{video.description}</p>
               <p className="text-sm text-muted-foreground flex items-center mt-1">
-              <Eye className="w-4 h-4 mr-1" />
-              {video.views.toLocaleString()} views
-            </p>
+                <Eye className="w-4 h-4 mr-1" />
+                {video.views.toLocaleString()} views
+              </p>
             </div>
           </Link>
         ))}
