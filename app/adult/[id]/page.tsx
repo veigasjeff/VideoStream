@@ -121,7 +121,7 @@ import { VideoPlayer } from "@/components/video-player"
 import Link from "next/link"
 import Image from "next/image"
 import { useEffect, useMemo, useState } from "react"
-import { Clock, Eye, Heart } from "lucide-react"
+import { Clock, Heart } from "lucide-react"
 
 interface Props {
   params: {
@@ -138,25 +138,25 @@ function findAdultVideo(id: string) {
 
 function getRecommendedAdultVideos(currentVideoId: string, limit = 500) {
   return superdata.adult
-    .filter((v) => v.id !== currentVideoId) // Exclude current video
-    .sort(() => Math.random() - 0.5) // Shuffle once
-    .slice(0, limit) // Limit results
+    .filter((v) => v.id !== currentVideoId)
+    .sort(() => Math.random() - 0.5)
+    .slice(0, limit)
 }
 
 export default function AdultVideoPage({ params }: Props) {
   const video = findAdultVideo(params.id)
   const [showPopupAd, setShowPopupAd] = useState(false)
   const [showMainVideo, setShowMainVideo] = useState(false)
+  const [skipCountdown, setSkipCountdown] = useState(5)
+  const [showSkipButton, setShowSkipButton] = useState(false)
 
   if (!video) {
     notFound()
   }
 
-  // Memoized recommended videos to prevent unnecessary re-renders
   const recommendedVideos = useMemo(() => getRecommendedAdultVideos(video.id), [video.id])
 
   useEffect(() => {
-    // Show popup ad every 15 seconds, hide after 5 seconds
     const interval = setInterval(() => {
       setShowPopupAd(true)
       setTimeout(() => setShowPopupAd(false), 5000)
@@ -165,22 +165,55 @@ export default function AdultVideoPage({ params }: Props) {
     return () => clearInterval(interval)
   }, [])
 
+  // Skip Ad Countdown Logic
+  useEffect(() => {
+    if (!showMainVideo) {
+      const countdownInterval = setInterval(() => {
+        setSkipCountdown((prev) => {
+          if (prev <= 1) {
+            clearInterval(countdownInterval)
+            setShowSkipButton(true)
+            return 0
+          }
+          return prev - 1
+        })
+      }, 1000)
+
+      return () => clearInterval(countdownInterval)
+    }
+  }, [showMainVideo])
+
   return (
     <>
       <StructuredData video={video} />
       <h1 className="text-3xl font-bold pt-10 text-center">{video.title}</h1>
 
       <div className="container py-6 justify-center items-center">
-        <div className="mb-6 px-4 md:px-8 lg:px-12">
+        <div className="mb-6 px-4 md:px-8 lg:px-12 relative">
           {/* Main Ad Video */}
           {!showMainVideo && (
-            <video
-              src={adVideoUrl}
-              controls
-              autoPlay
-              className="w-full rounded-lg"
-              onEnded={() => setShowMainVideo(true)}
-            />
+            <div className="relative">
+              <video
+                src={adVideoUrl}
+                controls
+                autoPlay
+                className="w-full rounded-lg"
+                onEnded={() => setShowMainVideo(true)}
+              />
+              {/* Skip Button */}
+              {showSkipButton ? (
+                <button
+                  onClick={() => setShowMainVideo(true)}
+                  className="absolute top-3 right-3 bg-black/80 text-white px-4 py-2 text-sm rounded-md"
+                >
+                  Skip Ad
+                </button>
+              ) : (
+                <div className="absolute top-3 right-3 bg-black/80 text-white px-4 py-2 text-sm rounded-md">
+                  Skip in {skipCountdown}s
+                </div>
+              )}
+            </div>
           )}
 
           {/* Main Video */}
@@ -207,13 +240,11 @@ export default function AdultVideoPage({ params }: Props) {
               {recommendedVideos.map((v) => (
                 <Link key={v.id} href={`/adult/${v.id}`} className="block group">
                   <div className="relative w-full">
-                    {/* "Adult" Label on the Top Left */}
                     <div className="absolute top-2 left-2 bg-primary text-primary-foreground px-2 py-1 text-xs rounded-md flex items-center">
                       <Heart className="w-3 h-3 mr-1" />
                       Adult
                     </div>
 
-                    {/* Video Thumbnail */}
                     <div className="relative w-full aspect-[16/9]">
                       <Image
                         src={v.thumbnail || "/placeholder.svg"}
@@ -228,14 +259,12 @@ export default function AdultVideoPage({ params }: Props) {
                         }}
                       />
                     </div>
-                    {/* Duration on Bottom Right */}
                     <div className="absolute bottom-2 right-2 bg-black/80 text-white px-2 py-1 text-xs rounded-md flex items-center">
                       <Clock className="w-3 h-3 mr-1" />
                       {v.duration}
                     </div>
                   </div>
 
-                  {/* Title Centered */}
                   <h3 className="font-medium group-hover:text-primary text-center">
                     {v.title}
                   </h3>
