@@ -239,114 +239,178 @@
 
 
 
-"use client"
-import { notFound } from "next/navigation"
-import superdata from "@/data/superdata.json"
-import { StructuredData } from "@/components/structured-data"
-import Link from "next/link"
-import Image from "next/image"
-import { VideoPlayer } from "@/components/video-player"
-import { Clock, Tv } from "lucide-react"
-import { useMemo } from "react"
+"use client";
 
-interface Props {
-  params: {
-    id: string
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
+
+async function getVideo(slug: string) {
+  if (!slug) return null;
+  try {
+    const response = await fetch("/api/list", { cache: "no-store" });
+    if (!response.ok) throw new Error("Failed to fetch video data");
+
+    const data = await response.json();
+    return data.items?.find((video: any) => video.slug === slug) || null;
+  } catch (error) {
+    console.error("Error fetching video:", error);
+    return null;
   }
 }
 
-const adVideoUrl = "https://res.cloudinary.com/dm37icb6j/video/upload/v1739845637/main_zmp0bz.mp4";
-const popupAdUrl = "https://res.cloudinary.com/dm37icb6j/video/upload/v1739803773/AD1_jr0ngh.mp4";
+async function getAllVideos() {
+  try {
+    const response = await fetch("/api/list", { cache: "no-store" });
+    if (!response.ok) throw new Error("Failed to fetch video list");
 
-function findVideo(id: string) {
-  return superdata.series.flatMap((s) => s.episodes).find((ep) => ep.id === id)
+    const data = await response.json();
+    return data.items || [];
+  } catch (error) {
+    console.error("Error fetching videos:", error);
+    return [];
+  }
 }
 
-function getRecommendedSeries(currentSeriesId: string, limit = 500) {
-  const filteredSeries = superdata.series.filter((s) => s.id !== currentSeriesId)
-  return filteredSeries.sort(() => Math.random() - 0.5).slice(0, limit)
+async function fetchGithubInfo() {
+  try {
+    const response = await fetch(
+      "https://raw.githubusercontent.com/rndsouza2024/info/main/info.json",
+      { cache: "no-store" }
+    );
+    if (!response.ok) throw new Error(`GitHub responded with ${response.status}`);
+
+    return await response.json();
+  } catch (error) {
+    console.warn("Failed to fetch GitHub info.json:", error);
+    return {};
+  }
 }
 
-export default function VideoPage({ params }: Props) {
-  const video = findVideo(params.id)
+export default function WatchPage({ params }: { params: { slug: string } }) {
+  const router = useRouter();
+  const [video, setVideo] = useState<any>(null);
+  const [recommended, setRecommended] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [githubThumbnails, setGithubThumbnails] = useState<Record<string, any>>({});
+  const [showAd, setShowAd] = useState(true);
+  const [adSkipped, setAdSkipped] = useState(false);
+  const [skipButtonVisible, setSkipButtonVisible] = useState(false);
+  const [countdown, setCountdown] = useState(8);
+  const [showPopupAd, setShowPopupAd] = useState(false);
 
-  if (!video) {
-    notFound()
+  const adVideoUrl = "https://res.cloudinary.com/dm37icb6j/video/upload/v1739845637/main_zmp0bz.mp4";
+  const popupAdUrl = "https://res.cloudinary.com/dm37icb6j/video/upload/v1739803773/AD1_jr0ngh.mp4";
+
+  useEffect(() => {
+    async function fetchData() {
+      if (!params || !params.slug) {
+        console.error("Invalid video slug");
+        return;
+      }
+
+      setLoading(true);
+
+      const [videoData, allVideos, githubData] = await Promise.all([
+        getVideo(params.slug),
+        getAllVideos(),
+        fetchGithubInfo(),
+      ]);
+
+      if (!videoData) {
+        router.push("/404");
+        return;
+      }
+
+      const githubInfo = githubData[videoData.name] || {};
+      setVideo({
+        ...videoData,
+        thumbnailUrl: githubInfo?.thumbnailUrl ?? videoData?.thumbnailUrl ?? "",
+        description: githubInfo?.description ?? videoData?.description ?? "No description available",
+      });
+
+      setGithubThumbnails(githubData);
+      const filteredVideos = allVideos
+        .filter((v) => v.slug !== params.slug)
+        .map((video) => {
+          const githubInfo = githubData[video.name] || {};
+          return {
+            ...video,
+            thumbnailUrl: githubInfo?.thumbnailUrl ?? video?.thumbnailUrl ?? "",
+            description: githubInfo?.description ?? video?.description ?? "No description available",
+          };
+        });
+      shuffleVideos(filteredVideos);
+      setLoading(false);
+    }
+
+    fetchData();
+  }, [params.slug]);
+
+  useEffect(() => {
+    if (showAd && countdown > 0) {
+      const timer = setInterval(() => setCountdown((prev) => prev - 1), 1000);
+      return () => clearInterval(timer);
+    } else if (countdown === 0) {
+      setSkipButtonVisible(true);
+    }
+  }, [showAd, countdown]);
+
+  useEffect(() => {
+    const popupTimer = setTimeout(() => setShowPopupAd(true), 15000);
+    return () => clearTimeout(popupTimer);
+  }, []);
+
+  function shuffleVideos(videos: any[]) {
+    setRecommended([...videos].sort(() => Math.random() - 0.5).slice(0, 4));
   }
 
-  const recommendedSeries = useMemo(() => getRecommendedSeries(video.seriesId), [video.seriesId])
+  if (loading) return <p className="text-center text-gray-500">Loading...</p>;
 
   return (
-    <>
-      <StructuredData video={video} />
-      <h1 className="text-3xl font-bold pt-10 text-center">{video.title}</h1>
-
-      <div className="container py-6 justify-center items-center">
-        {/* Main Ad Video */}
-        <div className="mb-6 px-4 md:px-8 lg:px-12">
-          <video
-            src={adVideoUrl}
-            controls
-            className="w-full rounded-lg"
-          />
-        </div>
-
-        {/* Main Video Player */}
-        <div className="mb-6 px-4 md:px-8 lg:px-12">
-          <VideoPlayer video={video} />
-          <p className="text-muted-foreground mb-6 mt-5 text-center">{video.description}</p>
-        </div>
-
-        {/* Popup Ad Video */}
-        <div className="mb-6 px-4 md:px-8 lg:px-12">
-          <video
-            src={popupAdUrl}
-            controls
-            className="w-full rounded-lg"
-          />
-        </div>
-
-        {/* Recommended Series Section */}
-        <div className="px-4 md:px-8 lg:px-12">
-          <h2 className="text-2xl font-semibold mb-4 text-center">Recommended Series</h2>
-
-          {recommendedSeries.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {recommendedSeries.map((s) => (
-                <Link key={s.id} href={`/series/${s.id}`} className="block group">
-                  <div className="relative">
-                    <div className="absolute top-2 left-2 bg-primary text-primary-foreground px-2 py-1 text-xs rounded-md flex items-center">
-                      <Tv className="w-3 h-3 mr-1" />
-                      Tv Series
-                    </div>
-                    <div className="relative w-full aspect-[16/9]">
-                      <Image
-                        src={s.thumbnail || "/placeholder.svg"}
-                        alt={s.title}
-                        quality={90}
-                        fill
-                        loading="lazy"
-                        className="rounded-lg"
-                        style={{
-                          objectFit: "cover",
-                          filter: "contrast(1.1) saturate(1.1) brightness(1.0) hue-rotate(0deg)",
-                        }}
-                      />
-                    </div>
-                    <div className="absolute bottom-2 right-2 bg-black/80 text-white px-2 py-1 text-xs rounded-md flex items-center">
-                      <Clock className="w-3 h-3 mr-1" />
-                      {s.duration}
-                    </div>
-                  </div>
-                  <h3 className="font-medium group-hover:text-primary text-center">{s.title}</h3>
-                </Link>
-              ))}
-            </div>
-          ) : (
-            <p className="text-center">No recommended series available.</p>
+    <div className="bg-gray-100 py-8 px-4">
+      {showAd && !adSkipped && (
+        <div className="relative w-full aspect-video mb-4">
+          <video autoPlay muted loop onEnded={() => setShowAd(false)} className="w-full">
+            <source src={adVideoUrl} type="video/mp4" />
+          </video>
+          {skipButtonVisible && (
+            <button onClick={() => setShowAd(false)} className="absolute bottom-4 left-4 bg-gray-800 text-white px-4 py-2 rounded">
+              Skip Ad
+            </button>
           )}
         </div>
+      )}
+
+      {!showAd && (
+        <iframe
+          src={`https://short.icu/${video.slug}?thumbnail=${encodeURIComponent(video.thumbnailUrl)}`}
+          className="w-full aspect-video"
+          allowFullScreen
+        />
+      )}
+
+      {showPopupAd && (
+        <div className="fixed bottom-5 right-5 w-80 bg-black text-white p-4 rounded shadow-lg">
+          <button onClick={() => setShowPopupAd(false)} className="absolute top-2 right-2">✖</button>
+          <video autoPlay muted loop className="w-full rounded">
+            <source src={popupAdUrl} type="video/mp4" />
+          </video>
+        </div>
+      )}
+
+      <h2 className="text-xl font-bold">Recommended Videos</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {recommended.map((rec, index) => (
+          <Link key={index} href={`/watch/${rec.slug}`}>
+            <div className="p-4 border bg-white rounded shadow-lg">
+              <Image src={rec.thumbnailUrl} alt="Thumbnail" width={320} height={180} className="rounded" />
+              <h3>{rec.name.replace(/\.[^/.]+$/, "")}</h3>
+            </div>
+          </Link>
+        ))}
       </div>
-    </>
-  )
+    </div>
+  );
 }
