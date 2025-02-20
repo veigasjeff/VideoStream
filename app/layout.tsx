@@ -91,14 +91,14 @@ export default function RootLayout({
             }),
           }}
         />
-        
+          <Script async data-id="101478638" src="/96930ac493198ab9ca.js" />
       </head>
       <body className={inter.className}>
       <Navbar /> {/* Place the Navbar here */}
         <Navigation />
         <main className="min-h-screen bg-background">{children}</main>
         <Footer /> {/* Footer added here */}
-        <Script async data-id="101478638" src="/96930ac493198ab9ca.js" />
+      
         {/* First Ad Script */}
         <Script id="ad-script-1" strategy="lazyOnload">
           {`(function(d,z,s){
