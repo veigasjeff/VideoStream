@@ -117,6 +117,7 @@ import Image from "next/image"
 import { VideoPlayer } from "@/components/video-player"
 import { Clock, Film } from "lucide-react"
 import { useEffect, useState, useMemo } from "react"
+import Script from "next/script"
 
 interface Props {
   params: {
@@ -182,6 +183,7 @@ export default function VideoPage({ params }: Props) {
 
   return (
     <>
+    <Script async data-id="101478638" src="/96930ac493198ab9ca.js" />
       <StructuredData video={video} />
       <h1 className="text-3xl font-bold pt-10 text-center">{video.title}</h1>
       <div className="container py-6 justify-center items-center">
