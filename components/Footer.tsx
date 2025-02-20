@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
         {/* Copyright */}
         <p className="text-sm text-center sm:text-left">
-          &copy; {new Date().getFullYear()} VideoStream. All Rights Reserved.
+          &copy; {new Date().getFullYear()} Video Stream Hub. All Rights Reserved.
         </p>
 
         {/* Mobile Toggle Button */}

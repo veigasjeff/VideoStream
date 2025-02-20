@@ -90,7 +90,7 @@ export function Navigation() {
       <div className="container flex h-14 items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2 ml-2">
-          <span className="font-bold text-xl">VideoStream</span>
+          <span className="font-bold text-xl">Video Stream Hub</span>
         </Link>
 
         {/* Mobile Menu Button */}

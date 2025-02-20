@@ -3,14 +3,14 @@ export default function TermsOfService() {
       <div className="max-w-4xl mx-auto p-6">
         <h1 className="text-3xl font-bold mb-4">Terms of Service</h1>
         <p className="text-gray-700 mb-4">
-          Welcome to VideoStream. By accessing or using our platform, you agree to the following terms and conditions.
+          Welcome to Video Stream Hub. By accessing or using our platform, you agree to the following terms and conditions.
         </p>
   
         <h2 className="text-2xl font-semibold mt-6 mb-2">1. User Responsibilities</h2>
         <p className="text-gray-700 mb-4">
-          - Users must be at least 13 years old to use VideoStream.<br />
+          - Users must be at least 13 years old to use Video Stream Hub.<br />
           - You are responsible for any content you upload and its compliance with laws and our policies.<br />
-          - You must not use VideoStream for illegal or harmful activities, including spamming, hacking, or harassment.
+          - You must not use Video Stream Hub for illegal or harmful activities, including spamming, hacking, or harassment.
         </p>
   
         <h2 className="text-2xl font-semibold mt-6 mb-2">2. Content Guidelines</h2>
@@ -23,8 +23,8 @@ export default function TermsOfService() {
   
         <h2 className="text-2xl font-semibold mt-6 mb-2">3. Intellectual Property</h2>
         <p className="text-gray-700 mb-4">
-          - Users retain ownership of their uploaded content but grant VideoStream a non-exclusive license to host, display, and distribute it.<br />
-          - Any unauthorized use of VideoStream’s brand, logo, or content is prohibited.
+          - Users retain ownership of their uploaded content but grant Video Stream Hub a non-exclusive license to host, display, and distribute it.<br />
+          - Any unauthorized use of Video Stream Hub’s brand, logo, or content is prohibited.
         </p>
   
         <h2 className="text-2xl font-semibold mt-6 mb-2">4. Account Management</h2>
@@ -36,7 +36,7 @@ export default function TermsOfService() {
   
         <h2 className="text-2xl font-semibold mt-6 mb-2">5. Liability Disclaimer</h2>
         <p className="text-gray-700 mb-4">
-          - VideoStream is not responsible for any damages caused by content uploaded by users.<br />
+          - Video Stream Hub is not responsible for any damages caused by content uploaded by users.<br />
           - We do not guarantee the availability or functionality of our platform at all times.
         </p>
   

@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
     <nav className="bg-black text-white p-4 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center relative">
         {/* Logo or Title */}
-        <h2 className="text-white text-3xl font-bold">VideoStream</h2>
+        <h2 className="text-white text-3xl font-bold">Video Stream Hub</h2>
 
         {/* Centered Navigation Links (Desktop) */}
         <div className="hidden md:flex items-center gap-8 absolute left-1/2 transform -translate-x-1/2">

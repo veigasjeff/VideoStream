@@ -7,34 +7,34 @@ export default function Disclaimer() {
     <div className="max-w-4xl mx-auto p-6">
       <h1 className="text-3xl font-bold mb-4">Disclaimer</h1>
       <p className="text-gray-700 mb-4">
-        The information provided by VideoStream is for general informational purposes only.
-        All content on this platform is uploaded by users, and VideoStream does not verify
+        The information provided by Video Stream Hub is for general informational purposes only.
+        All content on this platform is uploaded by users, and Video Stream Hub does not verify
         or endorse the accuracy, reliability, or legality of the content.
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">1. Content Responsibility</h2>
       <p className="text-gray-700 mb-4">
-        - VideoStream does not take responsibility for user-uploaded content.<br />
+        - Video Stream Hub does not take responsibility for user-uploaded content.<br />
         - Users are solely responsible for the videos they upload and must ensure they do not violate copyright laws, community guidelines, or any applicable regulations.<br />
         - The platform does not endorse or take liability for any opinions, statements, or views expressed in user-uploaded videos.
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">2. Reporting and Content Removal</h2>
       <p className="text-gray-700 mb-4">
-        - By using VideoStream, you acknowledge that videos uploaded may be removed without user consent if they are reported for inappropriate content or violate the platform's terms of service.<br />
+        - By using Video Stream Hub, you acknowledge that videos uploaded may be removed without user consent if they are reported for inappropriate content or violate the platform's terms of service.<br />
         - Users can report videos by contacting us through the <a href="/contact" className="text-blue-600 hover:underline">Contact Us</a> page.<br />
-        - VideoStream is not responsible for any content uploaded unless it has been reported for review and found to be in violation of platform policies.<br />
+        - Video Stream Hub is not responsible for any content uploaded unless it has been reported for review and found to be in violation of platform policies.<br />
         - Once reported, videos will be reviewed, and necessary action will be taken, including removal if required.
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">3. External Links</h2>
       <p className="text-gray-700 mb-4">
-        - VideoStream may contain links to third-party websites. We do not control or endorse the content of these external sites and are not responsible for any damages or issues that may arise from accessing them.
+        - Video Stream Hub may contain links to third-party websites. We do not control or endorse the content of these external sites and are not responsible for any damages or issues that may arise from accessing them.
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">4. Platform Availability</h2>
       <p className="text-gray-700 mb-4">
-        - While we strive to provide an uninterrupted experience, VideoStream does not guarantee constant availability or error-free functionality.<br />
+        - While we strive to provide an uninterrupted experience, Video Stream Hub does not guarantee constant availability or error-free functionality.<br />
         - We reserve the right to modify, suspend, or discontinue any aspect of the service without prior notice.
       </p>
 
