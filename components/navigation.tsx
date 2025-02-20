@@ -103,13 +103,13 @@ export function Navigation() {
 
         {/* Navigation Links (Desktop) */}
         <div className="hidden lg:flex space-x-4 absolute left-1/2 transform -translate-x-1/2">
-          <Link href="/series" className="text-sm font-medium hover:no-underline">
+          <Link href="/series" className="font-bold text-xl hover:no-underline">
             Tv Series
           </Link>
-          <Link href="/movies" className="text-sm font-medium hover:no-underline">
+          <Link href="/movies" className="font-bold text-xl hover:no-underline">
             Movies
           </Link>
-          <Link href="/adult" className="text-sm font-medium hover:no-underline">
+          <Link href="/adult" className="font-bold text-xl hover:no-underline">
             Adult
           </Link>
         </div>
@@ -118,13 +118,13 @@ export function Navigation() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="lg:hidden flex flex-col space-y-4 py-4 border-t bg-background items-center">
-          <Link href="/movies" className="text-sm font-medium hover:no-underline" onClick={() => setIsOpen(false)}>
+          <Link href="/movies" className="font-bold text-xl hover:no-underline" onClick={() => setIsOpen(false)}>
             Movies
           </Link>
-          <Link href="/series" className="text-sm font-medium hover:no-underline" onClick={() => setIsOpen(false)}>
+          <Link href="/series" className="font-bold text-xl hover:no-underline" onClick={() => setIsOpen(false)}>
             Tv Series
           </Link>
-          <Link href="/adult" className="text-sm font-medium hover:no-underline" onClick={() => setIsOpen(false)}>
+          <Link href="/adult" className="font-bold text-xl hover:no-underline" onClick={() => setIsOpen(false)}>
             Adult
           </Link>
           
