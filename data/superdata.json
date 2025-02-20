@@ -1,6 +1,22 @@
 {
   "videos": [
     {
+      "id": "captain-america-brave-new-world-2025",
+      "title": "Captain America: Brave New World (2025)",
+      "description": "Sam Wilson, the new Captain America, finds himself in the middle of an international incident and must discover the motive behind a nefarious global plan.",
+      "videoUrl": "https://short.icu/iE1J4Ygk_?thumbnail=https://pacificsciencecenter.org/wp-content/uploads/2025/01/cap-america-web-1.jpg",
+      "thumbnail": "https://pacificsciencecenter.org/wp-content/uploads/2025/01/cap-america-web-1.jpg",
+      "rating": 6.1,
+      "views": 4011,
+      "duration": "1:58:00",
+      "uploadDate": "2025-02-14",
+      "tags": [
+        "action",
+        "adventure",
+        "sci-fi"
+      ]
+    },
+    {
       "id": "one-of-them-days-2025",
       "title": "One Of Them Days (2025)",
       "description": "When best friends and roommates Dreux and Alyssa discover Alyssa's boyfriend has blown their rent money, the duo finds themselves going to extremes in a race against the clock to avoid eviction and keep their friendship intact.",
@@ -938,6 +954,22 @@
       "tags": [
         "comedy",
         "romance"
+      ]
+    },
+    {
+      "id": "captain-america:-brave-new-world-2025-hindi-dubbed",
+      "title": "Captain America: Brave New World (2025) Hindi Dubbed",
+      "description": "Sam Wilson, the new Captain America, finds himself in the middle of an international incident and must discover the motive behind a nefarious global plan.",
+      "videoUrl": "https://short.icu/WnKkJoBQ49?thumbnail=https://pacificsciencecenter.org/wp-content/uploads/2025/01/cap-america-web-1.jpg",
+      "thumbnail": "https://pacificsciencecenter.org/wp-content/uploads/2025/01/cap-america-web-1.jpg",
+      "rating": 6.1,
+      "views": 3011,
+      "duration": "1:58:00",
+      "uploadDate": "2025-02-14",
+      "tags": [
+        "action",
+        "adventure",
+        "sci-fi"
       ]
     }
   ],
