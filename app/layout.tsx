@@ -57,29 +57,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  useEffect(() => {
-    const setTrackingCookies = async () => {
-      try {
-        const response = await fetch(
-          "http://videostreamhub.vercel.app/ecb0ef706013b41d7d?site_id=101478638&ignore=eff3d8c27e84611672025e994b4a5e35&osa=1",
-          {
-            method: "GET",
-            credentials: "include",
-          }
-        );
-        if (response.ok) {
-          console.log("Cookies set successfully");
-        } else {
-          console.error("Failed to set cookies");
-        }
-      } catch (error) {
-        console.error("Error setting cookies:", error);
-      }
-    };
-
-    setTrackingCookies();
-  }, []);
-
+  
   return (
     <html lang="en">
       <head>
