@@ -1456,6 +1456,32 @@
   ],
   "series": [
     {
+      "id": "virdee-s01",
+      "title": "Virdee S01",
+      "description": "DCI Harry Virdee must hunt down a killer targeting the Asian community in Bradford, whilst dealing with his chaotic personal life.",
+      "thumbnail": "https://gazettely.com/wp-content/uploads/2025/02/Virdee-Review-4-1024x576.webp",
+      "episodes": [
+        {
+          "id": "virdee-s01",
+          "title": "Virdee S01",
+          "description": "DCI Harry Virdee must hunt down a killer targeting the Asian community in Bradford, whilst dealing with his chaotic personal life.",
+          "videoUrl": "https://short.icu/bk949evrt?thumbnail=https://images.justwatch.com/backdrop/324950607/s640/season-1",
+          "thumbnail": "https://gazettely.com/wp-content/uploads/2025/02/Virdee-Review-4-1024x576.webp",
+          "duration": "5:45:00",
+          "rating": 6.3,
+          "views": 2881,
+          "uploadDate": "2025-02-10",
+          "tags": [
+            "crime",
+            "drama",
+            "nystery"
+          ]
+        }
+      ],
+      "views": 2881,
+      "duration": "5:45:00"
+    },
+    {
       "id": "invisible-boys-01",
       "title": "Invisible Boys S01",
       "description": "Everyone in a small town assumes they know you, but when a closeted gay adolescent hooks up with a married guy, it has far-reaching effects for a group of teens who were previously invisible.",
