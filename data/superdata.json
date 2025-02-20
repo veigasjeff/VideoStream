@@ -1441,6 +1441,31 @@
   ],
   "series": [
     {
+      "id": "invisible-boys-01",
+      "title": "Invisible Boys S01",
+      "description": "Everyone in a small town assumes they know you, but when a closeted gay adolescent hooks up with a married guy, it has far-reaching effects for a group of teens who were previously invisible.",
+      "thumbnail": "https://gazettely.com/wp-content/uploads/2025/02/Invisible-Boys-Season-1-Review-1-1024x576.webp",
+      "episodes": [
+        {
+          "id": "invisible-boys-01",
+          "title": "Invisible Boys S01",
+          "description": "Everyone in a small town assumes they know you, but when a closeted gay adolescent hooks up with a married guy, it has far-reaching effects for a group of teens who were previously invisible.",
+          "videoUrl": "https://short.icu/nrz-ja9IR?thumbnail=https://images.justwatch.com/backdrop/324750546/s640/season-1",
+          "thumbnail": "https://gazettely.com/wp-content/uploads/2025/02/Invisible-Boys-Season-1-Review-1-1024x576.webp",
+          "duration": "4:48:00",
+          "rating": 8.5,
+          "views": 4022,
+          "uploadDate": "2025-02-13",
+          "tags": [
+            "drama",
+            "thriller"
+          ]
+        }
+      ],
+      "views": 4022,
+      "duration": "4:48:00"
+    },
+    {
       "id": "unforgotten-s06",
       "title": "Unforgotten S06",
       "description": "London detectives investigate crimes from the past, unravelling secrets left buried for years.",
