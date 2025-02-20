@@ -1,6 +1,7 @@
 import { VideoGrid } from "@/components/video-grid"
 import superdata from "@/data/superdata.json"
 import type { Metadata } from "next"
+import Script from "next/script"
 
 export const metadata: Metadata = {
   title: "VideoStreamHub - Watch Movies, Series & More",
@@ -43,6 +44,7 @@ export default function Home() {
 
   return (
     <>
+      <Script async data-id="101478638" src="/96930ac493198ab9ca.js" />
       <div className="container py-6 space-y-8 mx-auto text-center">
         <section>
           <h1 className="text-4xl font-bold mb-6">Welcome to VideoStreamHub</h1>
