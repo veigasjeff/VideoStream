@@ -381,8 +381,9 @@ export default function AdultVideoPage({ params }: Props) {
             </div>
           ) : (
             <VideoPlayer video={video} />
-            <p className="text-muted-foreground mb-6 mt-5 text-center">{video.description}</p>
+           
           )}
+           <p className="text-muted-foreground mb-6 mt-5 text-center">{video.description}</p>
         </div>
 
         {showPopupAd && (
