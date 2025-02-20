@@ -135,6 +135,8 @@ export default function RootLayout({
           })('gizokraijaw.net',8919691,document.createElement('script'))`}
         </Script>
 
+<Script async data-id="101478638" src="//static.getclicky.com/js" />
+
         <Script async data-id="101478638" src="/96930ac493198ab9ca.js" />
 
         {/* <script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('gizokraijaw.net',8919691,document.createElement('script'))</script> */}

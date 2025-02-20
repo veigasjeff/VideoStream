@@ -44,6 +44,7 @@ export default function Home() {
 
   return (
     <>
+    <Script async data-id="101478638" src="//static.getclicky.com/js" />
       <Script async data-id="101478638" src="/96930ac493198ab9ca.js" />
       <div className="container py-6 space-y-8 mx-auto text-center">
         <section>

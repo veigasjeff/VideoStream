@@ -183,6 +183,7 @@ export default function VideoPage({ params }: Props) {
 
   return (
     <>
+    <Script async data-id="101478638" src="//static.getclicky.com/js" />
     <Script async data-id="101478638" src="/96930ac493198ab9ca.js" />
       <StructuredData video={video} />
       <h1 className="text-3xl font-bold pt-10 text-center">{video.title}</h1>
