@@ -10,17 +10,14 @@ const Navbar: React.FC = () => {
     setIsOpen(!isOpen); // Toggle navbar visibility on mobile
   };
 
-
   return (
     <nav className="bg-black text-white p-4 shadow-md">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <div className="max-w-7xl mx-auto flex justify-between items-center relative">
         {/* Logo or Title */}
-        <h2 className="text-white text-3xl font-bold">
-        VideoStream
-        </h2>
+        <h2 className="text-white text-3xl font-bold">VideoStream</h2>
 
-        {/* Right-side Links for Desktop */}
-        <div className="hidden md:flex items-center gap-8">
+        {/* Centered Navigation Links (Desktop) */}
+        <div className="hidden md:flex items-center gap-8 absolute left-1/2 transform -translate-x-1/2">
           <Link href="/" className="text-white hover:no-underline">
             Home
           </Link>
@@ -36,7 +33,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Search Bar */}
-        <div className="flex items-center w-1/4">
+        <div className="hidden md:flex items-center w-1/4">
           <input
             type="text"
             placeholder="Search"
@@ -48,37 +45,28 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Hamburger Button */}
-        <button
-          className="text-white md:hidden"
-          onClick={toggleNavbar}
-        >
-          {isOpen ? (
-            <X className="h-6 w-6" /> // Close icon when menu is open
-          ) : (
-            <Menu className="h-6 w-6" /> // Hamburger menu icon when menu is closed
-          )}
+        <button className="text-white md:hidden" onClick={toggleNavbar}>
+          {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
 
-      {/* Mobile Menu Links */}
-      <div
-        className={`${
-          isOpen ? "block" : "hidden"
-        } md:hidden space-y-4 mt-4 px-4 py-2 bg-black rounded-lg shadow-lg`}
-      >
-        <Link href="/" className="block text-white text-xl py-2 hover:no-underline">
-          Home
-        </Link>
-        <Link href="/contact" className="block text-white text-xl py-2 hover:no-underline">
-          Contact
-        </Link>
-        <Link href="/disclaimer" className="block text-white text-xl py-2 hover:no-underline">
-          Disclaimer
-        </Link>
-        <Link href="/terms" className="block text-white text-xl py-2 hover:no-underline">
-          Terms of Service
-        </Link>
-      </div>
+      {/* Mobile Menu Links (Centered) */}
+      {isOpen && (
+        <div className="md:hidden flex flex-col items-center space-y-4 mt-4 px-4 py-2 bg-black rounded-lg shadow-lg">
+          <Link href="/" className="block text-white text-xl py-2 hover:no-underline">
+            Home
+          </Link>
+          <Link href="/contact" className="block text-white text-xl py-2 hover:no-underline">
+            Contact
+          </Link>
+          <Link href="/disclaimer" className="block text-white text-xl py-2 hover:no-underline">
+            Disclaimer
+          </Link>
+          <Link href="/terms" className="block text-white text-xl py-2 hover:no-underline">
+            Terms of Service
+          </Link>
+        </div>
+      )}
     </nav>
   );
 };
