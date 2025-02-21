@@ -203,7 +203,7 @@ function generateSitemap() {
   if (superdata.hindiDubbed && Array.isArray(superdata.hindiDubbed)) {
     superdata.hindiDubbed.forEach((video) => {
       urls.push({
-        loc: `${baseUrl}/hindiDubbed/${video.id}`,
+        loc: `${baseUrl}/hindi-dubbed/${video.id}`,
         changefreq: "daily",
         priority: "0.9",
       });
