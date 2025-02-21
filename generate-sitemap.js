@@ -9,6 +9,7 @@ function generateSitemap() {
   const urls = [
     { loc: baseUrl, changefreq: 'daily', priority: '1.0' },
     { loc: `${baseUrl}/movies`, changefreq: 'daily', priority: '0.9' },
+    { loc: `${baseUrl}/hindi-dubbed`, changefreq: 'daily', priority: '0.9' },
     { loc: `${baseUrl}/series`, changefreq: 'daily', priority: '0.9' },
     { loc: `${baseUrl}/adult`, changefreq: 'daily', priority: '0.9' },
   ];
@@ -16,15 +17,22 @@ function generateSitemap() {
   superdata.videos.forEach((video) => {
     urls.push({
       loc: `${baseUrl}/video/${video.id}`,
-      changefreq: 'weekly',
+      changefreq: 'daily',
       priority: '0.9',
     });
   });
 
+ superdata.hindiDubbed.forEach((post) => {
+  urls.push({
+    loc: `${baseUrl}/hindi-dubbed/${post.id}`,
+    changefreq: 'daily',
+    priority: '0.9',
+  });
+});
   superdata.adult.forEach((video) => {
     urls.push({
       loc: `${baseUrl}/adult/${video.id}`,
-      changefreq: 'weekly',
+      changefreq: 'daily',
       priority: '0.9',
     });
   });
@@ -32,14 +40,14 @@ function generateSitemap() {
   superdata.series.forEach((series) => {
     urls.push({
       loc: `${baseUrl}/series/${series.id}`,
-      changefreq: 'weekly',
+      changefreq: 'daily',
       priority: '0.9',
     });
 
     series.episodes.forEach((episode) => {
       urls.push({
         loc: `${baseUrl}/video/${episode.id}`,
-        changefreq: 'weekly',
+        changefreq: 'daily',
         priority: '0.9',
       });
     });

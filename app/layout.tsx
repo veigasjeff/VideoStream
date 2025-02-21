@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   description:
     "Stream the latest movies, TV series, and exclusive content on VideoStreamHub. Your ultimate entertainment destination.",
-  keywords: [ "VideoStreamHub", "VideoStream Hub", "Video Stream Hub", "movies", "TV series", "video", "free movies", "free TV series", "watch movie online", "watch TV series online", "free movie streaming", "free TV series streaming", "video streaming", "entertainment", "watch online", "JustWatch", "JustWatch Free"],
+  keywords: ["VideoStreamHub", "VideoStream Hub", "Video Stream Hub", "movies", "TV series", "video", "free movies", "free TV series", "watch movie online", "watch TV series online", "free movie streaming", "free TV series streaming", "video streaming", "entertainment", "watch online", "JustWatch", "JustWatch Free"],
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -58,11 +58,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  
+
   return (
     <html lang="en">
       <head>
-      <Script
+        <Script
           id="google-analytics"
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-FX1FS2NM81"
@@ -90,31 +90,15 @@ export default function RootLayout({
               },
             }),
           }}
-        />        
-        <Script
-          id="statcounter-main"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              var sc_project=13089310; 
-              var sc_invisible=1; 
-              var sc_security="86df82eb"; 
-            `,
-          }}
         />
-        <Script
-          id="statcounter-script"
-          strategy="afterInteractive"
-          src="https://www.statcounter.com/counter/counter_xhtml.js"
-          async
-        />
+
       </head>
       <body className={inter.className}>
-      <Navbar /> {/* Place the Navbar here */}
+        <Navbar /> {/* Place the Navbar here */}
         <Navigation />
         <main className="min-h-screen bg-background">{children}</main>
         <Footer /> {/* Footer added here */}
-      
+
         {/* First Ad Script */}
         <Script id="ad-script-1" strategy="lazyOnload">
           {`(function(d,z,s){
@@ -151,7 +135,7 @@ export default function RootLayout({
           })('gizokraijaw.net',8919691,document.createElement('script'))`}
         </Script>
 
-<Script async data-id="101478638" src="//static.getclicky.com/js" />
+        <Script async data-id="101478638" src="//static.getclicky.com/js" />
 
         <Script async data-id="101478638" src="/96930ac493198ab9ca.js" />
 
