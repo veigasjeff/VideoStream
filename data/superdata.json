@@ -1,6 +1,84 @@
 {
   "videos": [
     {
+      "id": "honeymoon-crasher-2025",
+      "title": "Honeymoon Crasher (2025)",
+      "description": "When his fiancee dumps him at the altar for her ex, a young man is left with no alternative but to go on his romantic honeymoon with his mother.",
+      "videoUrl": "https://short.icu/Mlg2yErs7?thumbnail=https://occ-0-8407-116.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABSYpafGV0y5Pi4iPvdlgSqbEbt7hi9NgqTkXy5ZF7w2jT-KPHv8e13klmGSHT3RmkqGm1-c8X1jTnH1SkopUFBDE-9IagAA2ADvH.jpg?r=999",
+      "thumbnail": "https://i.ytimg.com/vi/M15wyhE9yDw/maxresdefault.jpg",
+      "rating": 5.5,
+      "views": 2899,
+      "duration": "1:33:00",
+      "uploadDate": "2025-02-12",
+      "tags": [
+        "romance",
+        "comedy",
+        "drama"
+      ]
+    },
+    {
+      "id": "loveyapa-2025",
+      "title": "Loveyapa (2025)",
+      "description": "The madness after a couple exchanges their mobile phones and begins to unearth bitter truth about each other.",
+      "videoUrl": "https://short.icu/T1keok7kb8?thumbnail=https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/medium/loveyapa-et00427632-1738580822.jpg",
+      "thumbnail": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/medium/loveyapa-et00427632-1738580822.jpg",
+      "rating": 5.4,
+      "views": 3991,
+      "duration": "2:17:00",
+      "uploadDate": "2025-02-07",
+      "tags": [
+        "comedy",
+        "romance",
+        "drama"
+      ]
+    },
+    {
+      "id": "dhoom-dhaam-2025",
+      "title": "Dhoom Dhaam (2025)",
+      "description": "Veer Khurana and Koyal Chadda are a mismatched couple, who get into an arranged marriage. A case of mistaken identity forces this newly married couple to go on the run on their wedding night and search for the mysterious \"Charlie\".",
+      "videoUrl": "https://geo.dailymotion.com/player/xjrxe.html?video=x9elafs",
+      "thumbnail": "https://resizing.flixster.com/lf37LQjMEnOQpZomm7zl-mOZy6w=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29386127_v_h9_aa.jpg",
+      "rating": 6.4,
+      "views": 3571,
+      "duration": "1:48:00",
+      "uploadDate": "2025-02-14",
+      "tags": [
+        "action",
+        "comedy",
+        "drama"
+      ]
+    },
+    {
+      "id": "bobby-aur-rishi-ki-love-story-2025",
+      "title": "Bobby Aur Rishi Ki Love Story (2025)",
+      "description": "Sparks fly between Bobby and Rishi in the heart of cambridge but life forces them apart. Years after, will the star crossed lovers get a second chance?",
+      "videoUrl": "https://short.icu/gNV6B53l_?thumbnail=https://i.ytimg.com/vi/ihwhmu7X3Vk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCmM3qnk3qN6aHelEDzli2L6s4g_Q",
+      "thumbnail": "https://i.ytimg.com/vi/ihwhmu7X3Vk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCmM3qnk3qN6aHelEDzli2L6s4g_Q",
+      "rating": 4.2,
+      "views": 2019,
+      "duration": "1:37:00",
+      "uploadDate": "2025-02-11",
+      "tags": [
+        "romance",
+        "drama"
+      ]
+    },
+    {
+      "id": "ek-anjaan-rishtey-ka-guilt-4-2025",
+      "title": "Ek Anjaan Rishtey Ka Guilt 4 (2025)",
+      "description": "Rhea and Ansh Singh, a daring couple, play a gamble that puts their marriage on the line. Will 7 days with the flamboyant Vikram Ahuja be the ultimate temptation?",
+      "videoUrl": "https://short.icu/Ze397fI1V?thumbnail=https://i.ytimg.com/vi/6ARFCVioU_s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAvZMSld0k8jdhaab8vRRm4Um-qxw",
+      "thumbnail": "https://i.ytimg.com/vi/6ARFCVioU_s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAvZMSld0k8jdhaab8vRRm4Um-qxw",
+      "rating": 4.4,
+      "views": 1890,
+      "duration": "2:46:00",
+      "uploadDate": "2025-02-13",
+      "tags": [
+        "romance",
+        "drama"
+      ]
+    },
+    {
       "id": "the-gorge-2025",
       "title": "The Gorge (2025)",
       "description": "Two highly-trained operatives become close after being sent to protect opposite sides of a mysterious gorge. When an evil emerges, they must work together to survive what lies within.",
@@ -863,24 +941,40 @@
         "drama",
         "romance"
       ]
-    },
+    }    
+  ],
+  "hindiDubbed": [
     {
-      "id": "saale-aashiq-2025",
-      "title": "Saale Aashiq (2025)",
-      "description": "The story is about standing up to the hate politics, age-old traditions and an eventual death threats as a couple faces opposition from their respective families.",
-      "videoUrl": "https://short.icu/Mlg2yErs7?thumbnail=https://assets.gadgets360cdn.com/pricee/assets/product/202501/Saale_Aashiq_1_1737030430.jpg?downsize=400:*",
-      "thumbnail": "https://assets.gadgets360cdn.com/pricee/assets/product/202501/Saale_Aashiq_1_1737030430.jpg?downsize=400:*",
-      "rating": 6.8,
-      "views": 3956,
+      "id": "my-fault-london-hindi-dubbed-2025",
+      "title": "My Fault: London Hindi Dubbed (2025)",
+      "description": "An 18-year-old girl moves from America to London with her mother and wealthy stepfather. She meets her stepbrother, and an attraction brews despite their efforts. Unaware, her estranged father tracks her down after release from prison",
+      "videoUrl": "https://short.icu/lwixaE7MM?thumbnail=https://www.midstlive.com/wp-content/uploads/2025/01/my-fault-london-culpa-mia-ott-release-1.png",
+      "thumbnail": "https://www.midstlive.com/wp-content/uploads/2025/01/my-fault-london-culpa-mia-ott-release-1.png",
+      "rating": 5.5,
+      "views": 2566,
       "duration": "2:00:00",
-      "uploadDate": "2025-02-01",
+      "uploadDate": "2025-02-13",
       "tags": [
         "drama",
         "romance"
       ]
-    }
-  ],
-  "hindiDubbed": [
+    },
+    {
+      "id": "honeymoon-crasher-2025-hindi-dubbed",
+      "title": "Honeymoon Crasher (2025) Hindi Dubbed",
+      "description": "When his fiancee dumps him at the altar for her ex, a young man is left with no alternative but to go on his romantic honeymoon with his mother.",
+      "videoUrl": "https://short.icu/mKrYwky4j?thumbnail=https://occ-0-8407-116.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABSYpafGV0y5Pi4iPvdlgSqbEbt7hi9NgqTkXy5ZF7w2jT-KPHv8e13klmGSHT3RmkqGm1-c8X1jTnH1SkopUFBDE-9IagAA2ADvH.jpg?r=999",
+      "thumbnail": "https://i.ytimg.com/vi/M15wyhE9yDw/maxresdefault.jpg",
+      "rating": 5.5,
+      "views": 3111,
+      "duration": "1:35:00",
+      "uploadDate": "2025-02-12",
+      "tags": [
+        "romance",
+        "comedy",
+        "drama"
+      ]
+    },
     {
       "id": "companion-hindi-dubbed-2025",
       "title": "Companion Hindi Dubbed (2025)",
@@ -1099,7 +1193,70 @@
         "thriller",
         "drama"
       ]
-    }
+    },
+    {
+      "id": "the-secrets-of-the-shiledars-s01-hindi-dubbed",
+      "title": "The Secrets Of The Shiledars S01 Hindi Dubbed",
+      "description": "A secret society unravels a hidden treasure belonging to Chhatrapati Shivaji Maharaj, with Rajeev leading the quest to protect it from falling into wrong hands, ultimately becoming the chief of the Shiledars.",
+      "videoUrl": "https://short.icu/a6gFGvNLP?thumbnail=https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2068/1738263022068-i",
+      "thumbnail": "https://i.ytimg.com/vi/qMST9Pmyewo/maxresdefault.jpg",
+      "rating": 7,
+      "views": 3995,
+      "duration": "3:37:00",
+      "uploadDate": "2025-01-31",
+      "tags": [
+        "action",
+        "adventure",
+        "mystery"
+      ]
+    },
+    {
+      "id": "american-primeval-s01-hindi-dubbed",
+      "title": "American Primeval S01 Hindi Dubbed",
+      "description": "It follows the gritty and adventurous exploration of the birth of the American West, the violent collisions of cults, religion, and men and women fighting for control of the new world.",
+      "videoUrl": "https://short.icu/xlyioafWG?thumbnail=https://www.heavenofhorror.com/wp-content/uploads/2025/01/American-Primeval-2025-Netflix-Series-Review-1200x720.jpg",
+      "thumbnail": "https://www.heavenofhorror.com/wp-content/uploads/2025/01/American-Primeval-2025-Netflix-Series-Review-1200x720.jpg",
+      "rating": 8.1,
+      "views": 4002,
+      "duration": "5:02:00",
+      "uploadDate": "2024-12-09",
+      "tags": [
+        "action",
+        "drama",
+        "thriller"
+      ]
+    },
+    {
+      "id": "luccas-world-hindi-dubbed-2025",
+      "title": "Luccas World Hindi Dubbed (2025)",
+      "description": "Determined to help her son, who has cerebral palsy, Bárbara takes her family to India for an experimental treatment.",
+      "videoUrl": "https://short.icu/1h17PESc5?thumbnail=https://occ-0-8407-1361.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABa3Qo1KVTUQ37Bsp2IosTn7WUKCPycwk-1e0q1shYERx4HkCYwIkrjBJQOwkyH_DZjiLz0t34QI-85qyj4_pOyapfHnKWtZSCLvnQmlmHzcyyhWNjdG4LavOjdTOaz-RpC8p0uHbAQkh7B4LAcf9NU0Zj5Y_zVOH22YFXdpB7o7hOAptkCy2vkM1lYS6ciw.jpg?r=5b7",
+      "thumbnail": "https://mp4moviez.ind.in/files/luccas-world.webp",
+      "rating": 4.8,
+      "views": 1292,
+      "duration": "1:36:00",
+      "uploadDate": "2025-01-31",
+      "tags": [
+        "drama",
+        "romance"
+      ]
+    },    
+    {
+      "id": "back-In-action-hindi-dubbed-2025",
+      "title": "Back In Action Hindi Dubbed (2025)",
+      "description": "Former CIA spies Emily and Matt are pulled back into espionage after their secret identities are exposed.",
+      "videoUrl": "https://short.icu/AP4gomVgM?thumbnail=https://www.filmofilia.com/wp-content/uploads/2025/01/Back-in-Action-1.jpg",
+      "thumbnail": "https://www.filmofilia.com/wp-content/uploads/2025/01/Back-in-Action-1.jpg",
+      "rating": 6.5,
+      "views": 2914,
+      "duration": "1:54:00",
+      "uploadDate": "2025-01-30",
+      "tags": [
+        "spy",
+        "drama",
+        "comedy"
+      ]
+    } 
   ],
   "adult": [
     {
@@ -2317,6 +2474,31 @@
       ],
       "views": 4112,
       "duration": "5:34:00"
+    },
+    {
+      "id": "agra-affair-s01",
+      "title": "Agra Affair S01",
+      "description": "Akash struggles to save his family's crumbling hotel while pursuing his dream restaurant. He falls for tour guide Tanvi, but their romance faces hurdles. Akash's path intertwines with Megha's, leading to a poignant story of love, ambition.",
+      "thumbnail": "https://static.toiimg.com/photo/msid-117059097.jpeg",
+      "episodes": [
+        {
+          "id": "agra-affair-s01",
+          "title": "Agra Affair S01",
+          "description": "Akash struggles to save his family's crumbling hotel while pursuing his dream restaurant. He falls for tour guide Tanvi, but their romance faces hurdles. Akash's path intertwines with Megha's, leading to a poignant story of love, ambition.",
+          "videoUrl": "https://short.icu/daJ2iAPuU?thumbnail=https://static.toiimg.com/photo/msid-117059097.jpeg",
+          "thumbnail": "https://static.toiimg.com/photo/msid-117059097.jpeg",
+          "duration": "2:43:00",
+          "rating": 7.6,
+          "views": 3713,
+          "uploadDate": "2025-01-08",
+          "tags": [
+            "romance",
+            "drama"
+          ]
+        }
+      ],
+      "duration": "2:43:00",
+      "views": 3713
     }
   ]
 }
