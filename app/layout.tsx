@@ -92,6 +92,22 @@ export default function RootLayout({
             }),
           }}
         />
+          {/* StatCounter Tracking Code */}
+          <Script
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              var sc_project=13089310; 
+              var sc_security="86df82eb"; 
+              (function() {
+                var s = document.createElement("script");
+                s.src = "https://www.statcounter.com/counter/counter.js";
+                s.async = true;
+                document.body.appendChild(s);
+              })();
+            `,
+          }}
+        />
        
       </head>
       <body className={inter.className}>
@@ -99,8 +115,7 @@ export default function RootLayout({
         <Navigation />
         <main className="min-h-screen bg-background">{children}</main>
         <Footer /> {/* Footer added here */}
-         {/* StatCounter Component */}
-         <StatCounter sc_project={13089310} sc_security="86df82eb" />
+      
         {/* First Ad Script */}
         <Script id="ad-script-1" strategy="lazyOnload">
           {`(function(d,z,s){
