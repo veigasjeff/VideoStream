@@ -198,7 +198,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Movie URLs
   const videoUrls = superdata.videos?.map((video) => ({
-    url: `${baseUrl}/video/${video.id}`,
+    url: `${baseUrl}/movies/${video.id}`,
     lastModified: new Date(video.uploadDate || Date.now()),
   })) || [];
 

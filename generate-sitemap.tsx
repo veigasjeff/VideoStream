@@ -291,7 +291,7 @@ function generateSitemap() {
   // Movies
   superdata.videos?.forEach((video) => {
     urls.push({
-      loc: `${baseUrl}/video/${video.id}`,
+      loc: `${baseUrl}/movies/${video.id}`,
       changefreq: "daily",
       priority: "0.9",
     });
@@ -325,7 +325,7 @@ function generateSitemap() {
 
     series.episodes?.forEach((episode) => {
       urls.push({
-        loc: `${baseUrl}/video/${episode.id}`,
+        loc: `${baseUrl}/series/${episode.id}`,
         changefreq: "daily",
         priority: "0.9",
       });
