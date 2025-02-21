@@ -1,6 +1,36 @@
 {
   "videos": [
     {
+      "id": "den-of-thieves-2-pantera-2025",
+      "title": "Den of Thieves 2: Pantera (2025) ",
+      "description": "Big Nick is back on the hunt in Europe and closing in on Donnie, who is embroiled in the treacherous world of diamond thieves and the infamous Panther mafia, as they plot a massive heist of the world's largest diamond exchange.",
+      "videoUrl": "https://short.icu/ZM86Uso4xB?thumbnail=https://img.nowrunning.com/content/movie/2025/den-o-30388/bg_den-of-thieves-2-pantera.jpg",
+      "thumbnail": "https://img.nowrunning.com/content/movie/2025/den-o-30388/bg_den-of-thieves-2-pantera.jpg",
+      "rating": 6.3,
+      "views": 0,
+      "duration": "2:10:00",
+      "uploadDate": "2025-02-21",
+      "tags": [
+        "action",
+        "crime",
+        "thriller"
+      ]
+    },
+    {
+      "id": "brave-the-dark-2025",
+      "title": "Brave the Dark (2025)",
+      "description": "Haunted by torturous childhood memories, Nate Williams finds himself engulfed in darkness. When his drama teacher, Mr. Deen bails him out of jail and takes him in, Nate must confront his past before it leads to his own destruction.",
+      "videoUrl": "https://short.icu/6HJtD6_by?thumbnail=https://images.angelstudios.com/image/upload/f_auto/q_auto/v1735840872/brave-the-dark-horiz-img-01.png",
+      "thumbnail": "https://images.angelstudios.com/image/upload/f_auto/q_auto/v1735840872/brave-the-dark-horiz-img-01.png",
+      "rating": 6.9,
+      "views": 2619,
+      "duration": "1:52:00",
+      "uploadDate": "2025-02-27",
+      "tags": [
+        "drama"
+      ]
+    },
+    {
       "id": "honeymoon-crasher-2025",
       "title": "Honeymoon Crasher (2025)",
       "description": "When his fiancee dumps him at the altar for her ex, a young man is left with no alternative but to go on his romantic honeymoon with his mother.",
@@ -443,6 +473,22 @@
         "thriller"
       ],
       "rating": 2.4
+    },
+    {
+      "id": "den-of-thieves-2-pantera-hindi-dubbed-2025",
+      "title": "Den of Thieves 2: Pantera Hindi Dubbed (2025)",
+      "description": "Big Nick is back on the hunt in Europe and closing in on Donnie, who is embroiled in the treacherous world of diamond thieves and the infamous Panther mafia, as they plot a massive heist of the world's largest diamond exchange.",
+      "videoUrl": "https://short.icu/ZM86Uso4xB?thumbnail=https://img.nowrunning.com/content/movie/2025/den-o-30388/bg_den-of-thieves-2-pantera.jpg",
+      "thumbnail": "https://img.nowrunning.com/content/movie/2025/den-o-30388/bg_den-of-thieves-2-pantera.jpg",
+      "rating": 6.3,
+      "views": 2515,
+      "duration": "2:24:00",
+      "uploadDate": "2025-01-10",
+      "tags": [
+        "action",
+        "crime",
+        "thriller"
+      ]
     },
     {
       "id": "companion-2025",
