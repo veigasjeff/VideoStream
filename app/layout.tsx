@@ -92,22 +92,7 @@ export default function RootLayout({
             }),
           }}
         />
-          {/* StatCounter Tracking Code */}
-          <Script
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              var sc_project=13089310; 
-              var sc_security="86df82eb"; 
-              (function() {
-                var s = document.createElement("script");
-                s.src = "https://www.statcounter.com/counter/counter.js";
-                s.async = true;
-                document.body.appendChild(s);
-              })();
-            `,
-          }}
-        />
+        
        
       </head>
       <body className={inter.className}>
