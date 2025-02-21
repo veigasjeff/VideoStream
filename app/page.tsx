@@ -83,14 +83,6 @@ export default function Home() {
     type: "Adult",
   }));
 
-  const hindiDubbedMovies = superdata.hindiDubbed
-    ? superdata.hindiDubbed.map((video) => ({
-      ...video,
-      movieTitle: video.title,
-      type: "Hindi-Dubbed",
-    }))
-    : []; // If undefined, fallback to an empty array
-
 
   const tvSeries = superdata.series.map((series) => ({
     ...series,
@@ -98,11 +90,18 @@ export default function Home() {
     rating: series.rating || (series.episodes.length > 0 ? series.episodes[0].rating : 0),
   }));
 
+  const hindiDubbedMovies = superdata.hindiDubbed
+  ? superdata.hindiDubbed.map((video) => ({
+    ...video,
+    movieTitle: video.title,
+    type: "Hindi-Dubbed",
+  }))
+  : []; // If undefined, fallback to an empty array
+
   const allVideos = [
     ...movies,
     ...adultVideos,
-    ...hindiDubbedMovies, // ✅ Include Hindi-Dubbed movies
-    ...tvSeries.flatMap((s) =>
+     ...tvSeries.flatMap((s) =>
       s.episodes.map((ep) => ({
         ...ep,
         seriesTitle: s.title,
@@ -110,6 +109,7 @@ export default function Home() {
         rating: s.rating,
         type: "TVEpisode",
       }))
+      ...hindiDubbedMovies, // ✅ Include Hindi-Dubbed movies
     ),
   ];
 
