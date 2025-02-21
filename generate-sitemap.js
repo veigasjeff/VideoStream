@@ -9,7 +9,7 @@ function generateSitemap() {
   const urls = [
     { loc: baseUrl, changefreq: 'daily', priority: '1.0' },
     { loc: `${baseUrl}/movies`, changefreq: 'daily', priority: '0.9' },
-    { loc: `${baseUrl}/hindi-dubbed`, changefreq: 'daily', priority: '0.9' },
+    { loc: `${baseUrl}/hindiDubbed`, changefreq: 'daily', priority: '0.9' },
     { loc: `${baseUrl}/series`, changefreq: 'daily', priority: '0.9' },
     { loc: `${baseUrl}/adult`, changefreq: 'daily', priority: '0.9' },
   ];
