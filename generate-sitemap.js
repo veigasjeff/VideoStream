@@ -177,7 +177,7 @@ const fs = require("fs");
 const path = require("path");
 
 const baseUrl = "https://videostreamhub.vercel.app";
-const superdata = require("./data/superdata.json"); // Your data file
+const superdata = require("./data/superdata.json"); // Make sure your data file has `hindiDubbed`
 
 function generateSitemap() {
   const urls = [
@@ -189,16 +189,18 @@ function generateSitemap() {
   ];
 
   // Movies
-  superdata.videos?.forEach((video) => {
-    urls.push({
-      loc: `${baseUrl}/video/${video.id}`,
-      changefreq: "daily",
-      priority: "0.9",
+  if (superdata.videos) {
+    superdata.videos.forEach((video) => {
+      urls.push({
+        loc: `${baseUrl}/video/${video.id}`,
+        changefreq: "daily",
+        priority: "0.9",
+      });
     });
-  });
+  }
 
-  // Hindi Dubbed Movies
-  if (superdata.hindiDubbed) {
+  // ✅ Hindi Dubbed Movies - FIXED!
+  if (superdata.hindiDubbed && Array.isArray(superdata.hindiDubbed)) {
     superdata.hindiDubbed.forEach((video) => {
       urls.push({
         loc: `${baseUrl}/hindiDubbed/${video.id}`,
@@ -206,33 +208,41 @@ function generateSitemap() {
         priority: "0.9",
       });
     });
+  } else {
+    console.warn("⚠️ WARNING: `hindiDubbed` section is missing in superdata.json!");
   }
 
-  // Adult
-  superdata.adult?.forEach((video) => {
-    urls.push({
-      loc: `${baseUrl}/adult/${video.id}`,
-      changefreq: "daily",
-      priority: "0.9",
-    });
-  });
-
-  // Series & Episodes
-  superdata.series?.forEach((series) => {
-    urls.push({
-      loc: `${baseUrl}/series/${series.id}`,
-      changefreq: "daily",
-      priority: "0.9",
-    });
-
-    series.episodes?.forEach((episode) => {
+  // Adult Content
+  if (superdata.adult) {
+    superdata.adult.forEach((video) => {
       urls.push({
-        loc: `${baseUrl}/video/${episode.id}`,
+        loc: `${baseUrl}/adult/${video.id}`,
         changefreq: "daily",
         priority: "0.9",
       });
     });
-  });
+  }
+
+  // Series & Episodes
+  if (superdata.series) {
+    superdata.series.forEach((series) => {
+      urls.push({
+        loc: `${baseUrl}/series/${series.id}`,
+        changefreq: "daily",
+        priority: "0.9",
+      });
+
+      if (series.episodes) {
+        series.episodes.forEach((episode) => {
+          urls.push({
+            loc: `${baseUrl}/video/${episode.id}`,
+            changefreq: "daily",
+            priority: "0.9",
+          });
+        });
+      }
+    });
+  }
 
   // Generate XML content
   const sitemapXml = `
@@ -257,7 +267,7 @@ function generateSitemap() {
   // Save to public directory
   const sitemapPath = path.join(__dirname, "public", "sitemap.xml");
   fs.writeFileSync(sitemapPath, sitemapXml);
-  console.log("✅ Sitemap has been written to public/sitemap.xml");
+  console.log("✅ Sitemap has been successfully written to public/sitemap.xml");
 }
 
 generateSitemap();
