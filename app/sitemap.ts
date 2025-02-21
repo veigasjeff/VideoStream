@@ -130,6 +130,54 @@
 
 
 
+// import type { MetadataRoute } from "next";
+// import superdata from "@/data/superdata.json";
+
+// export default function sitemap(): MetadataRoute.Sitemap {
+//   const baseUrl = "https://videostreamhub.vercel.app";
+
+//   // Static pages
+//   const staticUrls = [
+//     { url: baseUrl },
+//     { url: `${baseUrl}/movies` },
+//     { url: `${baseUrl}/series` },
+//     { url: `${baseUrl}/adult` },
+//     { url: `${baseUrl}/hindi-dubbed` }, // Added Hindi Dubbed Page
+//   ].map((item) => ({
+//     ...item,
+//     lastModified: new Date(),
+//   }));
+
+//   // Movie URLs
+//   const videoUrls = superdata.videos.map((video) => ({
+//     url: `${baseUrl}/video/${video.slug}`, // Corrected video path
+//     lastModified: new Date(video.uploadDate || Date.now()),
+//   }));
+
+//   // Series Episodes
+//   const episodeUrls = superdata.series.flatMap((series) =>
+//     series.episodes.map((episode) => ({
+//       url: `${baseUrl}/series/${episode.id}`,
+//       lastModified: new Date(episode.uploadDate || Date.now()),
+//     }))
+//   );
+
+//   // Adult Videos
+//   const adultUrls = superdata.adult?.map((video) => ({
+//     url: `${baseUrl}/adult/${video.id}`,
+//     lastModified: new Date(video.uploadDate || Date.now()),
+//   })) || [];
+
+//   // Hindi Dubbed Movies
+//   const hindiDubbedUrls = superdata.hindiDubbed?.map((video) => ({
+//     url: `${baseUrl}/hindi-dubbed/${video.id}`,
+//     lastModified: new Date(video.uploadDate || Date.now()),
+//   })) || [];
+
+//   return [...staticUrls, ...videoUrls, ...episodeUrls, ...adultUrls, ...hindiDubbedUrls];
+// }
+
+
 import type { MetadataRoute } from "next";
 import superdata from "@/data/superdata.json";
 
@@ -142,25 +190,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/movies` },
     { url: `${baseUrl}/series` },
     { url: `${baseUrl}/adult` },
-    { url: `${baseUrl}/hindi-dubbed` }, // Added Hindi Dubbed Page
+    { url: `${baseUrl}/hindi-dubbed` },
   ].map((item) => ({
     ...item,
     lastModified: new Date(),
   }));
 
   // Movie URLs
-  const videoUrls = superdata.videos.map((video) => ({
-    url: `${baseUrl}/video/${video.slug}`, // Corrected video path
+  const videoUrls = superdata.videos?.map((video) => ({
+    url: `${baseUrl}/video/${video.id}`,
     lastModified: new Date(video.uploadDate || Date.now()),
-  }));
+  })) || [];
 
   // Series Episodes
-  const episodeUrls = superdata.series.flatMap((series) =>
+  const episodeUrls = superdata.series?.flatMap((series) =>
     series.episodes.map((episode) => ({
       url: `${baseUrl}/series/${episode.id}`,
       lastModified: new Date(episode.uploadDate || Date.now()),
     }))
-  );
+  ) || [];
 
   // Adult Videos
   const adultUrls = superdata.adult?.map((video) => ({
