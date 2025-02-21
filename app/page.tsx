@@ -101,7 +101,8 @@ export default function Home() {
   const allVideos = [
     ...movies,
     ...adultVideos,
-     ...tvSeries.flatMap((s) =>
+   
+    ...tvSeries.flatMap((s) =>
       s.episodes.map((ep) => ({
         ...ep,
         seriesTitle: s.title,
@@ -109,8 +110,8 @@ export default function Home() {
         rating: s.rating,
         type: "TVEpisode",
       }))
-      ...hindiDubbedMovies, // ✅ Include Hindi-Dubbed movies
     ),
+    ...hindiDubbedMovies, // ✅ Include Hindi-Dubbed movies
   ];
 
   return (
