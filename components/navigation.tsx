@@ -31,7 +31,7 @@ export function Navigation() {
           <Link href="/movies" className="font-bold text-xl hover:no-underline">
             Movies
           </Link>
-          <Link href="/hindi-dubbed" className="text-sm font-medium hover:no-underline">
+          <Link href="/hindi-dubbed" className="font-bold text-xl hover:no-underline">
           Hindi Dubbed
           </Link>
           <Link href="/adult" className="font-bold text-xl hover:no-underline">
