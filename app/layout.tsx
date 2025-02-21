@@ -4,6 +4,7 @@ import "./globals.css"
 import { Navigation } from "@/components/navigation"
 import Navbar from "../components/Navbar"; // Import the Navbar component
 import Footer from "../components/Footer"; // Import the Footer component
+import StatCounter from "react-statcounter"; // Import StatCounter component
 import type React from "react"
 import Script from "next/script"
 
@@ -98,7 +99,8 @@ export default function RootLayout({
         <Navigation />
         <main className="min-h-screen bg-background">{children}</main>
         <Footer /> {/* Footer added here */}
-      
+         {/* StatCounter Component */}
+         <StatCounter sc_project={13089310} sc_security="86df82eb" />
         {/* First Ad Script */}
         <Script id="ad-script-1" strategy="lazyOnload">
           {`(function(d,z,s){
