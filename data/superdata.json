@@ -1710,6 +1710,83 @@
   ],
   "series": [
     {
+      "id": "high-potential-s01",
+      "title": "High Potential S01",
+      "description": "Thanks to her exceptional mind, single-mom-of-three Morgan is able to help solve a crime as she rearranges evidence during her shift as a cleaner for the police department.",
+      "thumbnail": "https://www.metacritic.com/a/img/catalog/provider/2/13/2-f2759c2435be315e65d327a9d051b005.jpg",
+      "episodes": [
+        {
+          "id": "zero-day-s01",
+          "title": "Zero Day S01",
+          "description": "In the midst of crisis: how can we discover the truth when it seems that the world is being destroyed by uncontrollable forces? Also, to what extent are conspiracy theories our own inventions or products of our imagination?",
+          "thumbnail": "https://i.imgur.com/Xf8qqXc.png?dtrcs",
+          "episodes": [
+            {
+              "id": "zero-day-s01",
+              "title": "Zero Day S01",
+              "description": "In the midst of crisis: how can we discover the truth when it seems that the world is being destroyed by uncontrollable forces? Also, to what extent are conspiracy theories our own inventions or products of our imagination?",
+              "videoUrl": "https://short.icu/7VLd3Ag7G?thumbnail=https://i.imgur.com/Xf8qqXc.png?dtrcs",
+              "thumbnail": "https://i.imgur.com/Xf8qqXc.png?dtrcs",
+              "duration": "5:08:00",
+              "rating": 6.5,
+              "views": 3519,
+              "uploadDate": "2025-02-20",
+              "tags": [
+                "drama",
+                "thriller"
+              ]
+            }
+          ],
+          "views": 3519,
+          "duration": "5:08:00"
+        },
+        {
+          "id": "high-potential-s01",
+          "title": "High Potential S01",
+          "description": "Thanks to her exceptional mind, single-mom-of-three Morgan is able to help solve a crime as she rearranges evidence during her shift as a cleaner for the police department.",
+          "videoUrl": "https://short.icu/EBrJD9ps2?thumbnail=https://www.metacritic.com/a/img/catalog/provider/2/13/2-f2759c2435be315e65d327a9d051b005.jpg",
+          "thumbnail": "https://www.metacritic.com/a/img/catalog/provider/2/13/2-f2759c2435be315e65d327a9d051b005.jpg",
+          "duration": "9:15:00",
+          "rating": 7.6,
+          "views": 3515,
+          "uploadDate": "2025-02-11",
+          "tags": [
+            "crime",
+            "drama",
+            "mystery"
+          ]
+        }
+      ],
+      "views": 3515,
+      "duration": "9:15:00"
+    },
+    {
+      "id": "cobra-kai-s06",
+      "title": "Cobra Kai S06",
+      "description": "Decades after their 1984 All Valley Karate Tournament bout, a middle-aged Daniel LaRusso and Johnny Lawrence find themselves martial-arts rivals again.",
+      "thumbnail": "https://hs223eagleexpress.com/wp-content/uploads/2024/10/7.jpg",
+      "episodes": [
+        {
+          "id": "cobra-kai-s06",
+          "title": "Cobra Kai S06",
+          "description": "Decades after their 1984 All Valley Karate Tournament bout, a middle-aged Daniel LaRusso and Johnny Lawrence find themselves martial-arts rivals again.",
+          "videoUrl": "https://short.icu/FBPA8_fBc?thumbnail=https://hs223eagleexpress.com/wp-content/uploads/2024/10/7.jpg",
+          "thumbnail": "https://hs223eagleexpress.com/wp-content/uploads/2024/10/7.jpg",
+          "duration": "10:06:00",
+          "rating": 8.4,
+          "views": 4003,
+          "uploadDate": "2025-02-13",
+          "tags": [
+            "action",
+            "drama",
+            "sports"
+          ]
+        }
+      ],
+      "views": 4003,
+      "duration": "10:06:00"
+    },
+    {
       "id": "virdee-s01",
       "title": "Virdee S01",
       "description": "DCI Harry Virdee must hunt down a killer targeting the Asian community in Bradford, whilst dealing with his chaotic personal life.",
