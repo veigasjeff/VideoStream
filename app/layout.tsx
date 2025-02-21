@@ -75,7 +75,6 @@ export default function RootLayout({
             gtag('config', 'G-FX1FS2NM81');
           `}
         </Script>
-
         <Script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -91,9 +90,24 @@ export default function RootLayout({
               },
             }),
           }}
+        />        
+        <Script
+          id="statcounter-main"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              var sc_project=13089310; 
+              var sc_invisible=1; 
+              var sc_security="86df82eb"; 
+            `,
+          }}
         />
-        
-       
+        <Script
+          id="statcounter-script"
+          strategy="afterInteractive"
+          src="https://www.statcounter.com/counter/counter_xhtml.js"
+          async
+        />
       </head>
       <body className={inter.className}>
       <Navbar /> {/* Place the Navbar here */}
