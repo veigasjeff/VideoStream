@@ -61,6 +61,7 @@
 
 import { VideoGrid } from "@/components/video-grid";
 import superdata from "@/data/superdata.json";
+import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

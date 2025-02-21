@@ -142,6 +142,7 @@ import superdata from "@/data/superdata.json"
 import { StructuredData } from "@/components/structured-data-3"
 import Link from "next/link"
 import Image from "next/image"
+import Script from "next/script";
 import { VideoPlayer } from "@/components/video-player"
 import { Clock, Film } from "lucide-react"
 import { useEffect, useState, useMemo } from "react"
