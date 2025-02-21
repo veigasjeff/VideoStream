@@ -1710,36 +1710,37 @@
   ],
   "series": [
     {
-      "id": "high-potential-s01",
-      "title": "High Potential S01",
-      "description": "Thanks to her exceptional mind, single-mom-of-three Morgan is able to help solve a crime as she rearranges evidence during her shift as a cleaner for the police department.",
-      "thumbnail": "https://www.metacritic.com/a/img/catalog/provider/2/13/2-f2759c2435be315e65d327a9d051b005.jpg",
+      "id": "zero-day-s01",
+      "title": "Zero Day S01",
+      "description": "In the midst of crisis: how can we discover the truth when it seems that the world is being destroyed by uncontrollable forces? Also, to what extent are conspiracy theories our own inventions or products of our imagination?",
+      "thumbnail": "https://i.imgur.com/Xf8qqXc.png?dtrcs",
       "episodes": [
         {
           "id": "zero-day-s01",
           "title": "Zero Day S01",
           "description": "In the midst of crisis: how can we discover the truth when it seems that the world is being destroyed by uncontrollable forces? Also, to what extent are conspiracy theories our own inventions or products of our imagination?",
+          "videoUrl": "https://short.icu/7VLd3Ag7G?thumbnail=https://i.imgur.com/Xf8qqXc.png?dtrcs",
           "thumbnail": "https://i.imgur.com/Xf8qqXc.png?dtrcs",
-          "episodes": [
-            {
-              "id": "zero-day-s01",
-              "title": "Zero Day S01",
-              "description": "In the midst of crisis: how can we discover the truth when it seems that the world is being destroyed by uncontrollable forces? Also, to what extent are conspiracy theories our own inventions or products of our imagination?",
-              "videoUrl": "https://short.icu/7VLd3Ag7G?thumbnail=https://i.imgur.com/Xf8qqXc.png?dtrcs",
-              "thumbnail": "https://i.imgur.com/Xf8qqXc.png?dtrcs",
-              "duration": "5:08:00",
-              "rating": 6.5,
-              "views": 3519,
-              "uploadDate": "2025-02-20",
-              "tags": [
-                "drama",
-                "thriller"
-              ]
-            }
-          ],
+          "duration": "5:08:00",
+          "rating": 6.5,
           "views": 3519,
-          "duration": "5:08:00"
-        },
+          "uploadDate": "2025-02-20",
+          "tags": [
+            "drama",
+            "thriller"
+          ]
+        }
+      ],
+      "views": 3519,
+      "duration": "5:08:00"
+    },
+    {
+      "id": "high-potential-s01",
+      "title": "High Potential S01",
+      "description": "Thanks to her exceptional mind, single-mom-of-three Morgan is able to help solve a crime as she rearranges evidence during her shift as a cleaner for the police department.",
+      "thumbnail": "https://www.metacritic.com/a/img/catalog/provider/2/13/2-f2759c2435be315e65d327a9d051b005.jpg",
+      "episodes": [
+        
         {
           "id": "high-potential-s01",
           "title": "High Potential S01",
