@@ -145,7 +145,6 @@ import Image from "next/image"
 import Script from "next/script";
 import { VideoPlayer } from "@/components/video-player"
 import { Clock, Film } from "lucide-react"
-import { generateMetadata } from "./metadata" 
 import { useEffect, useState, useMemo } from "react"
 
 interface Props {
@@ -210,9 +209,6 @@ export default function VideoPage({ params }: Props) {
   }
 
   const handlePopupAdClose = () => setShowPopupAd(false)
-
-      // Generate metadata for SEO
-      const metadata: Promise<Metadata> = generateMetadata({ params })
 
   return (
     <>
