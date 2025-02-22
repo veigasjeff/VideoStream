@@ -11,6 +11,7 @@ export function StructuredData({ video }: StructuredDataProps) {
     name: video.title,
     description: video.description,
     duration: video.duration,
+    images: video.thumbnail,
     thumbnailUrl: video.thumbnail,
     url: `https://videostreamhub.vercel.app/hindi-dubbed/${video.id}`,
     aggregateRating: {
