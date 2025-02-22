@@ -84,7 +84,8 @@ interface Props {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const video = superdata.videos.find((v) => v.id === params.id);
+  // Search for video in "hindiDubbed" array
+  const video = superdata.hindiDubbed.find((v) => v.id === params.id);
 
   if (!video) {
     return {
@@ -119,23 +120,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: video.title,
       description: video.description,
       type: "video.movie",
-      images: video.thumbnail
-        ? [
-            {
-              url: video.thumbnail, // Ensure this is a FULL URL
-              width: 1200,
-              height: 630,
-              alt: video.title,
-            },
-          ]
-        : [
-            {
-              url: "https://videostreamhub.vercel.app/placeholder.svg",
-              width: 1200,
-              height: 630,
-              alt: "Default Thumbnail",
-            },
-          ],
+      images: [
+        {
+          url: video.thumbnail, // ✅ Uses correct thumbnail from JSON
+          width: 1200,
+          height: 630,
+          alt: video.title,
+        },
+      ],
     },
     other: {
       dateCreated: video.uploadDate,
