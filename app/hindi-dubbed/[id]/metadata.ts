@@ -47,6 +47,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: video.title,
     description: video.description,
+    alternates: {
+      canonical: `https://videostreamhub.vercel.app/hindi-dubbed/${video.id}`,
+    },
     openGraph: {
       title: video.title,
       description: video.description,
