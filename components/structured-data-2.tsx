@@ -125,6 +125,7 @@ export function StructuredData({ video }: StructuredDataProps) {
     name: video.title,
     description: video.description,
     duration: video.duration,
+    image: video.thumbnail,
     thumbnailUrl: video.thumbnail,
     url: `https://videostreamhub.vercel.app/movies/${video.id}`,
     aggregateRating: {
