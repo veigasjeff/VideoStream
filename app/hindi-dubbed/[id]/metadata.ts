@@ -47,7 +47,7 @@
 // }
 
 // export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const video = superdata.hindiDubbed.find((v) => v.id === params.id);
+//   const video = superdata.videos.find((v) => v.id === params.id)
 
 //   if (!video) {
 //     return {
@@ -74,8 +74,6 @@
 //   }
 // }
 
-
-
 import type { Metadata } from "next";
 import superdata from "@/data/superdata.json";
 
@@ -86,7 +84,6 @@ interface Props {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  // const video = superdata.hindiDubbed.find((v) => v.id === params.id);
   const video = superdata.videos.find((v) => v.id === params.id);
 
   if (!video) {
