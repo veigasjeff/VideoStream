@@ -64,55 +64,11 @@ import superdata from "@/data/superdata.json";
 import Script from "next/script";
 import type { Metadata } from "next";
 
-// export const metadata: Metadata = {
-//   title: "VideoStreamHub - Watch Movies, Series & More",
-//   description:
-//     "Stream the latest movies, TV series, and exclusive content on VideoStreamHub. Your ultimate entertainment destination.",
-// };
-
 export const metadata: Metadata = {
-  metadataBase: new URL("https://videostreamhub.vercel.app"),
-  title: {
-    default: "VideoStreamHub - Watch Movies, Series & More",
-    template: "%s | VideoStreamHub",
-  },
+  title: "VideoStreamHub - Watch Movies, Series & More",
   description:
     "Stream the latest movies, TV series, and exclusive content on VideoStreamHub. Your ultimate entertainment destination.",
-  keywords: ["VideoStreamHub", "VideoStream Hub", "Video Stream Hub", "movies", "TV series", "video", "free movies", "free TV series", "watch movie online", "watch TV series online", "free movie streaming", "free TV series streaming", "video streaming", "entertainment", "watch online", "JustWatch", "JustWatch Free"],
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://videostreamhub.vercel.app",
-    siteName: "VideoStreamHub",
-    title: "VideoStreamHub - Watch Movies, Series & More",
-    description:
-      "Stream the latest movies, TV series, and exclusive content on VideoStreamHub. Your ultimate entertainment destination.",
-    images: [
-      {
-        url: "https://videostreamhub.vercel.app/og_image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "VideoStreamHub - Your Ultimate Streaming Platform",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "VideoStreamHub - Watch Movies, Series & More",
-    description:
-      "Stream the latest movies, TV series, and exclusive content on VideoStreamHub. Your ultimate entertainment destination.",
-    images: ["https://videostreamhub.vercel.app/og_image.jpg"],
-    creator: "@VideoStreamHub",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-  alternates: {
-    canonical: "https://videostreamhub.vercel.app",
-  },
-}
-
+};
 
 export default function Home() {
   const movies = superdata.videos.map((video) => ({
