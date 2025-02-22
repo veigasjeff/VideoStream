@@ -218,8 +218,6 @@ import "./globals.css";
 import { Navigation } from "@/components/navigation";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import StatCounter from "react-statcounter";
-import type React from "react";
 import Script from "next/script";
 import superdata from "@/data/superdata.json";
 
@@ -269,43 +267,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: video.description,
       type: "video.movie",
       url: [
-        `https://videostreamhub.vercel.app/video/${params.slug}`,
-        `https://videostreamhub.vercel.app/movie/${params.slug}`,
+        `https://videostreamhub.vercel.app/movies/${params.slug}`,
         `https://videostreamhub.vercel.app/series/${params.slug}`,
         `https://videostreamhub.vercel.app/adult/${params.slug}`,
         `https://videostreamhub.vercel.app/hindi-dubbed/${params.slug}`,
       ],
-      siteName: "VideoStreamHub",
-      images: [
-        {
-          url: video.thumbnail || "/placeholder.svg",
-          width: 1200,
-          height: 630,
-          alt: video.title,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: video.title,
-      description: video.description,
-      images: [video.thumbnail || "/placeholder.svg"],
-    },
-    other: {
-      dateCreated: video.uploadDate,
-    },
-  };
-}
-
-
-  return {
-    title: `${video.title} | VideoStreamHub`,
-    description: video.description,
-    openGraph: {
-      title: video.title,
-      description: video.description,
-      type: "video.movie",
-      url: `https://videostreamhub.vercel.app/video/${params.slug}`,
       siteName: "VideoStreamHub",
       images: [
         {
