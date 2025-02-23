@@ -102,9 +102,21 @@ export default function VideoPage({ params }: Props) {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {shuffledSeries.map((series) => (
                 <Link key={series.id} href={`/video/${series.id}`} className="group">
+                  {/* <div className="relative aspect-video rounded-lg overflow-hidden bg-muted mb-2">
+                    <Image src={series.thumbnail || "/placeholder.svg"} alt={series.title} quality={90}
+                    fill  loading="lazy" objectFit="cover" />
+                  </div> */}
                   <div className="relative aspect-video rounded-lg overflow-hidden bg-muted mb-2">
-                    <Image src={series.thumbnail || "/placeholder.svg"} alt={series.title} layout="fill" objectFit="cover" />
+                    <Image
+                      src={series.thumbnail || "/placeholder.svg"}
+                      alt={series.title}
+                      quality={90}
+                      fill
+                      loading="lazy"
+                      style={{ objectFit: "cover" }}
+                    />
                   </div>
+
                   <div className="mt-2">
                     <h3 className="font-medium line-clamp-2 group-hover:text-primary">{series.title}</h3>
                     <p className="text-sm text-muted-foreground mt-1 line-clamp-2">{series.description}</p>
