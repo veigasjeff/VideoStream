@@ -1788,6 +1788,32 @@
   ],
   "series": [
     {
+      "id": "crime-beat-s01",
+      "title": "Crime Beat S01",
+      "description": "Small-town crime journalist Abhishek finds his life and career affected by a fugitive gangster. As he gets trapped in a web of lies and motives, what price will he pay- to become a renowned reporter?",
+      "thumbnail": "https://i.ytimg.com/vi/aitcEOkQQvY/maxresdefault.jpg",
+      "episodes": [
+        {
+          "id": "crime-beat-s01",
+          "title": "Crime Beat S01",
+          "description": "Small-town crime journalist Abhishek finds his life and career affected by a fugitive gangster. As he gets trapped in a web of lies and motives, what price will he pay- to become a renowned reporter?",
+          "videoUrl": "https://short.icu/QkTqBJdRi?thumbnail=https://i.ytimg.com/vi/aitcEOkQQvY/maxresdefault.jpg",
+          "thumbnail": "https://i.ytimg.com/vi/aitcEOkQQvY/maxresdefault.jpg",
+          "duration": "4:05:00",
+          "rating": 7,
+          "views": 4113,
+          "uploadDate": "2025-02-23",
+          "tags": [
+            "crime",
+            "drama",
+            "thriller"
+          ]
+        }
+      ],
+      "views": 4113,
+      "duration": "4:05:00"
+    },
+    {
       "id": "zero-day-s01",
       "title": "Zero Day S01",
       "description": "In the midst of crisis: how can we discover the truth when it seems that the world is being destroyed by uncontrollable forces? Also, to what extent are conspiracy theories our own inventions or products of our imagination?",
