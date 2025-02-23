@@ -124,7 +124,7 @@ export default function RootLayout({
           })('vemtoutcheeg.com',8919677,document.createElement('script'))`}
         </Script>
         {/* <script>(function(d,z,s){s.src='https://'+d+'/400/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('vemtoutcheeg.com',8919677,document.createElement('script'))</cript> */}
-        <Script id="ad-script-3" strategy="lazyOnload">
+        {/* <Script id="ad-script-3" strategy="lazyOnload">
           {`(function(d,z,s){
               s.src='https://'+d+'/401/'+z;
               try {
@@ -133,7 +133,7 @@ export default function RootLayout({
                   console.error('Error loading script:', e);
               }
           })('gizokraijaw.net',8919691,document.createElement('script'))`}
-        </Script>
+        </Script> */}
 
         <Script async data-id="101478638" src="//static.getclicky.com/js" />
 
