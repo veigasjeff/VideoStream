@@ -178,48 +178,102 @@
 // }
 
 
+// import type { MetadataRoute } from "next";
+// import superdata from "@/data/superdata.json";
+
+// export default function sitemap(): MetadataRoute.Sitemap {
+//   const baseUrl = "https://videostreamhub.vercel.app";
+
+//   // Static pages
+//   const staticUrls = [
+//     { url: baseUrl },
+//     { url: `${baseUrl}/movies` },
+//     { url: `${baseUrl}/series` },
+//     { url: `${baseUrl}/adult` },
+//     { url: `${baseUrl}/hindi-dubbed` },
+//   ].map((item) => ({
+//     ...item,
+//     lastModified: new Date(),
+//   }));
+
+//   // Movie URLs
+//   const videoUrls = superdata.videos?.map((video) => ({
+//     url: `${baseUrl}/movies/${video.id}`,
+//     lastModified: new Date(video.uploadDate || Date.now()),
+//   })) || [];
+
+//   // Series Episodes
+//   const episodeUrls = superdata.series?.flatMap((series) =>
+//     series.episodes.map((episode) => ({
+//       url: `${baseUrl}/series/${episode.id}`,
+//       lastModified: new Date(episode.uploadDate || Date.now()),
+//     }))
+//   ) || [];
+
+//   // Adult Videos
+//   const adultUrls = superdata.adult?.map((video) => ({
+//     url: `${baseUrl}/adult/${video.id}`,
+//     lastModified: new Date(video.uploadDate || Date.now()),
+//   })) || [];
+
+//   // Hindi Dubbed Movies
+//   const hindiDubbedUrls = superdata.hindiDubbed?.map((video) => ({
+//     url: `${baseUrl}/hindi-dubbed/${video.id}`,
+//     lastModified: new Date(video.uploadDate || Date.now()),
+//   })) || [];
+
+//   return [...staticUrls, ...videoUrls, ...episodeUrls, ...adultUrls, ...hindiDubbedUrls];
+// }
 import type { MetadataRoute } from "next";
 import superdata from "@/data/superdata.json";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://videostreamhub.vercel.app";
 
-  // Static pages
+  // Static Pages (High Priority)
   const staticUrls = [
-    { url: baseUrl },
-    { url: `${baseUrl}/movies` },
-    { url: `${baseUrl}/series` },
-    { url: `${baseUrl}/adult` },
-    { url: `${baseUrl}/hindi-dubbed` },
+    { url: baseUrl, priority: 1.0, changefreq: "daily" }, // Homepage (most important)
+    { url: `${baseUrl}/movies`, priority: 0.9, changefreq: "daily" }, 
+    { url: `${baseUrl}/series`, priority: 0.9, changefreq: "daily" },
+    { url: `${baseUrl}/adult`, priority: 0.7, changefreq: "weekly" },
+    { url: `${baseUrl}/hindi-dubbed`, priority: 0.8, changefreq: "weekly" },
   ].map((item) => ({
     ...item,
-    lastModified: new Date(),
+    lastModified: new Date().toISOString(),
   }));
 
-  // Movie URLs
+  // Movie URLs (Updated Weekly)
   const videoUrls = superdata.videos?.map((video) => ({
     url: `${baseUrl}/movies/${video.id}`,
-    lastModified: new Date(video.uploadDate || Date.now()),
+    lastModified: new Date(video.uploadDate || Date.now()).toISOString(),
+    priority: 0.8,
+    changefreq: "weekly",
   })) || [];
 
-  // Series Episodes
+  // Series Episodes (Lower Priority, Updated Less Often)
   const episodeUrls = superdata.series?.flatMap((series) =>
     series.episodes.map((episode) => ({
       url: `${baseUrl}/series/${episode.id}`,
-      lastModified: new Date(episode.uploadDate || Date.now()),
+      lastModified: new Date(episode.uploadDate || Date.now()).toISOString(),
+      priority: 0.7,
+      changefreq: "weekly",
     }))
   ) || [];
 
-  // Adult Videos
+  // Adult Videos (Lower Priority)
   const adultUrls = superdata.adult?.map((video) => ({
     url: `${baseUrl}/adult/${video.id}`,
-    lastModified: new Date(video.uploadDate || Date.now()),
+    lastModified: new Date(video.uploadDate || Date.now()).toISOString(),
+    priority: 0.6,
+    changefreq: "monthly",
   })) || [];
 
-  // Hindi Dubbed Movies
+  // Hindi Dubbed Movies (Moderate Priority)
   const hindiDubbedUrls = superdata.hindiDubbed?.map((video) => ({
     url: `${baseUrl}/hindi-dubbed/${video.id}`,
-    lastModified: new Date(video.uploadDate || Date.now()),
+    lastModified: new Date(video.uploadDate || Date.now()).toISOString(),
+    priority: 0.7,
+    changefreq: "weekly",
   })) || [];
 
   return [...staticUrls, ...videoUrls, ...episodeUrls, ...adultUrls, ...hindiDubbedUrls];
