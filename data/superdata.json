@@ -1,6 +1,83 @@
 {
   "videos": [
     {
+      "id": "vidaamuyarchi-2025",
+      "title": "Vidaamuyarchi (2025)",
+      "description": "A married couple's trip takes an unsettling turn when the wife goes missing, prompting the husband's frantic search while an unknown villain creates obstacles.",
+      "videoUrl": "https://short.icu/exrWS4af7?thumbnail=https://assets-in.bmscdn.com/discovery-catalog/events/et00408788-hqkcdlqwcj-landscape.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/Fcdd6_QJLv8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA5WdwuZaKy1UbT4fVFg8X398eQsA",
+      "rating": 7.5,
+      "views": 4301,
+      "duration": "2:34:00",
+      "uploadDate": "2025-02-06",
+      "tags": [
+        "action",
+        "thriller"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Jilabi (2025)",
+      "description": "Jilabi: Directed by Nitin Kamble, Vishram Chavan. With Ruhi Aalve, Aditya Bhalerao, Priyanka Bhattacharjee, Ashwini Chavare.",
+      "videoUrl": "https://short.icu/goR10ggLe?thumbnail=https://assets-in.bmscdn.com/discovery-catalog/events/et00420885-snqvbfbarh-landscape.jpg",
+      "thumbnail": "https://assets-in.bmscdn.com/discovery-catalog/events/et00420885-snqvbfbarh-landscape.jpg",
+      "rating": 7.6,
+      "views": 3210,
+      "duration": "2:02:00",
+      "uploadDate": "2025-01-17",
+      "tags": [
+        "action",
+        "crime",
+        "drama"
+      ]
+    },
+    {
+      "id": "cleaner-2025",
+      "title": "Cleaner (2025)",
+      "description": "Criminal activists hijack a gala, taking 300 hostages. One extremist plans mass murder as a message to the world. An Ex-soldier turned window cleaner now works to rescue the hostages.",
+      "videoUrl": "https://short.icu/qjmHfT1CF?thumbnail=https://ntvb.tmsimg.com/assets/p28990405_v_h8_aa.jpg?w=960&h=540",
+      "thumbnail": "https://ntvb.tmsimg.com/assets/p28990405_v_h8_aa.jpg?w=960&h=540",
+      "rating": 5.8,
+      "views": 4012,
+      "duration": "1:37:00",
+      "uploadDate": "2025-02-21",
+      "tags": [
+        "action",
+        "drama",
+        "thriller"
+      ]
+    },  
+    {
+      "id": "the-monkey-2025",
+      "title": "The Monkey (2025)",
+      "description": "When twin brothers Bill and Hal find their father's old monkey toy in the attic, a series of gruesome deaths start. The siblings decide to throw the toy away and move on with their lives, growing apart over the years.",
+      "videoUrl": "https://short.icu/V9dTk7zGh?thumbnail=https://i.ytimg.com/vi/8pGDA9To3AA/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/8pGDA9To3AA/maxresdefault.jpg",
+      "rating": 6.6,
+      "views": 3811,
+      "duration": "1:39:00",
+      "uploadDate": "2025-02-21",
+      "tags": [
+        "horror",
+        "drama"
+      ]
+    },
+    {
+      "id": "mere-husband-ki-biwi-2025",
+      "title": "Mere Husband Ki Biwi (2025)",
+      "description": "A Delhi professional navigates a complicated love triangle when his old flame returns to his life just as he begins falling for someone new, leading to a series of comedic misunderstandings.",
+      "videoUrl": "https://short.icu/afRrEoX41?thumbnail=https://www.bollywoodhungama.com/wp-content/uploads/2025/02/Mere-Husband-Ki-Biwi-18.jpg",
+      "thumbnail": "https://www.midstlive.com/wp-content/uploads/2025/02/Mere-Husband-Ki-Biwi-1-585x390.png",
+      "rating": 8.2,
+      "views": 3414,
+      "duration": "2:22:00",
+      "uploadDate": "2025-02-21",
+      "tags": [
+        "romance",
+        "drama"
+      ]
+    },
+    {
       "id": "pyaar-testing-2025",
       "title": "Pyaar Testing (2025)",
       "description": "Dhruv and Amrita, potential marriage partners, decided to live together before the wedding to test their compatibility. As they spend time together, the question arises that whether they develop romantic feelings between them.",
