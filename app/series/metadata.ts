@@ -16,6 +16,9 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   return {
     title: video.title,
     description: video.description,
+    alternates: {
+    canonical: `https://videostreamhub.vercel.app/series/${video.id}`,
+    },
     openGraph: {
       title: video.title,
       description: video.description,

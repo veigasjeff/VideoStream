@@ -74,71 +74,29 @@
 //   }
 // }
 
-import type { Metadata } from "next";
-import superdata from "@/data/superdata.json";
+import { Metadata } from "next"
+import superdata from "@/data/superdata.json"
 
-interface Props {
-  params: {
-    id: string;
-  };
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const video = superdata.videos.find((v) => v.id === params.id);
+export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+  const video = superdata.videos.find((v) => v.id === params.id)
 
   if (!video) {
     return {
       title: "Video Not Found",
-      description: "The requested video was not found.",
-      alternates: {
-        canonical: "https://videostreamhub.vercel.app",
-      },
-      openGraph: {
-        title: "Video Not Found",
-        description: "This video does not exist.",
-        type: "website",
-        images: [
-          {
-            url: "https://videostreamhub.vercel.app/placeholder.svg", // Default fallback image
-            width: 1200,
-            height: 630,
-            alt: "Video Not Found",
-          },
-        ],
-      },
-    };
+      description: "The requested video could not be found.",
+    }
   }
 
   return {
     title: video.title,
     description: video.description,
     alternates: {
-      canonical: `https://videostreamhub.vercel.app/hindi-dubbed/${video.id}`,
+    canonical: `https://videostreamhub.vercel.app/hindi-dubbed/${video.id}`,
     },
     openGraph: {
       title: video.title,
       description: video.description,
       type: "video.movie",
-      images: video.thumbnail
-        ? [
-            {
-              url: video.thumbnail, // Ensure this is a FULL URL
-              width: 1200,
-              height: 630,
-              alt: video.title,
-            },
-          ]
-        : [
-            {
-              url: "https://videostreamhub.vercel.app/placeholder.svg",
-              width: 1200,
-              height: 630,
-              alt: "Default Thumbnail",
-            },
-          ],
     },
-    other: {
-      dateCreated: video.uploadDate,
-    },
-  };
+  }
 }
