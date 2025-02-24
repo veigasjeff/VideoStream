@@ -1881,6 +1881,131 @@
   ],
   "series": [
     {
+      "id": "paatal-lok-s02",
+      "title": "Paatal Lok S02",
+      "description": "Inspector Hathi Ram Chaudhary, the haggard, unlikely hero, investigates a high-profile murder case that leads him to remote corners of North-East India, where he battles powerful forces and personal tragedies in his pursuit of truth.",
+      "thumbnail": "https://i.ytimg.com/vi/uX8eCqdC39o/maxresdefault.jpg",
+      "episodes": [
+        {
+          "id": "paatal-lok-s02",
+          "title": "Paatal Lok S02",
+          "description": "Inspector Hathi Ram Chaudhary, the haggard, unlikely hero, investigates a high-profile murder case that leads him to remote corners of North-East India, where he battles powerful forces and personal tragedies in his pursuit of truth.",
+          "videoUrl": "https://short.icu/K7Wlv7WLd?thumbnail=https://m.media-amazon.com/images/S/pv-target-images/03e398facfb8c631ed25e9588bd02008fcdea16c437cff6643fe6e45f83fb7d4._SX1080_FMjpg_.jpg",
+          "thumbnail": "https://i.ytimg.com/vi/uX8eCqdC39o/maxresdefault.jpg",
+          "duration": "5:58:00",
+          "rating": 8.2,
+          "views": 3445,
+          "uploadDate": "2025-01-17",
+          "tags": [
+            "action",
+            "crime",
+            "drama"
+          ]
+        }
+      ],
+      "views": 3445,
+      "duration": "5:58:00"
+    },
+    {
+      "id": "watson-s01",
+      "title": "Watson S01",
+      "description": "A year after the death of his friend and partner Sherlock Holmes, Dr. John Watson resumes his medical career at a clinic dedicated to the treatment of rare diseases. However, he soon finds that his old life is not done with him yet.",
+      "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/688b870632daa68955867b4f2a2e0ae7959ee8e991334fe20fe0d212e7295786.jpg",
+      "episodes": [
+        {
+          "id": "watson-s01",
+          "title": "Watson S01",
+          "description": "A year after the death of his friend and partner Sherlock Holmes, Dr. John Watson resumes his medical career at a clinic dedicated to the treatment of rare diseases. However, he soon finds that his old life is not done with him yet.",
+          "videoUrl": "https://short.icu/34x84hCQQ?thumbnail=https://wwwimage-tve.cbsstatic.com/thumbnails/photos/w1920-q80/marquee/1048468/27/75/50/asset_marquee_f81e9dfd-f674-4c3e-b150-75496f097d8e.jpg",
+          "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/688b870632daa68955867b4f2a2e0ae7959ee8e991334fe20fe0d212e7295786.jpg",
+          "duration": "2:09:00",
+          "rating": 4.7,
+          "views": 3771,
+          "uploadDate": "2025-01-26",
+          "tags": [
+            "drama",
+            "mystery"
+          ]
+        }
+      ],
+      "views": 3771,
+      "duration": "2:09:00"
+    },
+    {
+      "id": "suits-la-s01",
+      "title": "Suits LA S01",
+      "description": "Follows a new group led by Ted Black, a former New York prosecutor who built an L.A. law firm that specializes in criminal and entertainment law.",
+      "thumbnail": "https://elcomercio.pe/resizer/v2/5QFX363F5VHHZPHFWYTN77Z5XQ.jpg?auth=00939b899ab425fac1c752378f876eceed8fd27c9049917480c0e80620a6e925&width=1200&height=810&quality=90&smart=true",
+      "episodes": [
+        {
+          "id": "suits-la-s01",
+          "title": "Suits LA S01",
+          "description": "Follows a new group led by Ted Black, a former New York prosecutor who built an L.A. law firm that specializes in criminal and entertainment law.",
+          "videoUrl": "https://short.icu/PmFOUO4EW?thumbnail=https://www.hindustantimes.com/ht-img/img/2025/02/24/550x309/Suits_LA_1740400405418_1740400410107.jpg",
+          "thumbnail": "https://elcomercio.pe/resizer/v2/5QFX363F5VHHZPHFWYTN77Z5XQ.jpg?auth=00939b899ab425fac1c752378f876eceed8fd27c9049917480c0e80620a6e925&width=1200&height=810&quality=90&smart=true",
+          "duration": "44:00",
+          "rating": 5.9,
+          "views": 3411,
+          "uploadDate": "2025-02-23",
+          "tags": [
+            "drama"
+          ]
+        }
+      ],
+      "duration": "44:00",
+      "views": 3411
+    },
+    {
+      "id": "the-white-lotus-s03",
+      "title": "The White Lotus S03",
+      "description": "The exploits of various guests and employees of a luxury resort over the span of a week.",
+      "thumbnail": "https://imageio.forbes.com/specials-images/imageserve/65986a7cb7b40b71bbabcb2d/0x0.jpg?format=jpg&crop=2264,1274,x137,y355,safe&height=900&width=1600&fit=bounds",
+      "episodes": [
+        {
+          "id": "the-white-lotus-s03",
+          "title": "The White Lotus S03",
+          "description": "The exploits of various guests and employees of a luxury resort over the span of a week.",
+          "videoUrl": "https://short.icu/USy6fJLe2?thumbnail=https://i.ytimg.com/vi/Sp0thA4cDcM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCWseJmOxr2FUme29rGCPPj3Oav4A",
+          "thumbnail": "https://imageio.forbes.com/specials-images/imageserve/65986a7cb7b40b71bbabcb2d/0x0.jpg?format=jpg&crop=2264,1274,x137,y355,safe&height=900&width=1600&fit=bounds",
+          "duration": "2:01:00",
+          "rating": 8.1,
+          "views": 3126,
+          "uploadDate": "2025-02-07",
+          "tags": [
+            "comedy",
+            "drama"
+          ]
+        }
+      ],
+      "views": 3126,
+      "duration": "2:01:00"
+    },
+    {
+      "id": "school-friends-s03",
+      "title": "School Friends S03",
+      "description": "A slice-of-life show that explores the lives of 5 quirky school teenagers who've just entered 11th Commerce, as they navigate friendships, heartbreaks, peer pressures, more importantly figuring out who they really want to be.",
+      "thumbnail": "https://i.ytimg.com/vi/5_3jl2kkA2c/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCB2q9HlhsmIoUEs23JEpiDxaiPhQ",
+      "episodes": [
+        {
+          "id": "school-friends-s03",
+          "title": "School Friends S03",
+          "description": "A slice-of-life show that explores the lives of 5 quirky school teenagers who've just entered 11th Commerce, as they navigate friendships, heartbreaks, peer pressures, more importantly figuring out who they really want to be.",
+          "videoUrl": "https://short.icu/qXWy_ysD-?thumbnail=https://www.pinkvilla.com/pics/500x500/1626704445_school-friends_202502.jpg",
+          "thumbnail": "https://i.ytimg.com/vi/5_3jl2kkA2c/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCB2q9HlhsmIoUEs23JEpiDxaiPhQ",
+          "duration": "5:24:00",
+          "rating": 7.2,
+          "views": 3616,
+          "uploadDate": "2025-02-14",
+          "tags": [
+            "comedy",
+            "romance"
+          ]
+        }
+      ],
+      "views": 3616,
+      "duration": "5:24:00"
+    },
+    {
       "id": "a-thousand-blows-s01",
       "title": "A Thousand Blows S01",
       "description": "The fortunes of Hezekiah and Alec, two best friends newly arrived from Jamaica. Fighting for survival in the violent melting pot of Victorian London's East End, they come up against Sugar Goodson, a dangerous, veteran boxer.",
