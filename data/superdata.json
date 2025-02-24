@@ -1804,6 +1804,32 @@
   ],
   "series": [
     {
+      "id": "a-thousand-blows-s01",
+      "title": "A Thousand Blows S01",
+      "description": "The fortunes of Hezekiah and Alec, two best friends newly arrived from Jamaica. Fighting for survival in the violent melting pot of Victorian London's East End, they come up against Sugar Goodson, a dangerous, veteran boxer.",
+      "thumbnail": "https://i.imgur.com/IzzBsDg.png?myad",
+      "episodes": [
+        {
+          "id": "a-thousand-blows-s01",
+          "title": "A Thousand Blows S01",
+          "description": "The fortunes of Hezekiah and Alec, two best friends newly arrived from Jamaica. Fighting for survival in the violent melting pot of Victorian London's East End, they come up against Sugar Goodson, a dangerous, veteran boxer.",
+          "videoUrl": "https://short.icu/Qq5quTUnf?thumbnail=https://i.imgur.com/IzzBsDg.png?myad",
+          "thumbnail": "https://i.imgur.com/IzzBsDg.png?myad",
+          "duration": "5:10:00",
+          "rating": 7.5,
+          "views": 4376,
+          "uploadDate": "2025-02-21",
+          "tags": [
+            "history",
+            "sports",
+            "drama"
+          ]
+        }
+      ],
+      "views": 4376,
+      "duration": "5:10:00"
+    },
+    {
       "id": "crime-beat-s01",
       "title": "Crime Beat S01",
       "description": "Small-town crime journalist Abhishek finds his life and career affected by a fugitive gangster. As he gets trapped in a web of lies and motives, what price will he pay- to become a renowned reporter?",
