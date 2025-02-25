@@ -1,6 +1,22 @@
 {
   "videos": [
     {
+      "id": "bone-face-2025",
+      "title": "Bone Face (2025)",
+      "description": "When a masked killer slaughters several campers in a small town, a sheriff and a deputy track the murderer to a local diner where, using their investigative skills, they must discover which person in the diner is the actual killer.",
+      "videoUrl": "https://geo.dailymotion.com/player/xjrxe.html?video=x9f1oli",
+      "thumbnail": "https://i0.wp.com/fzmovies.com.ng/wp-content/uploads/2025/02/Bone-Face-2025.jpg?resize=678%2C381&ssl=1",
+      "rating": 4.7,
+      "views": 2901,
+      "duration": "1:34:00",
+      "uploadDate": "2025-01-21",
+      "tags": [
+        "horror",
+        "mystery",
+        "thriller"
+      ]
+    },
+    {
       "id": "vidaamuyarchi-2025",
       "title": "Vidaamuyarchi (2025)",
       "description": "A married couple's trip takes an unsettling turn when the wife goes missing, prompting the husband's frantic search while an unknown villain creates obstacles.",
@@ -1383,6 +1399,38 @@
   ],
   "adult": [
     {
+      "id": "ansh-part1-2025",
+      "title": "Ansh Part1 (2025)",
+      "description": "Zainab's new series, Ansh Part-1, is releasing on Ullu, on February 25, 2025. Interestingly, OTTplay Premium subscribers will also be able to watch the series easily without any hassle. The story delves into a frustrated married couple, who are struggling to conceive, even after years of love making.",
+      "videoUrl": "https://short.icu/4r_dVDYck?thumbnail=https://i.ytimg.com/vi/IxPtOetIiSI/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/IxPtOetIiSI/maxresdefault.jpg",
+      "rating": 6.5,
+      "views": 4201,
+      "duration": "1:38:00",
+      "uploadDate": "2025-02-25",
+      "tags": [
+        "adult",
+        "hot",
+        "drama"
+      ]
+    },
+    {
+      "id": "wife-exchange-2025",
+      "title": "Wife Exchange (2025)",
+      "description": "A seemingly happy family is torn apart by betrayal and forbidden desires. Asha, married to Brijesh, harbors a secret affair with Ritesh, Brijesh’s younger brother and Rinki’s husband. Their deception remains hidden until one fateful day when Rinki catches them red-handed. Heartbroken and seeking justice, Rinki demands consequences, but the revelation ignites Brijesh’s fury. Consumed by rage and revenge, Brijesh makes a shocking demand—he wants to sleep with Rinki as retribution. As love, trust, and morality crumble, the family is thrust into chaos, forcing them to confront the devastating cost of betrayal.",
+      "videoUrl": "https://short.icu/QSACmv0Wq?thumbnail=https://i1.wp.com/s10.imagetwist.com/th/67733/714ctjmmpixr.jpg?w=1200&resize=1200,0&ssl=1",
+      "thumbnail": "https://i1.wp.com/s10.imagetwist.com/th/67733/714ctjmmpixr.jpg?w=1200&resize=1200,0&ssl=1",
+      "rating": 5.9,
+      "views": 3712,
+      "duration": "1:01:00",
+      "uploadDate": "2025-02-21",
+      "tags": [
+        "adult",
+        "hot",
+        "drama"
+      ]
+    },
+    {
       "id": "ishq-katilana-2025",
       "title": "Ishq Katilana (2025)",
       "description": "Watch the Awaited Teaser Ishq Katilana. Watch the all new series “Ishq Katilana” coming soon only on ALTT.",
@@ -1880,6 +1928,32 @@
     }
   ],
   "series": [
+    {
+      "id": "pati-patni-aur-padosan-s01",
+      "title": "Pati Patni Aur Padosan S01",
+      "description": "A housewife's fascination with her secretive new neighbor turns dangerous when she discovers the woman's dark past and must protect her husband from becoming the neighbor's next victim.",
+      "thumbnail": "https://m.media-amazon.com/images/M/MV5BNWEwOWM1YTItMzkyNi00NDY4LWE5ZjQtZmQxMjFiOGJjYWRhXkEyXkFqcGc@._V1_QL75_UX500_CR0,0,500,281_.jpg",
+      "episodes": [
+        {
+          "id": "pati-patni-aur-padosan-s01",
+          "title": "Pati Patni Aur Padosan S01",
+          "description": "A housewife's fascination with her secretive new neighbor turns dangerous when she discovers the woman's dark past and must protect her husband from becoming the neighbor's next victim.",
+          "videoUrl": "https://short.icu/DXV_PiBCQ?thumbnail=https://i.ytimg.com/vi/o1ICE7ukEEE/maxresdefault.jpg",
+          "thumbnail": "https://m.media-amazon.com/images/M/MV5BNWEwOWM1YTItMzkyNi00NDY4LWE5ZjQtZmQxMjFiOGJjYWRhXkEyXkFqcGc@._V1_QL75_UX500_CR0,0,500,281_.jpg",
+          "duration": "2:37:00",
+          "rating": 9,
+          "views": 4001,
+          "uploadDate": "2025-02-25",
+          "tags": [
+            "crime",
+            "drama",
+            "thriller"
+          ]
+        }
+      ],
+      "duration": "2:37:00",
+      "views": 4001
+    },
     {
       "id": "paatal-lok-s02",
       "title": "Paatal Lok S02",
@@ -2975,6 +3049,32 @@
       ],
       "views": 4712,
       "duration": "5:37:00"
+    },
+    {
+      "id": "grosse-pointe-garden-society-s01",
+      "title": "Grosse Pointe Garden Society S01",
+      "description": "Follows four members of a suburban garden club, as they get caught up in murder and mischief, as they strive to flourish.",
+      "thumbnail": "https://imageservice.disco.peacocktv.com/uuid/9aa28020-3836-3c9d-b661-b7cae930aa71/LAND_16_9/432/236?language=eng&territory=US&proposition=NBCUOTT&version=4eebca58-cd73-3aae-87d4-7ca89f693de2",
+      "episodes": [
+        {
+          "id": "grosse-pointe-garden-society-s01",
+          "title": "Grosse Pointe Garden Society S01",
+          "description": "Follows four members of a suburban garden club, as they get caught up in murder and mischief, as they strive to flourish.",
+          "videoUrl": "https://short.icu/80dwzgy73?thumbnail=https://i.gadgets360cdn.com/large/image_3_F_1740391175321.jpg",
+          "thumbnail": "https://imageservice.disco.peacocktv.com/uuid/9aa28020-3836-3c9d-b661-b7cae930aa71/LAND_16_9/432/236?language=eng&territory=US&proposition=NBCUOTT&version=4eebca58-cd73-3aae-87d4-7ca89f693de2",
+          "duration": "42:00",
+          "rating": 7,
+          "views": 2419,
+          "uploadDate": "2025-02-23",
+          "tags": [
+            "crime",
+            "drama",
+            "mystery"
+          ]
+        }
+      ],
+      "views": 2419,
+      "duration": "42:00"
     }
   ]
 }
