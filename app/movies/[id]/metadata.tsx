@@ -26,7 +26,7 @@ export function Metadata({ id }: MetadataProps) {
       <meta property="og:description" content={video.description} />
       <meta property="og:image" content={video.thumbnail} />
       <meta property="og:type" content="video.movie" />
-      <meta property="og:url" content={`https://videostreamhub.vercel.app/movies/${id}`} />
+      <meta property="og:url" content={`https://yourwebsite.com/movies/${id}`} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={video.title} />
       <meta name="twitter:description" content={video.description} />
