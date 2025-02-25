@@ -302,7 +302,15 @@ interface Props {
 }
 
 function findVideo(id: string) {
-  return superdata.videos.find((v) => v.id === id)
+  const video = superdata.videos.find((v) => v.id === id);
+  if (!video) return null;
+
+  return {
+    ...video,
+    thumbnail: video.thumbnail.startsWith("http")
+      ? video.thumbnail
+      : `https://videostreamhub.vercel.app/thumbnails/${video.thumbnail}`,
+  };
 }
 
 function getRecommendedVideos(currentVideoId: string, limit = 500) {
@@ -311,6 +319,18 @@ function getRecommendedVideos(currentVideoId: string, limit = 500) {
     .sort(() => Math.random() - 0.5)
     .slice(0, limit)
 }
+
+// function findVideo(id: string) {
+//   const video = superdata.videos.find((v) => v.id === id);
+//   if (!video) return null;
+
+//   return {
+//     ...video,
+//     thumbnail: video.thumbnail.startsWith("http")
+//       ? video.thumbnail
+//       : `https://yourcdn.com/thumbnails/${video.thumbnail}`,
+//   };
+// }
 
 export default function VideoPage({ params }: Props) {
   const video = findVideo(params.id)
