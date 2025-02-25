@@ -70,6 +70,12 @@ export const metadata: Metadata = {
     "Stream the latest movies, TV series, and exclusive content on VideoStreamHub. Your ultimate entertainment destination.",
 };
 
+// Lazy load VideoGrid
+const VideoGrid = dynamic(() => import("@/components/video-grid"), {
+  suspense: true,
+  ssr: false, // Avoid blocking server-side rendering
+});
+
 export default function Home() {
   const movies = superdata.videos.map((video) => ({
     ...video,
@@ -123,7 +129,10 @@ export default function Home() {
           <h1 className="text-4xl font-bold mb-6">Welcome to VideoStreamHub</h1>
           <p className="text-xl mb-8">Discover the latest movies, TV series, and exclusive Adult content.</p>
           <h2 className="text-2xl font-bold mb-4">Featured Content</h2>
-          <VideoGrid videos={allVideos} />
+          {/* <VideoGrid videos={allVideos} /> */}
+          <Suspense fallback={<p>Loading videos...</p>}>
+            <VideoGrid videos={allVideos} />
+          </Suspense>
         </section>
       </div>
     </>
