@@ -301,16 +301,24 @@ interface Props {
   }
 }
 
+// Function to find video in any category
 function findVideo(id: string) {
-  const video = superdata.videos.find((v) => v.id === id);
-  if (!video) return null;
+  let video = null
 
-  return {
-    ...video,
-    thumbnail: video.thumbnail.startsWith("http")
-      ? video.thumbnail
-      : `https://videostreamhub.vercel.app/thumbnails/${video.thumbnail}`,
-  };
+  for (const category of ["videos", "hindiDubbed", "adult", "series"]) {
+    if (category === "series") {
+      superdata.series.forEach((series) => {
+        const foundEpisode = series.episodes.find((ep) => ep.id === id)
+        if (foundEpisode) video = foundEpisode
+      })
+    } else {
+      video = superdata[category].find((v) => v.id === id)
+    }
+    if (video) break
+  }
+
+  console.log("Matched Video:", video) // Debugging Log
+  return video
 }
 
 function getRecommendedVideos(currentVideoId: string, limit = 500) {
