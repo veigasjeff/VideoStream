@@ -92,7 +92,7 @@
 //                     {v.duration}
 //                   </div>
 //                 </div>
-               
+
 //                 <h3 className="font-medium group-hover:text-primary"style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>{v.title}</h3>
 //               </Link>
 //             ))}
@@ -239,7 +239,7 @@
 //             </div>
 //           ) : (
 //             <VideoPlayer video={video} />
-           
+
 //           )}
 //            <p className="text-muted-foreground mb-6 mt-5 text-center">{video.description}</p>
 //         </div>
