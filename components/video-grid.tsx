@@ -181,7 +181,7 @@ interface Video {
   description?: string
 }
 
-// Memoized video card component to prevent unnecessary re-renders
+// Memoized video card for better performance
 const VideoCard = memo(function VideoCard({
   video,
   url,
@@ -200,7 +200,7 @@ const VideoCard = memo(function VideoCard({
             alt={video.title}
             width={640}
             height={360}
-            priority={index < 4} // Prioritize first 4 images
+            priority={index < 4} // Prioritize first 4 images in each section
             loading={index < 4 ? "eager" : "lazy"}
             className="transition-transform group-hover:scale-105"
             style={{
@@ -238,6 +238,7 @@ const VideoCard = memo(function VideoCard({
 
       <div className="mt-2">
         <h3 className="font-medium line-clamp-2 group-hover:text-primary">{video.title}</h3>
+        {video.seriesTitle && <p className="text-sm text-muted-foreground mt-1">{video.seriesTitle}</p>}
         <p className="text-sm text-muted-foreground flex items-center mt-1">
           <Eye className="w-4 h-4 mr-1" />
           {video.views.toLocaleString()} views
