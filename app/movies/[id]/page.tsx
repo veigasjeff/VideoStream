@@ -266,10 +266,12 @@ interface Props {
 }
 
 function findVideo(id: string) {
+  if (!superdata?.movies) return null
   return superdata.movies.find((v: any) => v.id === id) || null
 }
 
 function getRecommendedVideos(currentVideoId: string, limit = 500) {
+  if (!superdata?.movies) return []
   return superdata.movies
     .filter((v: any) => v.id !== currentVideoId)
     .sort(() => Math.random() - 0.5)
@@ -278,10 +280,9 @@ function getRecommendedVideos(currentVideoId: string, limit = 500) {
 
 export default function VideoPage({ params }: Props) {
   const video = findVideo(params.id)
-  if (!video) notFound()
+  if (!video) return null
 
   const recommendedVideos = useMemo(() => getRecommendedVideos(video.id), [video.id])
-
   const [showAd, setShowAd] = useState(true)
   const [adSkipped, setAdSkipped] = useState(false)
   const [skipButtonVisible, setSkipButtonVisible] = useState(false)
@@ -314,13 +315,6 @@ export default function VideoPage({ params }: Props) {
     setShowAd(false)
   }
 
-  const handleAdEnd = () => {
-    setAdSkipped(true)
-    setShowAd(false)
-  }
-
-  const handlePopupAdClose = () => setShowPopupAd(false)
-
   return (
     <>
       <Script async data-id="101478638" src="//static.getclicky.com/js" />
@@ -331,7 +325,7 @@ export default function VideoPage({ params }: Props) {
         <div className="mb-6 px-4 md:px-8 lg:px-12">
           {showAd && !adSkipped ? (
             <div className="relative w-full aspect-video mb-4">
-              <video autoPlay muted loop onEnded={handleAdEnd} className="absolute inset-0 w-full h-full object-cover">
+              <video autoPlay muted loop onEnded={handleAdSkip} className="absolute inset-0 w-full h-full object-cover">
                 <source src={adVideoUrl} type="video/mp4" />
               </video>
               <div className="absolute bottom-4 left-4 text-white">
@@ -351,7 +345,7 @@ export default function VideoPage({ params }: Props) {
 
         {showPopupAd && (
           <div className="fixed bottom-5 right-5 w-80 bg-black text-white p-4 rounded-lg shadow-lg z-50">
-            <button onClick={handlePopupAdClose} className="absolute top-2 right-2 text-gray-400 hover:text-white z-20">✖</button>
+            <button onClick={() => setShowPopupAd(false)} className="absolute top-2 right-2 text-gray-400 hover:text-white z-20">✖</button>
             <a href="https://amazonaffiliatestore.vercel.app/" target="_blank" rel="noopener noreferrer">
               <video autoPlay muted loop className="w-full rounded-lg mt-8">
                 <source src={popupAdUrl} type="video/mp4" />
