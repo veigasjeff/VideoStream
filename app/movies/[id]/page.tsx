@@ -266,16 +266,11 @@ interface Props {
 }
 
 function findVideo(id: string) {
-  const categories = ["videos", "hindiDubbed", "adult", "series"]
-  for (const category of categories) {
-    const video = superdata[category].find((v: any) => v.id === id)
-    if (video) return { ...video, category }
-  }
-  return null
+  return superdata.movies.find((v: any) => v.id === id) || null
 }
 
-function getRecommendedVideos(currentVideoId: string, currentCategory: string, limit = 500) {
-  return superdata[currentCategory]
+function getRecommendedVideos(currentVideoId: string, limit = 500) {
+  return superdata.movies
     .filter((v: any) => v.id !== currentVideoId)
     .sort(() => Math.random() - 0.5)
     .slice(0, limit)
@@ -285,7 +280,7 @@ export default function VideoPage({ params }: Props) {
   const video = findVideo(params.id)
   if (!video) notFound()
 
-  const recommendedVideos = useMemo(() => getRecommendedVideos(video.id, video.category), [video.id, video.category])
+  const recommendedVideos = useMemo(() => getRecommendedVideos(video.id), [video.id])
 
   const [showAd, setShowAd] = useState(true)
   const [adSkipped, setAdSkipped] = useState(false)
@@ -366,13 +361,13 @@ export default function VideoPage({ params }: Props) {
         )}
 
         <div className="px-4 md:px-8 lg:px-12">
-          <h2 className="text-2xl font-semibold mb-4 text-center">Recommended Videos</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-center">Recommended Movies</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {recommendedVideos.map((v: any) => (
-              <Link key={v.id} href={`/${video.category}/${v.id}`} className="block group">
+              <Link key={v.id} href={`/movies/${v.id}`} className="block group">
                 <div className="relative w-full">
                   <div className="absolute top-2 left-2 bg-primary text-primary-foreground px-2 py-1 text-xs rounded-md flex items-center">
-                    <Film className="w-3 h-3 mr-1" /> {video.category.toUpperCase()}
+                    <Film className="w-3 h-3 mr-1" /> MOVIES
                   </div>
                   <div className="relative w-full aspect-[16/9]">
                     <Image src={v.thumbnail || "/placeholder.svg"} alt={v.title} quality={90} fill loading="lazy" className="transition-transform group-hover:scale-105 rounded-lg" style={{ objectFit: "cover" }} />
