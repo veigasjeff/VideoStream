@@ -6,12 +6,7 @@ interface MetadataProps {
 }
 
 function findVideo(id: string) {
-  return (
-    superdata.videos.find((v) => v.id === id) ||
-    superdata.hindiDubbed.find((v) => v.id === id) ||
-    superdata.adult.find((v) => v.id === id) ||
-    superdata.series.find((v) => v.id === id)
-  )
+  return superdata.videos.find((v) => v.id === id) || null
 }
 
 export function Metadata({ id }: MetadataProps) {
