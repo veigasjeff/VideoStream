@@ -269,7 +269,7 @@ export function VideoGrid({ videos }: { videos: Video[] }) {
               />
               <div className="relative aspect-video rounded-lg overflow-hidden">
                 <div className="relative w-full aspect-[16/9]">
-                  {/* <Image
+                  <Image
                     src={video.thumbnail || "/placeholder.svg"}
                     alt={video.title}
                     quality={90}
@@ -280,21 +280,7 @@ export function VideoGrid({ videos }: { videos: Video[] }) {
                       objectFit: "cover",
                       filter: "contrast(1.1) saturate(1.1) brightness(1.0) hue-rotate(0deg)",
                     }}
-                  /> */}
-                  <Image
-                    src={video.thumbnail || "/placeholder.svg"}
-                    alt={video.title}
-                    quality={80} // Lowered from 90 to 80
-                    fill
-                    loading={index < 4 ? "eager" : "lazy"} // Load first 4 images eagerly, rest lazily
-                    priority={index < 4} // Prioritize first images for LCP improvement
-                    className="transition-transform group-hover:scale-105"
-                    style={{
-                      objectFit: "cover",
-                      filter: "contrast(1.1) saturate(1.1) brightness(1.0) hue-rotate(0deg)",
-                    }}
                   />
-
                 </div>
 
                 {/* Duration Badge */}
@@ -316,10 +302,10 @@ export function VideoGrid({ videos }: { videos: Video[] }) {
                     {video.type === "Movie"
                       ? "Movie"
                       : video.type === "Hindi-Dubbed"
-                        ? "Hindi Dubbed"
-                        : video.type === "Adult"
-                          ? "Adult"
-                          : "Series"}
+                      ? "Hindi Dubbed"
+                      : video.type === "Adult"
+                      ? "Adult"
+                      : "Series"}
                   </span>
                 </div>
               </div>
