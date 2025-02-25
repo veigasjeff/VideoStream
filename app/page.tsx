@@ -131,7 +131,7 @@
 //   );
 // }
 
-
+"use client"; 
 import dynamic from "next/dynamic";
 import superdata from "@/data/superdata.json";
 import Script from "next/script";
