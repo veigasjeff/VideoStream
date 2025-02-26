@@ -1,6 +1,21 @@
 {
   "videos": [
     {
+      "id": "sisterhood-inc-2025",
+      "title": "Sisterhood.Inc..(2025)",
+      "description": "Corporate exec Megan starts a board of directors to improve her younger sister's chaotic life and finds romance with a psych professor who uncovers her tough demeanor.\n\n",
+      "videoUrl": "https://geo.dailymotion.com/player/xjrxe.html?video=x9f4j9i",
+      "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/466bee34853d35f7baff161daae21bdbf893cf24982904a3e7ab1c76e256d22c.jpg",
+      "rating": 5.9,
+      "views": 2993,
+      "duration": "1:24:00",
+      "uploadDate": "2025-02-22",
+      "tags": [
+        "drama",
+        "romance"
+      ]
+    },
+    {
       "id": "bone-face-2025",
       "title": "Bone Face (2025)",
       "description": "When a masked killer slaughters several campers in a small town, a sheriff and a deputy track the murderer to a local diner where, using their investigative skills, they must discover which person in the diner is the actual killer.",
@@ -1067,6 +1082,20 @@
     }
   ],
   "hindiDubbed": [
+    {
+      "id": "suits-la-s01-hindi-dubbed",
+      "title": "Suits LA S01 Hindi Dubbed",
+      "description": "Follows a new group led by Ted Black, a former New York prosecutor who built an L.A. law firm that specializes in criminal and entertainment law.",
+      "videoUrl": "https://short.icu/H89k-y1mE?thumbnail=https://www.hindustantimes.com/ht-img/img/2025/02/24/550x309/Suits_LA_1740400405418_1740400410107.jpg",
+      "thumbnail": "https://elcomercio.pe/resizer/v2/5QFX363F5VHHZPHFWYTN77Z5XQ.jpg?auth=00939b899ab425fac1c752378f876eceed8fd27c9049917480c0e80620a6e925&width=1200&height=810&quality=90&smart=true",
+      "rating": 5.9,
+      "views": 3666,
+      "duration": "45:00",
+      "uploadDate": "2025-02-23",
+      "tags": [
+        "drama"
+      ]
+    },
     {
       "id": "my-fault-london-hindi-dubbed-2025",
       "title": "My Fault: London Hindi Dubbed (2025)",
