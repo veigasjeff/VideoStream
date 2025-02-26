@@ -1,6 +1,21 @@
 {
   "videos": [
     {
+      "id": "love-forever-2025",
+      "title": "Love Forever (2025)",
+      "description": "The plans of Stockholmers Hanna and Samuel of an intimate countryside wedding in Gotland are shattered by family and friends.",
+      "videoUrl": "https://short.icu/YKsYzsb_S?thumbnail=https://theeurotvplace.com/wp-content/uploads/2025/01/Love-Forever.jpg",
+      "thumbnail": "https://theeurotvplace.com/wp-content/uploads/2025/01/Love-Forever.jpg",
+      "rating": 5.1,
+      "views": 3513,
+      "duration": "1:36:00",
+      "uploadDate": "2025-02-14",
+      "tags": [
+        "comedy",
+        "romance"
+      ]
+    },
+    {
       "id": "sugar-mama-2025",
       "title": "Sugar Mama (2025)",
       "description": "A college student finds himself at the center of a wealthy businesswoman's deadly scheme.",
