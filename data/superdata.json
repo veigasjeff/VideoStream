@@ -1,6 +1,20 @@
 {
   "videos": [
     {
+      "id": "sugar-mama-2025",
+      "title": "Sugar Mama (2025)",
+      "description": "A college student finds himself at the center of a wealthy businesswoman's deadly scheme.",
+      "videoUrl": "https://geo.dailymotion.com/player/xjrxe.html?video=x9f1okk",
+      "thumbnail": "https://bossip.com/wp-content/uploads/sites/28/2025/01/17358257628352.jpg?w=1024&strip=all&quality=80",
+      "rating": 5,
+      "views": 2568,
+      "duration": "1:34:00",
+      "uploadDate": "2025-01-03",
+      "tags": [
+        "thriller"
+      ]
+    },
+    {
       "id": "sisterhood-inc-2025",
       "title": "Sisterhood.Inc..(2025)",
       "description": "Corporate exec Megan starts a board of directors to improve her younger sister's chaotic life and finds romance with a psych professor who uncovers her tough demeanor.\n\n",
