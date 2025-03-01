@@ -252,7 +252,7 @@ export default function RootLayout({
           })('groleegni.net',8919674,document.createElement('script'))`}
         </Script>
 
-        <Script id="ad-script-2" strategy="lazyOnload">
+        {/* <Script id="ad-script-2" strategy="lazyOnload">
           {`(function(d,z,s){
               s.src='https://'+d+'/400/'+z;
               try {
@@ -261,9 +261,9 @@ export default function RootLayout({
                   console.error('Error loading script:', e);
               }
           })('vemtoutcheeg.com',8919677,document.createElement('script'))`}
-        </Script>
+        </Script> */}
 
-        {/* <Script id="ad-script-3" strategy="lazyOnload">
+        <Script id="ad-script-3" strategy="lazyOnload">
           {`(function(d,z,s){
               s.src='https://'+d+'/401/'+z;
               try {
@@ -272,7 +272,7 @@ export default function RootLayout({
                   console.error('Error loading script:', e);
               }
           })('gizokraijaw.net',8919691,document.createElement('script'))`}
-        </Script> */}
+        </Script>
       </body>
     </html>
   )
