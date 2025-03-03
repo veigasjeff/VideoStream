@@ -50,11 +50,11 @@ export default function VideosPage() {
                 // <div className="absolute top-2 left-2 bg-primary text-primary-foreground px-2 py-1 text-xs rounded-md">
                 //   Movies
                 // </div>
-                <div className="absolute top-2 left-2 flex space-x-2">
-                  <div className="bg-primary text-primary-foreground px-2 py-1 text-xs rounded-md flex items-center">
+                // <div className="absolute top-2 left-2 flex space-x-2">
+                <div className="absolute top-2 left-2 bg-black text-white px-2 py-1 text-xs rounded-md flex items-center">
                     <Film className="w-3 h-3 mr-1" />
                     Movies
-                  </div>
+                  {/* </div> */}
                   {/* <div className="bg-secondary text-secondary-foreground px-2 py-1 text-xs rounded-md flex items-center">
                   <span>TV</span>
                 </div> */}
