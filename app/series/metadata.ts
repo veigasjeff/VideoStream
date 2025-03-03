@@ -4,7 +4,7 @@ import { Metadata } from "next"
 import superdata from "@/data/superdata.json"
 
 export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
-  const video = superdata.videos.find((v) => v.id === params.id)
+  const video = superdata.series.find((v) => v.id === params.id)
 
   if (!video) {
     return {
