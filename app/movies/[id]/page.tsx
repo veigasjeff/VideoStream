@@ -10,6 +10,7 @@ import { VideoPlayer } from "@/components/video-player"
 import { Clock, Film } from "lucide-react"
 import { useEffect, useState, useMemo } from "react"
 import Script from "next/script"
+import Head from "next/head";
 
 interface Props {
   params: {
@@ -27,6 +28,7 @@ function getRecommendedVideos(currentVideoId: string, limit = 500) {
     .sort(() => Math.random() - 0.5)
     .slice(0, limit)
 }
+
 
 export default function VideoPage({ params }: Props) {
   const video = findVideo(params.id)
@@ -75,10 +77,13 @@ export default function VideoPage({ params }: Props) {
 
   return (
     <>
-    <Script async data-id="101478638" src="//static.getclicky.com/js" />
-    <Script async data-id="101478638" src="/96930ac493198ab9ca.js" />
+      <Script async data-id="101478638" src="//static.getclicky.com/js" />
+      <Script async data-id="101478638" src="/96930ac493198ab9ca.js" />
       {/* <StructuredData video={video} /> */}
       <StructuredData movie={video} />
+      <Head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(movieData) }} />
+      </Head>
       <h1 className="text-3xl font-bold pt-10 text-center">{video.title}</h1>
       <div className="container py-6 justify-center items-center">
         <div className="mb-6 px-4 md:px-8 lg:px-12">
@@ -98,9 +103,9 @@ export default function VideoPage({ params }: Props) {
             </div>
           ) : (
             <VideoPlayer video={video} />
-           
+
           )}
-           <p className="text-muted-foreground mb-6 mt-5 text-center">{video.description}</p>
+          <p className="text-muted-foreground mb-6 mt-5 text-center">{video.description}</p>
         </div>
 
         {showPopupAd && (
@@ -114,27 +119,27 @@ export default function VideoPage({ params }: Props) {
             </a>
           </div>
         )}
- <div className="px-4 md:px-8 lg:px-12">
-        <h2 className="text-2xl font-semibold mb-4 text-center">Recommended Movies</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {recommendedVideos.map((v) => (
-            <Link key={v.id} href={`/movies/${v.id}`} className="block group">
-              <div className="relative w-full">
-                <div className="absolute top-2 left-2 bg-primary text-primary-foreground px-2 py-1 text-xs rounded-md flex items-center">
-                  <Film className="w-3 h-3 mr-1" /> Movies
+        <div className="px-4 md:px-8 lg:px-12">
+          <h2 className="text-2xl font-semibold mb-4 text-center">Recommended Movies</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {recommendedVideos.map((v) => (
+              <Link key={v.id} href={`/movies/${v.id}`} className="block group">
+                <div className="relative w-full">
+                  <div className="absolute top-2 left-2 bg-primary text-primary-foreground px-2 py-1 text-xs rounded-md flex items-center">
+                    <Film className="w-3 h-3 mr-1" /> Movies
+                  </div>
+                  <div className="relative w-full aspect-[16/9]">
+                    <Image src={v.thumbnail || "/placeholder.svg"} alt={v.title} quality={90} fill loading="lazy" className="transition-transform group-hover:scale-105 rounded-lg" style={{ objectFit: "cover", filter: "contrast(1.1) saturate(1.1) brightness(1.0) hue-rotate(0deg)", }} />
+                  </div>
+                  <div className="absolute bottom-2 right-2 bg-black/80 text-white px-2 py-1 text-xs rounded-md flex items-center">
+                    <Clock className="w-3 h-3 mr-1" /> {v.duration}
+                  </div>
                 </div>
-                <div className="relative w-full aspect-[16/9]">
-                  <Image src={v.thumbnail || "/placeholder.svg"} alt={v.title} quality={90} fill loading="lazy" className="transition-transform group-hover:scale-105 rounded-lg" style={{ objectFit: "cover", filter: "contrast(1.1) saturate(1.1) brightness(1.0) hue-rotate(0deg)", }} />
-                </div>
-                <div className="absolute bottom-2 right-2 bg-black/80 text-white px-2 py-1 text-xs rounded-md flex items-center">
-                  <Clock className="w-3 h-3 mr-1" /> {v.duration}
-                </div>
-              </div>
-              <h3 className="font-medium group-hover:text-primary text-center">{v.title}</h3>
-            </Link>
-          ))}
+                <h3 className="font-medium group-hover:text-primary text-center">{v.title}</h3>
+              </Link>
+            ))}
+          </div>
         </div>
-      </div>
       </div>
     </>
   )
