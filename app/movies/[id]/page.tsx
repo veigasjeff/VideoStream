@@ -82,7 +82,32 @@ export default function VideoPage({ params }: Props) {
       {/* <StructuredData video={video} /> */}
       <StructuredData movie={video} />
       <Head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(movieData) }} />
+      <Script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Movie",
+      "name": video.title,
+      "description": video.description,
+      "image": video.thumbnail,
+      "thumbnailUrl": video.thumbnail,
+      "uploadDate": video.uploadDate,
+      "genre": video.tags, 
+      "url": `https://videostreamhub.vercel.app/movies/${video.id}`,
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": video.rating,
+        "bestRating": 10,
+        "worstRating": 0,
+        "ratingCount": 1
+      },
+      "interactionStatistic": {
+        "@type": "InteractionCounter",
+        "interactionType": { "@type": "WatchAction" },
+        "userInteractionCount": video.views
+      }
+    }) }}
+  />
       </Head>
       <h1 className="text-3xl font-bold pt-10 text-center">{video.title}</h1>
       <div className="container py-6 justify-center items-center">
