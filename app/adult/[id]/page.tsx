@@ -42,8 +42,8 @@ export default function AdultVideoPage({ params }: Props) {
   const [countdown, setCountdown] = useState(8)
   const [showPopupAd, setShowPopupAd] = useState(false)
 
-  const adVideoUrl = "https://res.cloudinary.com/dm37icb6j/video/upload/v1739845637/main_zmp0bz.mp4"
-  const popupAdUrl = "https://res.cloudinary.com/dm37icb6j/video/upload/v1739803773/AD1_jr0ngh.mp4"
+  const adVideoUrl = "https://res.cloudinary.com/dezf3wemk/video/upload/v1741945852/ads_dkxhl6.mp4"
+  const popupAdUrl = "https://res.cloudinary.com/dezf3wemk/video/upload/v1741945852/ads_dkxhl6.mp4"
 
   useEffect(() => {
     if (showAd && countdown > 0) {
