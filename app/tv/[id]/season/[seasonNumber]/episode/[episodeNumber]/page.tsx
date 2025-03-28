@@ -100,7 +100,13 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
 
         <div className="flex flex-wrap justify-between items-start gap-4 mb-4">
           <h1 className="text-3xl font-bold">{episode.name}</h1>
-          <SocialShare url={pageUrl} title={shareTitle} description={episode.overview} />
+          {/* <SocialShare url={pageUrl} title={shareTitle} description={episode.overview} /> */}
+          <SocialShare
+            url={pageUrl}
+            title={shareTitle}
+            description={episode.overview}
+            imageUrl={getImageUrl(episode.still_path, "w300")}
+          />
         </div>
 
         <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">

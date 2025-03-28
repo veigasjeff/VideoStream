@@ -296,7 +296,13 @@ export default function TvShowDetailPage({ params }: TvShowDetailPageProps) {
           </div>
           <h1 className="text-3xl font-bold">{tvShow.name} - {decodedCategory} Watch Now</h1>
         </div>
-        <SocialShare url={pageUrl} title={shareTitle} description={`Watch ${tvShow.name} from ${decodedCategory} category live on ${SITE_NAME}`} />
+        {/* <SocialShare url={pageUrl} title={shareTitle} description={`Watch ${tvShow.name} from ${decodedCategory} category live on ${SITE_NAME}`} /> */}
+        <SocialShare
+          url={pageUrl}
+          title={shareTitle}
+          description={`Watch ${id} from ${decodedCategory} category live on ${SITE_NAME}`}
+          imageUrl={tvShow.poster}
+        />
       </div>
 
       {/* Video Player */}

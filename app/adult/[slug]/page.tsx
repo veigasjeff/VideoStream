@@ -141,7 +141,7 @@ import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, Eye, User } from 'lucide-react'
 import { SITE_NAME, SITE_URL } from "@/lib/tmdb"
 import AdsterraAd from "@/components/AdsterraAd";
-import AdComponent  from "@/components/AdComponent";
+import AdComponent from "@/components/AdComponent";
 
 interface AdultContentDetailPageProps {
   params: { slug: string }
@@ -186,7 +186,7 @@ export default function AdultContentDetailPage({ params }: AdultContentDetailPag
 
   // Get other adult content for recommendations
   const otherContent = getAllAdultContent().filter((item) => item.id !== content.id)
-  
+
   const pageUrl = `${SITE_URL}/adult/${params.slug}`
   const shareTitle = `${content.title} | ${SITE_NAME}`
 
@@ -194,8 +194,8 @@ export default function AdultContentDetailPage({ params }: AdultContentDetailPag
     <div>
       {/* Hero Section */}
       <section className="relative">
-            <AdsterraAd /> 
-                        {/* <AdComponent /> */}
+        <AdsterraAd />
+        {/* <AdComponent /> */}
         <div className="relative h-[50vh] md:h-[70vh] w-full">
           <Image
             src={content.thumbnailUrl || "/placeholder.svg"}
@@ -203,6 +203,8 @@ export default function AdultContentDetailPage({ params }: AdultContentDetailPag
             fill
             priority
             className="object-cover"
+            quality={90}
+            style={{ filter: "contrast(1.3) saturate(1.3) brightness(1.05) hue-rotate(10deg)" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/10" />
         </div>
@@ -217,6 +219,8 @@ export default function AdultContentDetailPage({ params }: AdultContentDetailPag
               alt={content.title}
               fill
               className="rounded-lg object-cover"
+              quality={90}
+              style={{ filter: "contrast(1.3) saturate(1.3) brightness(1.05) hue-rotate(10deg)" }}
             />
           </div>
 

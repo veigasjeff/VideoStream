@@ -103,6 +103,8 @@ export default async function MoviePage({ params }: MoviePageProps) {
               fill
               priority
               className="object-cover"
+              quality={90}
+              style={{ filter: "contrast(1.3) saturate(1.3) brightness(1.05) hue-rotate(10deg)" }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/10" />
           </div>
@@ -117,6 +119,8 @@ export default async function MoviePage({ params }: MoviePageProps) {
                 alt={movie.title || "Movie poster"}
                 fill
                 className="rounded-lg object-cover"
+                quality={90}
+                style={{ filter: "contrast(1.3) saturate(1.3) brightness(1.05) hue-rotate(10deg)" }}
               />
             </div>
 

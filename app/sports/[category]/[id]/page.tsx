@@ -571,6 +571,7 @@ export default function SportsDetailPage({ params }: SportsDetailPageProps) {
   const pageUrl = `${SITE_URL}/sports/${encodeURIComponent(decodedCategory)}/${id}`
   const shareTitle = `${sportName} - ${decodedCategory} Live Sports | ${SITE_NAME}`
 
+  
   return (
     <div className="container py-6">
           <AdsterraAd /> 
@@ -593,10 +594,16 @@ export default function SportsDetailPage({ params }: SportsDetailPageProps) {
         </div>
         <div className="flex flex-wrap items-center gap-4">
           <GmtTime />
-          <SocialShare
+          {/* <SocialShare
             url={pageUrl}
             title={shareTitle}
             description={`Watch ${decodedCategory}: ${sportName} live on ${SITE_NAME}`}
+          /> */}
+                 <SocialShare
+            url={pageUrl}
+            title={shareTitle}
+            description={`Watch ${decodedCategory}: ${sportName} live on ${SITE_NAME}`}
+            imageUrl={sports.poster}
           />
         </div>
       </div>

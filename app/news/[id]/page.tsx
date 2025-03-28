@@ -306,7 +306,13 @@ const sportsItems = getSportsByCategory(firstSportsCategory).slice(0, 4)
 
       <h1 className="text-3xl font-bold mb-6">{news.name} Live</h1>
       <div className="flex justify-center mb-6">
-        <SocialShare url={pageUrl} title={shareTitle} description={news.overview} />
+        {/* <SocialShare url={pageUrl} title={shareTitle} description={news.overview} /> */}
+        <SocialShare
+          url={pageUrl}
+          title={shareTitle}
+          description={`Watch ${params.id.toUpperCase()} live news on ${SITE_NAME}`}
+          imageUrl={news.poster}
+        />
       </div>
       <div className="mb-8">
         <M3u8Player src={news.m3u8} poster={news.poster} title={news.name} />
