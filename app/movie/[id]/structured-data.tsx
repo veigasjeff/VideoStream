@@ -16,7 +16,7 @@ export default function MovieStructuredData({ movie }: { movie: MovieDetails }) 
     name: movie.title,
     description: movie.overview,
     image: getImageUrl(movie.poster_path, "w500"),
-    url: `https://movieswood.vercel.app/movie/${movie.id}`,
+    url: `https://videostreamhub.vercel.app/movie/${movie.id}`,
     datePublished: movie.release_date,
     director: director
       ? {
@@ -43,7 +43,7 @@ export default function MovieStructuredData({ movie }: { movie: MovieDetails }) 
       "@type": "WatchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: `https://movieswood.vercel.app/movie/${movie.id}`,
+        urlTemplate: `https://videostreamhub.vercel.app/movie/${movie.id}`,
       },
     },
     trailer: movie.videos?.results?.find((v) => v.type === "Trailer")

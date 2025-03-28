@@ -241,6 +241,7 @@ import AdComponent  from "@/components/AdComponent";
 import { SITE_NAME, SITE_URL } from "@/lib/tmdb";
 import Link from "next/link";
 
+
 interface NewsDetailPageProps {
   params: { id: string };
 }

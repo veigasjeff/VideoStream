@@ -76,6 +76,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://image.tmdb.org" />
         {/* Plyr CSS for video player */}
         <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+        
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
