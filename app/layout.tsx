@@ -86,7 +86,7 @@ export default function RootLayout({
             <main className="flex-1">{children}</main>
             <Footer />
             {/* Analytics with higher priority but still non-blocking */}
-            {/* <Script
+            <Script
               id="google-analytics"
               strategy="afterInteractive"
               src="https://www.googletagmanager.com/gtag/js?id=G-FX1FS2NM81"
@@ -98,10 +98,10 @@ export default function RootLayout({
             gtag('js', new Date());
             gtag('config', 'G-FX1FS2NM81');
           `}
-            </Script> */}
+            </Script>
 
             {/* Ad scripts with lowest priority */}
-            {/* <Script id="ad-script-1" strategy="lazyOnload">
+            <Script id="ad-script-1" strategy="lazyOnload">
               {`(function(d,z,s){
               s.src='https://'+d+'/401/'+z;
               try {
@@ -132,11 +132,11 @@ export default function RootLayout({
                   console.error('Error loading script:', e);
               }
           })('gizokraijaw.net',8919691,document.createElement('script'))`}
-            </Script> */}
+            </Script>
 
             {/* Clicky Analytics Scripts */}
-            {/* <Script async data-id="101478638" src="//static.getclicky.com/js" />
-            <Script async data-id="101478638" src="/96930ac493198ab9ca.js" /> */}
+            <Script async data-id="101478638" src="//static.getclicky.com/js" />
+            <Script async data-id="101478638" src="/96930ac493198ab9ca.js" />
 
 
           </div>
