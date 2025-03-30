@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: SeasonPageProps): Promise<Met
     const season = await fetchFromTMDB(`/tv/${params.id}/season/${params.seasonNumber}`)
 
     return {
-      title: `${tvShow.name}: ${season.name} | MoviesWood`,
+      title: `${tvShow.name}: ${season.name} | Video Stream Hub`,
       description: season.overview || `Watch ${season.name} of ${tvShow.name} on MoviesWood`,
       openGraph: {
         title: `${tvShow.name}: ${season.name}`,
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: SeasonPageProps): Promise<Met
       },
       twitter: {
         card: "summary_large_image",
-        title: `${tvShow.name}: ${season.name} | MoviesWood`,
+        title: `${tvShow.name}: ${season.name} | Video Stream Hub`,
         description: season.overview || `Watch ${season.name} of ${tvShow.name} on MoviesWood`,
       },
       alternates: {
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: SeasonPageProps): Promise<Met
     }
   } catch (error) {
     return {
-      title: "Season Not Found | MoviesWood",
+      title: "Season Not Found | Video Stream Hub",
       description: "The requested season could not be found.",
     }
   }
