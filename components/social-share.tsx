@@ -85,8 +85,7 @@ export default function SocialShare({ url, title, description = "", imageUrl }: 
   const encodedDescription = encodeURIComponent(description)
 
   const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`
-  // const twitterShareUrl = `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`
-  const twitterShareUrl = `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}&via=yourTwitterHandle`
+  const twitterShareUrl = `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(url).then(

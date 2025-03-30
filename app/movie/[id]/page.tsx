@@ -18,8 +18,7 @@ import { Badge } from "@/components/ui/badge"
 import { Clock, Calendar, Star } from "lucide-react"
 import MovieStructuredData from "./structured-data"
 import AdsterraAd from "@/components/AdsterraAd";
-import AdComponent from "@/components/AdComponent";
-import Head from "next/head";
+import AdComponent  from "@/components/AdComponent";
 
 interface MoviePageProps {
   params: { id: string }
@@ -28,13 +27,8 @@ interface MoviePageProps {
 export async function generateMetadata({ params }: MoviePageProps): Promise<Metadata> {
   try {
     const movie = (await getDetails("movie", params.id)) as MovieDetails
-    const imageUrl = movie.poster_path
-      ? getImageUrl(movie.poster_path, "w500") // Same as in structured-data.tsx
-      : `${SITE_URL}/default-image.jpg`
-
 
     return {
-
       title: `${movie.title} (${movie.release_date ? new Date(movie.release_date).getFullYear() : "Unknown"}) | ${SITE_NAME}`,
       description: movie.overview || `Watch ${movie.title} on ${SITE_NAME}`,
       openGraph: {
@@ -47,7 +41,8 @@ export async function generateMetadata({ params }: MoviePageProps): Promise<Meta
         card: "summary_large_image",
         title: `${movie.title} | ${SITE_NAME}`,
         description: movie.overview || `Watch ${movie.title} on ${SITE_NAME}`,
-        images: [imageUrl], // 🔥 FIX: Add this for Twitter image
+        type: "video.movie",
+        images: movie.backdrop_path ? [getImageUrl(movie.backdrop_path, "original")] : [],
       },
       alternates: {
         canonical: `${SITE_URL}/movie/${params.id}`,
@@ -99,16 +94,8 @@ export default async function MoviePage({ params }: MoviePageProps) {
 
     return (
       <div>
-        <Head>
-          {/* Twitter Card Meta Tags */}
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content={movie.title} />
-          <meta name="twitter:description" content={movie.overview} />
-          <meta name="twitter:image" content={getImageUrl(movie.poster_path, "w780")} />
-          <meta name="twitter:url" content={`https://videostreamhub.vercel.app/movie/${movie.id}`} />
-        </Head>
-        <AdsterraAd />
-        {/* <AdComponent /> */}
+           <AdsterraAd /> 
+                      {/* <AdComponent /> */}
         {/* Hero Section */}
         <section className="relative">
           <div className="relative h-[50vh] md:h-[70vh] w-full">
