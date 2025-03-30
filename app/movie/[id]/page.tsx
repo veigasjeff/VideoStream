@@ -27,7 +27,10 @@ interface MoviePageProps {
 export async function generateMetadata({ params }: MoviePageProps): Promise<Metadata> {
   try {
     const movie = (await getDetails("movie", params.id)) as MovieDetails
-    const imageUrl = movie.backdrop_path ? getImageUrl(movie.backdrop_path, "original") : `${SITE_URL}/default-image.jpg`
+    const imageUrl = movie.poster_path
+    ? getImageUrl(movie.poster_path, "w500") // Same as in structured-data.tsx
+    : `${SITE_URL}/default-image.jpg`
+
 
     return {
       title: `${movie.title} (${movie.release_date ? new Date(movie.release_date).getFullYear() : "Unknown"}) | ${SITE_NAME}`,
