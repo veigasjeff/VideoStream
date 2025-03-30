@@ -18,7 +18,7 @@ import { Badge } from "@/components/ui/badge"
 import { Clock, Calendar, Star } from "lucide-react"
 import MovieStructuredData from "./structured-data"
 import AdsterraAd from "@/components/AdsterraAd";
-import AdComponent  from "@/components/AdComponent";
+import AdComponent from "@/components/AdComponent";
 
 interface MoviePageProps {
   params: { id: string }
@@ -27,6 +27,7 @@ interface MoviePageProps {
 export async function generateMetadata({ params }: MoviePageProps): Promise<Metadata> {
   try {
     const movie = (await getDetails("movie", params.id)) as MovieDetails
+    const imageUrl = movie.backdrop_path ? getImageUrl(movie.backdrop_path, "original") : `${SITE_URL}/default-image.jpg`
 
     return {
       title: `${movie.title} (${movie.release_date ? new Date(movie.release_date).getFullYear() : "Unknown"}) | ${SITE_NAME}`,
@@ -41,6 +42,7 @@ export async function generateMetadata({ params }: MoviePageProps): Promise<Meta
         card: "summary_large_image",
         title: `${movie.title} | ${SITE_NAME}`,
         description: movie.overview || `Watch ${movie.title} on ${SITE_NAME}`,
+        images: [imageUrl], // 🔥 FIX: Add this for Twitter image
       },
       alternates: {
         canonical: `${SITE_URL}/movie/${params.id}`,
@@ -92,8 +94,8 @@ export default async function MoviePage({ params }: MoviePageProps) {
 
     return (
       <div>
-           <AdsterraAd /> 
-                      {/* <AdComponent /> */}
+        <AdsterraAd />
+        {/* <AdComponent /> */}
         {/* Hero Section */}
         <section className="relative">
           <div className="relative h-[50vh] md:h-[70vh] w-full">
