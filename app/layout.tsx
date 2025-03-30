@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "movie streaming website",
     "full movies no sign up",
     "online video streaming"
-],
+  ],
   authors: [{ name: SITE_NAME }],
   creator: SITE_NAME,
   publisher: SITE_NAME,
@@ -53,12 +53,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${SITE_NAME} - Stream Movies and TV Shows`,
     description: `Stream your favorite movies and TV shows on ${SITE_NAME}. Search for content and enjoy high-quality streaming.`,
+    image: `${SITE_URL}/twitter-image.jpg`, 
   },
   robots: {
     index: true,
     follow: true,
   },
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -76,7 +77,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://image.tmdb.org" />
         {/* Plyr CSS for video player */}
         <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-        
+
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
@@ -84,24 +85,24 @@ export default function RootLayout({
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
-                 {/* Analytics with higher priority but still non-blocking */}
-        <Script
-          id="google-analytics"
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-FX1FS2NM81"
-        />
-        <Script id="ga-config" strategy="afterInteractive">
-          {`
+            {/* Analytics with higher priority but still non-blocking */}
+            {/* <Script
+              id="google-analytics"
+              strategy="afterInteractive"
+              src="https://www.googletagmanager.com/gtag/js?id=G-FX1FS2NM81"
+            />
+            <Script id="ga-config" strategy="afterInteractive">
+              {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-FX1FS2NM81');
           `}
-        </Script>
- 
-        {/* Ad scripts with lowest priority */}
-        <Script id="ad-script-1" strategy="lazyOnload">
-          {`(function(d,z,s){
+            </Script> */}
+
+            {/* Ad scripts with lowest priority */}
+            {/* <Script id="ad-script-1" strategy="lazyOnload">
+              {`(function(d,z,s){
               s.src='https://'+d+'/401/'+z;
               try {
                   (document.body || document.documentElement).appendChild(s);
@@ -109,10 +110,10 @@ export default function RootLayout({
                   console.error('Error loading script:', e);
               }
           })('groleegni.net',8919674,document.createElement('script'))`}
-        </Script>
+            </Script>
 
-        <Script id="ad-script-2" strategy="lazyOnload">
-          {`(function(d,z,s){
+            <Script id="ad-script-2" strategy="lazyOnload">
+              {`(function(d,z,s){
               s.src='https://'+d+'/400/'+z;
               try {
                   (document.body || document.documentElement).appendChild(s);
@@ -120,10 +121,10 @@ export default function RootLayout({
                   console.error('Error loading script:', e);
               }
           })('vemtoutcheeg.com',8919677,document.createElement('script'))`}
-        </Script>
+            </Script>
 
-        <Script id="ad-script-3" strategy="lazyOnload">
-          {`(function(d,z,s){
+            <Script id="ad-script-3" strategy="lazyOnload">
+              {`(function(d,z,s){
               s.src='https://'+d+'/401/'+z;
               try {
                   (document.body || document.documentElement).appendChild(s);
@@ -131,12 +132,12 @@ export default function RootLayout({
                   console.error('Error loading script:', e);
               }
           })('gizokraijaw.net',8919691,document.createElement('script'))`}
-        </Script>
+            </Script> */}
 
-              {/* Clicky Analytics Scripts */}
-              <Script async data-id="101478638" src="//static.getclicky.com/js" />
-              <Script async data-id="101478638" src="/96930ac493198ab9ca.js" />
-             
+            {/* Clicky Analytics Scripts */}
+            {/* <Script async data-id="101478638" src="//static.getclicky.com/js" />
+            <Script async data-id="101478638" src="/96930ac493198ab9ca.js" /> */}
+
 
           </div>
         </ThemeProvider>
