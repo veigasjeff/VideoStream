@@ -1,6 +1,18 @@
 {
   "movie": [
     {
+      "id": "1257960",
+      "videoUrl": "https://short.icu/4wFDm1pbu?thumbnail=https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/medium/sikandar-et00394804-1742451123.jpg"
+    },
+    {
+      "id": "1109255",
+      "videoUrl": "https://short.icu/s3Zb3cSN4-?thumbnail=https://i.ytimg.com/vi/t7Ryymu6XcA/maxresdefault.jpg"
+    },
+    {
+      "id": "1367099",
+      "videoUrl": "https://short.icu/Qddh7zuHB?thumbnail=https://images.justwatch.com/backdrop/327179180/s640/guilty-pleasure"
+    },
+    {
       "id": "13078",
       "videoUrl": "https://short.icu/AyXNZ4bIr?thumbnail=https://cover.box3.net/newsimg/dvdmov/max1511226713-front-cover.jpg"
     },
@@ -279,6 +291,14 @@
     {
       "id": "981344",
       "videoUrl": "https://short.icu/P56iC1EFi?thumbnail=https://resizing.flixster.com/xlBGPakfIt9MlGWslWO7UKGxu8s=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p23620953_v_h9_ab.jpg"
+    },
+    {
+      "id": "1229730",
+      "videoUrl": "https://short.icu/J2I_FetlI?thumbnail=https://www.chennaitop10.com/wp-content/uploads/2025/03/36546b645cb8eb042efbcf5d318deaa09182841ef860b7887f98acf2a0993802._SX1080_FMjpg_-1.jpg"
+    },
+    {
+      "id": "1254786",
+      "videoUrl": "https://short.icu/qb4xzP2KgQ?thumbnail=https://media.suara.com/pictures/653x366/2025/02/22/37953-film-the-life-list.jpg"
     }
   ],
   "tv": [
@@ -287,6 +307,12 @@
       "season1": "",
       "season2": "",
       "season3": "https://short.icu/eTHerEjO3?thumbnail=https://www.tvguide.com/a/img/resize/c6d4c07def64a8638a23117ab4156cc39ad66e73/hub/2024/12/06/f8755a4f-451b-4ca1-b57b-e90c5229703d/reachie.jpg?auto=webp&width=1092"
+    },
+    {
+      "id": "287568",
+      "season1": "https://short.icu/eyJ7F4K6L?thumbnail=https://xde45.b-cdn.net/upload/photos/2025/03/174316832267e6a3424d1ce.jpg",
+      "season2": "",
+      "season3": ""
     },
     {
       "id": "286787",
@@ -410,6 +436,21 @@
     }
   ],
   "adult": [
+    {
+      "id": "A49",
+      "slug": "Chaashni-part-2",
+      "title": "Chaashni Part 2 - Webseries",
+      "description": "Ullu dropped a new trailer for Chaashni Part 2 alongside its release date. It is set to premiere on March 28, a week after the premiere of first part. The lesbian romantic series revolving around forbidden love will also available to watch on OTTplay Premium just like the other Ullu web series.",
+      "thumbnailUrl": "https://vgamovies8.rodeo/wp-content/uploads/2025/03/Chaashni-%E2%80%93-Part-2-2025-UllU-Original-185x278.jpg",
+      "videoUrl": "https://short.icu/AhivDuIdY?thumbnail=https://uncutmaza.co.in/wp-content/uploads/2025/03/Chaashni-ep1.jpg",
+      "videoUrl1": "https://voe.sx/e/ufkgsktbh8hi",
+      "videoUrl2": "https://vidoza.net/embed-og0j6cgyshof.html",
+      "duration": 3900,
+      "views": 135190,
+      "category": "Adult",
+      "releaseDate": "2025-03-28",
+      "director": "Fahad Kashmiri"
+    },
     {
       "id": "A48",
       "slug": "kundi-kat-khadkao-raja-part-1",
@@ -1428,6 +1469,68 @@
         "name": "Agni - Pareeksha E05",
         "poster": "https://qqcdnpictest.mxplay.com/pic/713223caaf38f20257b83b0caff425f8/en/16x9/480x270/fa8e489ad330813393bed02624d73a0f_1920x1080.webp",
         "m3u8": "https://d3sgzbosmwirao.cloudfront.net/video/faffe021abfb57801b6cea55b01ffe368c5ddb3c5de3595f9bf840ba333388e2/1/hls/h264_high.m3u8"
+      }
+    ],
+    "Kill Dill - The Heartbreak Club S01": [
+      {
+        "id": "dii-i-am-coming-s01-e01",
+        "name": "Dii, I'm coming! E01",
+        "poster": "https://qqcdnpictest.mxplay.com/pic/82b348c01bd831fec2db45b87dea59d5/en/16x9/640x360/1d9b9bd91d707a29b0107ee872a21254_1920x1080.jpg",
+        "m3u8": "https://d3sgzbosmwirao.cloudfront.net/video/64bb29b9d4b847dc2267c7afb65e7dfc1bffd9c2539ce633096282c277de08c7/1/hls/h264_high.m3u8"
+      },
+      {
+        "id": "dead-end-s01-e02",
+        "name": "Dead End E02",
+        "poster": "https://qqcdnpictest.mxplay.com/pic/67da9e6f1644c355fd201b1336555696/en/16x9/480x270/25e853e078f0d8d4e929a05df8722fa3_1920x1080.webp",
+        "m3u8": "https://d3sgzbosmwirao.cloudfront.net/video/d7064f91ebb8c2d8676ee636721e3f43a7d00f83e37bae1d1fca05884eedbf6f/1/hls/h264_high.m3u8"
+      },
+      {
+        "id": "shes-alive-s01-e03",
+        "name": "She's Alive! E03",
+        "poster": "https://qqcdnpictest.mxplay.com/pic/34c51e6103234f1b7e68791488c438d1/en/16x9/480x270/0ee16619c6f8869919e14049a88b5777_1920x1080.webp",
+        "m3u8": "https://d3sgzbosmwirao.cloudfront.net/video/7375420750e9e40364fbf5f2eab57ef10ceff36282107d2f44968ce0edeefd7c/1/hls/h264_high.m3u8"
+      },
+      {
+        "id": "black-handshake-s01-e04",
+        "name": "Black Handshake E04",
+        "poster": "https://qqcdnpictest.mxplay.com/pic/bf14c67b979759382d6cd52244525806/en/16x9/480x270/edaa99937569c291dd0bda7eabcc589d_1920x1080.webp",
+        "m3u8": "https://d3sgzbosmwirao.cloudfront.net/video/a9009e2f1c3e428b99ccde427a7b88f5d483752b0539c547e13548cfa2d07442/1/hls/h264_high.m3u8"
+      },
+      {
+        "id": "bff-or-bae-s01-e05",
+        "name": "BFF Or Bae? E05",
+        "poster": "https://qqcdnpictest.mxplay.com/pic/b1476911761c47cca6c9b35e44ea0b93/en/16x9/480x270/d7b7181a342af208d36b14677a234428_1920x1080.webp",
+        "m3u8": "https://d3sgzbosmwirao.cloudfront.net/video/7dac433741ece50905aa6653b8b22bb96811260fb0a18bb6e0a4ab140ce49335/3/hls/h264_high.m3u8"
+      },
+      {
+        "id": "the-heartbreak-s01-e06",
+        "name": "The Heartbreak E06",
+        "poster": "https://qqcdnpictest.mxplay.com/pic/1378904cb9d2c91f40a659b75ad6e461/en/16x9/480x270/37bfbddd02f9462cb1d9e069f23f9bc0_1920x1080.webp",
+        "m3u8": "https://d3sgzbosmwirao.cloudfront.net/video/b75edc57df720507a39f97d9401b5bbf3e887aa7445c4131d6947e40b709c9ea/3/hls/h264_high.m3u8"
+      },
+      {
+        "id": "whos-the-bishop-s01-e07",
+        "name": "Who's The Bishop? E07",
+        "poster": "https://qqcdnpictest.mxplay.com/pic/45d39eb7a0db1572d9889b5c2049d336/en/16x9/480x270/67d4fe7c866e5cdc5aadf5cda1a06eb8_1920x1080.webp",
+        "m3u8": "https://d3sgzbosmwirao.cloudfront.net/video/7c30094469902c41756aaf02fe85aa3f97c5e0d78aab090905f757c31ad0c47a/1/hls/h264_high.m3u8"
+      },
+      {
+        "id": "save-the-queen-s01-e08",
+        "name": "Save The Queen E08",
+        "poster": "https://qqcdnpictest.mxplay.com/pic/b989662f68667086e0b1b26386781366/en/16x9/480x270/409c03bdf1041024e0e50c8e4590195b_1920x1080.webp",
+        "m3u8": "https://d3sgzbosmwirao.cloudfront.net/video/3b0bb25255177e75cb2819ddc9a961022437d3c31c2f6fd6f12f88b50ba94cd1/1/hls/h264_high.m3u8"
+      },
+      {
+        "id": "click-click-click-s01-e09",
+        "name": "Click Click Click! E09",
+        "poster": "https://qqcdnpictest.mxplay.com/pic/7bf2439164cadf22fc7220630df90f13/en/16x9/480x270/7e695e4cea3f3ee449da5d02ee9e04bc_1920x1080.webp",
+        "m3u8": "https://d3sgzbosmwirao.cloudfront.net/video/25cd384249a831c34f79ecd008b5ea320075d229f032e781f21bb8266b878b31/4/hls/h264_high.m3u8"
+      },
+      {
+        "id": "check-mate-s01-e010",
+        "name": "Check Mate E010",
+        "poster": "https://qqcdnpictest.mxplay.com/pic/ac91c450baa02938371f20639c777aab/en/16x9/640x360/aa9e75028c8dc995b8d0781ef3d17f1f_1920x1080.jpg",
+        "m3u8": "https://d3sgzbosmwirao.cloudfront.net/video/4a58fe47baa5b72d34ad70a9ad70fcc5e7ce825a7ac68c3ee09aed1fb83a9453/1/hls/h264_high.m3u8"
       }
     ],
      "sports": [
